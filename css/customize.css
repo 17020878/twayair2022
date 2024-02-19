@@ -1,453 +1,4 @@
-@media (min-width: 1200px) {
-    .c, .container-lg, .container-md, .container-sm, .container-xl {
-        max-width: 1140px;
-    }
-}
-.header__main{
-    padding-right: 8%;
-    background-color: #C4001A;
-    justify-content: space-between;
-}
-.header .header__group > div{
-    width: 50%;
-}
-.header__group{
-    display: flex;
-    align-items: center;
-}
-.header__group .logo{
-    padding-left: 8%;
-}
-.header__title,.header__search{
-    padding-left: 24px;
-}
-.homeBanner__cont h2{
-    font-size: 72px;
-}
-.homeBanner__cont p{
-    font-size: 44px;
-}
-.searchBox_home{
-    margin-top: 35px;
-}
-.colorRed800{
-    color: #D20526;
-}
-.colorNeutral500{
-    color: #64748B;
-}
-.colorNeutral600{
-    color: #475569;
-}
-
-.typeSearch__box button p:before{
-    border-bottom: 2px solid red;
-}
-.typeSearch__box{
-    padding-right: 30px;
-}
-.typeSearch__box button.active p,.typeSearch__box button:hover p{
-    color: #D20526;
-}
-.searchBox__input input::placeholder{
-    color: #94A3B8;
-}
-
-.form-control[readonly]{
-    background: #F1F5F9;
-}
-.inputSearch__group{
-    display: flex;
-    align-items: center;
-    padding-top: 16px;
-    justify-content: right;
-}
-.searchBox__btn{
-    width: 220px;
-}
-.inputSearch__promo{
-    margin-right: 16px;
-}
-.inputSearch__promo svg{
-    margin-right: 8px;
-}
-.typeBook__group{
-    display: flex;
-    padding-top: 35px;
-}
-.typeBook__item {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-.typeBook__item svg{
-    margin-right: 10px;
-}
-.typeBook__item.active{
-    padding-bottom: 10px;
-    border-bottom: 2px solid #D20526;
-}
-.typeBook__item.active span{
-    color: #D20526;
-}
-.typeBook__col{
-    display: flex;
-    width: calc(100%/4);
-    justify-content: center;
-    padding: 0 50px;
-}
-.suggestion__title svg{
-    margin-right: 10px;
-}
-.t-datepicker-day{
-    right: -12vw;
-}
-.t-month{
-    font-size: 16px;
-    color: #475569;
-    font-weight: 500;
-}
-.t-table-condensed tr th{
-    color: #94A3B8;
-    font-weight: 500;
-}
-.t-day{
-    color: #1E293B;
-}
-.t-today{
-    color: #ffffff;
-}
-.t-hover-day-content{
-    font-weight: 500;
-}
-.t-hover-day, .t-hover-day-content, .t-hover-day:hover,.t-check-in .t-end, .t-check-out .t-start, .t-check-out tr ~ .t-end,.t-start, .t-end, .t-end-limit{
-    background: #D20526;
-}
-.t-range-limit,.t-range,.t-range-limit.t-start, .t-range-limit.t-end{
-    background: #f1dde0;
-}
-.t-hover-day::after{
-    border-top-color: #D20526;
-}
-.passengerBox__text p{
-    padding-bottom: 2px;
-}
-.apply__passenger{
-    background: #D20526;
-    border-radius: 8px;
-    width: 100px;
-    color: #fff;
-    padding: 6px 0;
-}
-.passengerBox__item:last-child{
-    justify-content: right;
-}
-.typeBook__group .typeBook__col.active{
-
-}
-.typeBook__item.active svg path{
-    fill: #D20526;
-}
-.typeBook__item:hover svg path{
-    fill: #D20526;
-}
-.typeBook__item:hover span{
-    color: #D20526;
-}
-.typeBook__item {
-    padding-bottom: 10px;
-    border-bottom: 2px solid #fff;
-}
-.searchBox__tab li.active button:after,.searchBox__tab li:hover button:after{
-    content: "";
-    position: absolute;
-    width: 28px;
-    background: #D20526;
-    left: 0;
-    bottom: -4px;
-    height: 2px;
-}
-.homeBook__form{
-    height: 169px;
-}
-.searchBox__tab li.active span{
-    color: #D20526;
-}
-.searchBox__toggle.active p:after,.searchBox__toggle:hover p:after {
-    content: "";
-    position: absolute;
-    width: 28px;
-    background: #D20526;
-    left: 0;
-    bottom: -4px;
-    height: 2px;
-}
-.searchBox__toggle{
-    position: relative;
-}
-.searchBox__add {
-    display: flex;
-    margin-bottom: 16px;
-}
-.add__Left, .add_Right {
-    position: relative;
-    width: 27%;
-    border-bottom: 1px solid #E2E8F0;
-    bottom: 16px;
-}
-.searchBox__add span {
-    color: #334155;
-    padding: 10px;
-    font-weight: 500;
-}
-.searchBox__add .add__Mid {
-    position: relative;
-    justify-content: center;
-    width: 16%;
-    display: flex;
-    cursor: pointer;
-}
-.header__search .dropdown-menu.show{
-    left: unset!important;
-    right: 0;
-    transform: unset!important;
-    top: unset!important;
-}
-.colorNeutral800{
-    color: #1E293B;
-}
-.footer__list ul:last-child{
-    width: 15%;
-}
-.appFooter img{
-    height: 36px;
-    width: 110px;
-    margin-right: 20px;
-    border-radius: 8px;
-}
-
-.socialFooter svg{
-    margin: 0 15px;
-}
-.footer{
-    background-color: #E2E8F0;
-}
-
-.footer__lang button svg{
-    margin: 0 8px;
-}
-.footer__lang button span{
-    margin-right: 10px;
-}
-.footer__lang .dropdown-menu.show{
-    right: 0;
-}
-.homeBanner:after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(359.24deg,#E5E5E5 -70%,rgb(255 255 255 / 0%) 13.24%);
-    opacity: 1;
-}
-.homeServices__cont{
-    width: 70%;
-}
-.homeServices__icon{
-    width: 30%;
-}
-.homeServices__title {
-    margin-bottom: 8px;
-}
-.homeIntern__title p{
-    font-size: 36px;
-}
-.homeIntern__item:last-child{
-    display: flex;
-    justify-content: right;
-}
-.internImage__back{
-    width: 437px;
-    height: 546px;
-    display: flex;
-    justify-content: right;
-	margin-bottom: 60px;
-}
-.internImage__back img, .internImage__font img{
-    border-radius: 300px;
-}
-.internImage__font{
-    position: absolute;
-    left: 0;
-    bottom: 14px;
-    width: 300px;
-    height: 400px;
-}
-.slick-initialized .slick-slide{
-    align-items: center;
-}
-.homeIntern__item{
-    margin-right: 30px;
-}
-.homeHighlight__col{
-    box-shadow: 0px 0px 8px rgb(0 0 0 / 15%);
-    border-radius: 8px;
-    background: #fff;
-}
-.homeHighlight__img{
-    height: 17vw;
-}
-.homeHighlight__img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px 8px 0 0;
-}
-.homeHighlight__cont{
-    padding: 16px;
-}
-.homeHighlight__cont p{
-    padding: 2px 0;
-}
-.homeHighlight__group .homeHighlight__col{
-    margin-bottom: 24px;
-    height: 25vw;
-}
-.homeHighlight .col-4{
-    padding-right: 12px;
-    padding-left: 12px;
-}
-.homeHighlight__image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-}
-.homeHighlight__image{
-    position: relative;
-    height: calc(50vw + 24px);
-}
-.homeHighlight__card{
-    border-radius: 8px;
-    box-shadow: 0px 0px 8px rgb(0 0 0 / 15%);
-}
-.homeHighlight__image .homeHighlight__cont{
-    z-index: 9;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-.homeHighlight__image:before{
-    border-radius: 8px;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(0deg, #000000 -13.45%, rgba(255, 255, 255, 0) 67.25%);
-}
-
-.homeDes__title{
-    font-size: 24px;
-    color: #1E293B;
-    font-weight: 500;
-    margin-bottom: 8px;
-}
-.homeDestination li a{
-    color: #475569;
-}
-.homeDestination .col-md-6{
-    padding: 8px 0;
-    float: left;
-}
-.homeHighlight,.homeDestination{
-    padding-bottom: 50px;
-}
-.homeLetter__input{
-    justify-content: center;
-    padding-bottom: 30px;
-}
-.homeLetter__input input{
-    width: 378px;
-}
-.homeLetter__input button{
-    width: 220px;
-}
-.homeLetter__title{
-    padding: 26px 0;
-    text-align: center;
-}
-.colorNeutral700{
-    color: #334155;
-}
-.node__cont{
-    display: flex;
-    align-items: center;
-    margin-top: 16px;
-}
-.node__cont svg{
-    margin-right: 8px;
-}
-.navbarBox__title{
-    color: #fff;
-}
-.homeDestination__group li a:hover{
-    text-decoration: underline;
-}
-.homeLetter__group{
-    position: relative;
-}
-.homeLetter__group svg{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 15px;
-}
-.header__toggle.active svg:first-child,.header__toggle svg:last-child{
-    display: none;
-}
-.header__toggle.active svg:last-child{
-    display: block;
-}
-.header__title{
-    cursor: pointer;
-}
-.homeServices__text p {
-    font-size: 16px;
-}
-.header__title span{
-    font-size: .92vw;
-}
-
-
-@media (min-width: 767px){
-    .searchBox__main {
-         box-shadow: 0px 0px 30px rgb(0 0 0 / 15%);
-    }
-    .navbarBox__title,.navbarBox__close{
-        display: none;
-    }
-    .footerIcon__group{
-        justify-content: space-between;
-        display: flex;
-    }
-    .footerIcon__left {
-         display: flex;
-         align-items: center;
-    }
-    .no_scroll_body {
-        height: 100%;
-        overflow: hidden;
-    }
-
-}
-
-/*start mobile*/
+/*start mobile ======================================================================================*/
 @media (max-width: 767px){
     .header__title{
         display: none;
@@ -696,4 +247,797 @@
         transition: all .3s ease-in-out;
     }
 }
-/*end mobile*/
+/*end mobile ======================================================================================*/
+
+@media (min-width: 1200px) {
+    .c, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 767px){
+    .flightItem__label {
+        margin-right: 16px;
+        border-radius: 4px;
+    }
+    .fareCondition {
+        padding: 0 24px;
+        background-color: #fff;
+        margin-top: -8px;
+        border-radius: 8px;
+    }
+    .flightItem__label .titleSort__filter {
+        padding: 0 18px;
+        cursor: pointer;
+        color: #2F80ED;
+    }
+    .flDate {
+        background-color: #fff;
+        position: relative;
+        border: 1px solid #E2E8F0;
+        margin-bottom: 15px;
+    }
+    .flightResult__left {
+        width: 100%;
+    }
+    .searchBox__main {
+        box-shadow: 0 0 30px rgb(0 0 0 / 15%);
+    }
+    .navbarBox__title,.navbarBox__close{
+        display: none;
+    }
+    .footerIcon__group{
+        justify-content: space-between;
+        display: flex;
+    }
+    .footerIcon__left {
+        display: flex;
+        align-items: center;
+    }
+    .no_scroll_body {
+        height: 100%;
+        overflow: hidden;
+    }
+    .fareCondition__title {
+        padding: 0.5vw 1vw;
+        font-size: 14px;
+    }
+    .fareCondition__title span {
+        padding-left: 1vw;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    .header__toggle svg{
+        width: 2vw;
+        height: 2vw;
+    }
+    .logo svg{
+        width: 18vw;
+        height: 3vw;
+    }
+    .homeBanner__cont h2 {
+        font-size: 3.5vw!important;
+    }
+    .homeBanner__cont p{
+        font-size: 2vw!important;
+    }
+    .header__title span{
+        font-size: .9vw;
+    }
+}
+
+.flTable__group{
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+.table-responsive{
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    margin-top: 24px;
+}
+.fareCondition table th {
+    vertical-align: middle;
+    position: relative;
+}
+.fareCondition .tableGroup-responsive{
+    border-top: 1px solid #E2E8F0;
+    margin-top: 3px;
+}
+.flightItem__label svg {
+    margin-left: 10px;
+}
+.table-responsive tr th, .table-responsive tr td{
+    width: 25%;
+    border-right: 1px solid #E2E8F0;
+    color: #1E293B;
+}
+.tableGroup-responsive table{
+    width: 100%;
+}
+.alert{
+    margin-bottom: 0;
+}
+.table-responsive .fareCondition_economy{
+    text-align: center;
+}
+.table-responsive thead tr th:nth-child(1){
+    background: #F1F5F9;
+}
+.table-responsive thead tr th:nth-child(2){
+    background: #E2E8F0;
+}
+.table-responsive thead tr th:nth-child(3){
+    background: #CBD5E1;
+}
+.table-responsive thead tr th:nth-child(4){
+    background: #94A3B8;
+}
+.fareCondition__th {
+    color: #1E293B;
+    font-size: 18px;
+}
+.fareCondition table th p {
+    font-weight: 500;
+    padding: 0.5vw;
+}
+.priceCondition__group{
+    border-top: 1px solid #E2E8F0;
+}
+.sortFilter{
+    border: 1px solid #E2E8F0;
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px 24px;
+}
+.sortFilter .boxSortby .listBox__form {
+    background: #D20526;
+    color: #fff;
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+    top: unset;
+    left: auto;
+    margin-left: 0;
+    margin-top: 7px;
+}
+.boxSortby a:hover{
+    color: #1E293B;
+}
+.boxRefundable__title, .boxAirlines__title, .boxTransit__title, .boxDepartTime__title, .boxArrival__title {
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.sortFilter .boxSortby .listBox__form a {
+    font-size: 14px;
+    cursor: pointer;
+}
+.boxFilter__group {
+    padding-top: 50px;
+    display: flex;
+}
+.boxFilter__left {
+    padding: 0 24px;
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+    width: 22vw;
+}
+.flboxRefundable, .flboxAirlines, .flBoxDeparture {
+    padding-bottom: 16px;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 16px;
+}
+.boxFilter__group .container {
+    display: flex;
+    padding: 6px 0;
+    align-items: center;
+}
+.boxRefundable__checkbox input[type=radio], .boxAirlines__checkbox input[type=radio], .boxTransit__checkbox input[type=radio] {
+    margin-right: 20px;
+}
+.boxFilter__right {
+    padding: 0 24px;
+    width: 22vw;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.boxFilter__group{
+    color: #fff;
+}
+.grid-item {
+    border: 1px solid #f9f6f4;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 8px 16px;
+    margin: 4px;
+    text-align: center;
+}
+.grid-item.active {
+    background: #FFCCD3;
+}
+.grid-item.active p {
+    color: #94A3B8!important;
+}
+.listBox__filter {
+    padding: 16px 0;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    display: none;
+    position: absolute;
+    z-index: 10;
+    box-shadow: 0 12px 16px 0 rgb(0 0 0 / 20%);
+    background: #D20526;
+    margin-top: 15px;
+    margin-left: -100px;
+}
+.listBox__filter button.close {
+    display: flex;
+    align-items: center;
+    opacity: 1;;
+    color: #fff;
+    text-shadow: unset;
+}
+.flDate__slide {
+    display: flex;
+    padding: 0 30px;
+}
+.flDate .slick-arrow.slick-next{
+    border-radius: 0 8px 8px 0;
+}
+.flDate .slick-arrow{
+    width: 32px;
+    height: 100%;
+}
+.flDate .slick-arrow.slick-prev{
+    border-radius: 8px 0 0 8px;
+}
+.flDate{
+    border-radius: 8px;
+    margin: 24px 0;
+}
+.flDate__item {
+    text-align: center;
+    transition: all .2s;
+    font-weight: 500;
+    width: calc(100% / 7);
+    padding: 12px 0;
+    border-right: 1px solid #E2E8F0;
+}
+.flightItem__title{
+    text-align: center;
+    padding: 16px 0;
+}
+.flightResult__body{
+    padding: 24px 0;
+}
+.flightTime__dot{
+    padding: 0 15px;
+}
+.viewMore{
+    margin-top: 10px;
+}
+.flightItem__table__header{
+    background: #fff;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    margin-bottom: 4px;
+}
+.header__main{
+    padding-right: 8%;
+    background-color: #C4001A;
+    justify-content: space-between;
+}
+.header__group > div{
+    width: 50%;
+}
+.header__group{
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+}
+.header__group .logo{
+    padding-left: 8%;
+}
+.header__title,.header__search{
+    padding-left: 24px;
+}
+.homeBanner__cont h2{
+    font-size: 72px;
+}
+.homeBanner__cont p{
+    font-size: 44px;
+}
+.alert.alert_blue{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+.searchBox_home{
+    margin-top: 35px;
+}
+.alert__icon{
+    margin-right: 10px;
+}
+.colorNeutral700{
+    color: #334155;
+}
+.colorRed800{
+    color: #D20526;
+}
+.colorRed500{
+    color: #EB5757;
+}
+.colorNeutral500{
+    color: #64748B;
+}
+.colorNeutral600{
+    color: #475569;
+}
+.boxPrice p:first-child{
+    margin-top: 4px;
+    margin-right: 2px;
+}
+.boxPrice{
+    display: flex;
+    justify-content: center;
+}
+.priceBox__cont{
+    border: 1px solid #94A3B8;
+    border-radius: 8px;
+    width: 85%;
+    height: 90%;
+    position: relative;
+}
+.priceBox.soldOut .priceBox__cont{
+    background-color:#94A3B8
+}
+.typeSearch__box button p:before{
+    border-bottom: 2px solid red;
+}
+.typeSearch__box{
+    padding-right: 30px;
+}
+.typeSearch__box button.active p,.typeSearch__box button:hover p{
+    color: #D20526;
+}
+.searchBox__input input::placeholder{
+    color: #94A3B8;
+}
+
+.form-control[readonly]{
+    background: #F1F5F9;
+}
+.inputSearch__group{
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+    justify-content: right;
+}
+.searchBox__btn{
+    width: 220px;
+}
+.inputSearch__promo{
+    margin-right: 16px;
+}
+.inputSearch__promo svg{
+    margin-right: 8px;
+}
+.typeBook__group{
+    display: flex;
+    padding-top: 35px;
+}
+.typeBook__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.typeBook__item svg{
+    margin-right: 10px;
+}
+.typeBook__item.active{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #D20526;
+}
+.typeBook__item.active span{
+    color: #D20526;
+}
+.typeBook__col{
+    display: flex;
+    width: calc(100%/4);
+    justify-content: center;
+    padding: 0 50px;
+}
+.suggestion__title svg{
+    margin-right: 10px;
+}
+.t-datepicker-day{
+    right: -12vw;
+}
+.t-month{
+    font-size: 16px;
+    color: #475569;
+    font-weight: 500;
+}
+.t-table-condensed tr th{
+    color: #94A3B8;
+    font-weight: 500;
+}
+.blue1{
+    color: #2F80ED;
+}
+.t-day{
+    color: #1E293B;
+}
+.t-today{
+    color: #ffffff;
+}
+.t-hover-day-content{
+    font-weight: 500;
+}
+.t-hover-day, .t-hover-day-content, .t-hover-day:hover,.t-check-in .t-end, .t-check-out .t-start, .t-check-out tr ~ .t-end,.t-start, .t-end, .t-end-limit{
+    background: #D20526;
+}
+.t-range-limit,.t-range,.t-range-limit.t-start, .t-range-limit.t-end{
+    background: #f1dde0;
+}
+.t-hover-day::after{
+    border-top-color: #D20526;
+}
+.passengerBox__text p{
+    padding-bottom: 2px;
+}
+.apply__passenger{
+    background: #D20526;
+    border-radius: 8px;
+    width: 100px;
+    color: #fff;
+    padding: 6px 0;
+}
+.passengerBox__item:last-child{
+    justify-content: right;
+}
+.typeBook__group .typeBook__col.active{
+
+}
+.typeBook__item.active svg path{
+    fill: #D20526;
+}
+.typeBook__item:hover svg path{
+    fill: #D20526;
+}
+.typeBook__item:hover span{
+    color: #D20526;
+}
+.typeBook__item {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+}
+.searchBox__tab li.active button:after,.searchBox__tab li:hover button:after{
+    content: "";
+    position: absolute;
+    width: 28px;
+    background: #D20526;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+}
+.homeBook__form{
+    height: 169px;
+}
+.searchBox__tab li.active span{
+    color: #D20526;
+}
+.searchBox__toggle.active p:after,.searchBox__toggle:hover p:after {
+    content: "";
+    position: absolute;
+    width: 28px;
+    background: #D20526;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+}
+.searchBox__toggle{
+    position: relative;
+}
+.searchBox__add {
+    display: flex;
+    margin-bottom: 16px;
+}
+.add__Left, .add_Right {
+    position: relative;
+    width: 27%;
+    border-bottom: 1px solid #E2E8F0;
+    bottom: 16px;
+}
+.searchBox__add span {
+    color: #334155;
+    padding: 10px;
+    font-weight: 500;
+}
+.searchBox__add .add__Mid {
+    position: relative;
+    justify-content: center;
+    width: 16%;
+    display: flex;
+    cursor: pointer;
+}
+.header__search .dropdown-menu.show{
+    left: unset!important;
+    right: 0;
+    transform: unset!important;
+    top: unset!important;
+}
+.colorNeutral800{
+    color: #1E293B;
+}
+.colorNeutral400{
+    color: #94A3B8;
+}
+.colorNeutral500{
+    color: #64748B;
+}
+.footer__list ul:last-child{
+    width: 15%;
+}
+.appFooter img{
+    height: 36px;
+    width: 110px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.socialFooter svg{
+    margin: 0 15px;
+}
+.footer{
+    background-color: #E2E8F0;
+}
+
+.footer__lang button svg{
+    margin: 0 8px;
+}
+.footer__lang button span{
+    margin-right: 10px;
+}
+.footer__lang .dropdown-menu.show{
+    right: 0;
+}
+.homeBanner:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(359.24deg,#E5E5E5 -70%,rgb(255 255 255 / 0%) 13.24%);
+    opacity: 1;
+}
+.homeServices__cont{
+    width: 70%;
+}
+.homeServices__icon{
+    width: 30%;
+}
+.homeServices__title {
+    margin-bottom: 8px;
+}
+.homeIntern__title p{
+    font-size: 36px;
+}
+.homeIntern__item:last-child{
+    display: flex;
+    justify-content: right;
+}
+.internImage__back{
+    width: 437px;
+    height: 546px;
+    display: flex;
+    justify-content: right;
+	margin-bottom: 60px;
+}
+.internImage__back img, .internImage__font img{
+    border-radius: 300px;
+}
+.internImage__font{
+    position: absolute;
+    left: 0;
+    bottom: 14px;
+    width: 300px;
+    height: 400px;
+}
+.slick-initialized .slick-slide{
+    align-items: center;
+}
+.homeIntern__item{
+    margin-right: 30px;
+}
+.homeHighlight__col{
+    box-shadow: 0px 0px 8px rgb(0 0 0 / 15%);
+    border-radius: 8px;
+    background: #fff;
+}
+.homeHighlight__img{
+    height: 17vw;
+}
+.homeHighlight__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+.homeHighlight__cont{
+    padding: 16px;
+}
+.homeHighlight__cont p{
+    padding: 2px 0;
+}
+.homeHighlight__group .homeHighlight__col{
+    margin-bottom: 24px;
+    height: 25vw;
+}
+.homeHighlight .col-4{
+    padding-right: 12px;
+    padding-left: 12px;
+}
+.homeHighlight__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.homeHighlight__image{
+    position: relative;
+    height: calc(50vw + 24px);
+}
+.homeHighlight__card{
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px rgb(0 0 0 / 15%);
+}
+.homeHighlight__image .homeHighlight__cont{
+    z-index: 9;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.homeHighlight__image:before{
+    border-radius: 8px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, #000000 -13.45%, rgba(255, 255, 255, 0) 67.25%);
+}
+
+.homeDes__title{
+    font-size: 24px;
+    color: #1E293B;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.homeDestination li a{
+    color: #475569;
+}
+.homeDestination .col-md-6{
+    padding: 8px 0;
+    float: left;
+}
+.homeHighlight,.homeDestination{
+    padding-bottom: 50px;
+}
+.homeLetter__input{
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.homeLetter__input input{
+    width: 378px;
+}
+.homeLetter__input button{
+    width: 220px;
+}
+.homeLetter__title{
+    padding: 26px 0;
+    text-align: center;
+}
+.colorNeutral700{
+    color: #334155;
+}
+.node__cont{
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+.node__cont svg{
+    margin-right: 8px;
+}
+.navbarBox__title{
+    color: #fff;
+}
+.homeDestination__group li a:hover{
+    text-decoration: underline;
+}
+.homeLetter__group{
+    position: relative;
+}
+.homeLetter__group svg{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+}
+.header__toggle.active svg:first-child,.header__toggle svg:last-child{
+    display: none;
+}
+.header__toggle.active svg:last-child{
+    display: block;
+}
+.header__title{
+    cursor: pointer;
+}
+.homeServices__text p {
+    font-size: 16px;
+}
+.buttonEdit__search svg{
+    margin-right: 10px;
+}
+.buttonEdit__search{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.fromTo__Title,.flightHeader__info {
+    display: flex;
+    align-items: center;
+}
+.fromTo__Title .fromTo__Icon {
+     padding: 0 15px;
+}
+.flightHeader__info > svg{
+    margin: 0 12px;
+}
+.flightHeader__up{
+    display: flex;
+    padding: 24px 0;
+}
+.flightHeader__down{
+    padding: 10px 0;
+    background: #CBD5E1;
+}
+#searchModal{
+    padding-right: 0!important;
+    overflow: hidden;
+}
+.modal-dialog .modal-content{
+    border-radius: 0 0 8px 8px;
+}
+.modal-dialog {
+    max-width: 1000px;
+}
+#searchModal .modal-body {
+    padding: 15px 0;
+}
+#searchModal .searchBox__main{
+    box-shadow: unset;
+}
+#searchModal .searchBox__body{
+    padding: 0;
+    box-shadow: unset;
+    background: unset;
+}
+#searchModal .close{
+    background-color: #D20526;
+    opacity: 1;
+    border-radius: 50%;
+    font-size: unset;
+    z-index: 999;
+}
+#searchModal .inputSearch__group{
+    padding-bottom: 16px;
+}
+
+
+
