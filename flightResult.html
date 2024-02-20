@@ -878,7 +878,7 @@
       <section class="flightResult">
         <div class="flightResult__body">
           <div class="container">
-            <div class="flightResult__left">
+            <div class="flightResult__left hidden">
               <div class="showDesktop">
                 <div class="flightItem">
                   <div class="flightItem__title">
@@ -1139,18 +1139,28 @@
                                   </svg></div>
                                   <div class="flightTime__code__item"><img src="images/logo-vnairline.png"><span class="ml5 text12 colorNeutral600">CX 688</span></div>
                                 </div>
-                                <button type="button" data-toggle="modal" data-target="#flightDetailPopup" class="viewMore text-left"><span class="blue1">Flight details</span></button>
+                                <button type="button" class="viewMore text-left"><span class="blue1">Flight details</span><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                                  <g clip-path="url(#clip0_1083_7200)">
+                                    <path d="M4.66192 6.67836L7.90359 1.33036C7.96482 1.22924 7.99807 1.11366 7.99992 0.995462C8.00177 0.877263 7.97216 0.760698 7.91412 0.657713C7.85608 0.554728 7.7717 0.469028 7.66963 0.409396C7.56756 0.349764 7.45147 0.318345 7.33325 0.31836L0.84992 0.31836C0.731657 0.31831 0.615508 0.349721 0.51339 0.40937C0.411271 0.469019 0.326858 0.554759 0.268808 0.657796C0.210759 0.760832 0.181163 0.877456 0.183058 0.995705C0.184952 1.11395 0.218267 1.22957 0.279587 1.33069L3.52125 6.67836C3.58064 6.77647 3.66433 6.85761 3.76424 6.91392C3.86415 6.97024 3.9769 6.99982 4.09159 6.99982C4.20628 6.99982 4.31902 6.97024 4.41893 6.91392C4.51884 6.85761 4.60254 6.77647 4.66192 6.67836Z" fill="#2F80ED"/>
+                                  </g>
+                                  <defs>
+                                    <clipPath id="clip0_1083_7200">
+                                      <rect width="8" height="8" fill="white" transform="translate(0 8) rotate(-90)"/>
+                                    </clipPath>
+                                  </defs>
+                                </svg></button>
                               </div>
                             </div>
                             <div class="flightItem__table__cell">
                               <div class="flightDuration">
                                 <p class="medium colorNeutral800 text16">02 hrs 35 mins</p>
                                 <p class="text14 medium colorRed800">1 stop</p>
+                                <p class="text14 medium colorNeutral500">Direct</p>
                               </div>
                             </div>
                           </div>
                           <div class="flightItem__table__right">
-                            <div class="flightItem__table__cell priceBox">
+                            <div class="flightItem__table__cell priceBox" type="economy">
                               <div class="priceBox__cont">
                                 <div class="priceBox__label">
                                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1">
@@ -1174,12 +1184,34 @@
                                     </defs>
                                   </svg>
                                 </div>
-                                <p class="text12 colorRed500">2 Seats left</p>
+                                <p class="text12 ANN_seat_left colorRed500">Only <span>4</span> Seats left</p>
                               </div>
                             </div>
-                            <div class="flightItem__table__cell priceBox soldOut">
+                            <div class="flightItem__table__cell priceBox" type="business">
                               <div class="priceBox__cont">
-                                <p class="text16 medium mb0">Sold out</p>
+                                <div class="priceBox__label">
+                                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1">
+                                    <path d="M10.3333 2.66683C10.3333 2.40161 10.4387 2.14726 10.6262 1.95972C10.8137 1.77219 11.0681 1.66683 11.3333 1.66683C11.5985 1.66683 11.8529 1.77219 12.0404 1.95972C12.228 2.14726 12.3333 2.40161 12.3333 2.66683C12.3333 2.93205 12.228 3.1864 12.0404 3.37394C11.8529 3.56147 11.5985 3.66683 11.3333 3.66683C11.0681 3.66683 10.8137 3.56147 10.6262 3.37394C10.4387 3.1864 10.3333 2.93205 10.3333 2.66683ZM7.27997 13.2735L13.28 7.2735C13.52 7.0335 13.6666 6.70016 13.6666 6.3335V1.66683C13.6666 0.926829 13.0733 0.333496 12.3333 0.333496L7.66664 0.333496C7.29997 0.333496 6.96664 0.480163 6.72664 0.726829L0.726641 6.72016C0.486641 6.96683 0.333307 7.30016 0.333307 7.66683C0.333307 8.0335 0.486641 8.36683 0.726641 8.60683L5.39331 13.2735C5.63331 13.5202 5.96664 13.6668 6.33331 13.6668C6.70664 13.6668 7.03997 13.5135 7.27997 13.2735Z" fill="#D20526"></path>
+                                  </svg>
+                                </div>
+                                <p class="colorNeutral600">From</p>
+                                <div class="boxPrice">
+                                  <p class="colorNeutral800 medium text14">USD</p>
+                                  <p class="medium colorNeutral800 text24">566.88</p>
+                                </div>
+                                <div class="priceBox__check">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <g clip-path="url(#clip0_352_1856)">
+                                      <path d="M15.5 3.6665L8.35333 10.8132C8.30696 10.8596 8.25188 10.8965 8.19125 10.9216C8.13062 10.9467 8.06563 10.9597 8 10.9597C7.93437 10.9597 7.86938 10.9467 7.80875 10.9216C7.74812 10.8965 7.69304 10.8596 7.64667 10.8132L0.5 3.6665" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_352_1856">
+                                        <rect width="16" height="16" fill="white" transform="translate(16) rotate(90)"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                                <p class="text12 ANN_seat_left colorRed500">Only <span>4</span> Seats left</p>
                               </div>
                             </div>
                           </div>
@@ -1193,19 +1225,15 @@
                                   <th>
                                     <p class="fareCondition__th">Fare conditions</p>
                                   </th>
-                                  <th class="fareCondition__group fareCondition_economy WP" cls_code="WP">
-                                    <p class="fareCondition__ticket ticket-1">WEB PROMOTION</p>
+                                  <th class="fareCondition__group fareCondition_economy">
+                                    <p class="fareCondition__ticket">WEB PROMOTION</p>
                                   </th>
-                                  <th class="fareCondition__group fareCondition_economy WS" cls_code="WS">
-                                    <p class="fareCondition__ticket ticket-1">WEB SAVER</p>
+                                  <th class="fareCondition__group fareCondition_economy">
+                                    <p class="fareCondition__ticket">WEB SAVER</p>
                                   </th>
-                                  <th class="fareCondition__group fareCondition_economy WF" cls_code="WF">
-                                    <p class="fareCondition__ticket ticket-1">WEB FREEDOM</p>
+                                  <th class="fareCondition__group fareCondition_economy">
+                                    <p class="fareCondition__ticket">WEB FREEDOM</p>
                                   </th>
-                                  <th class="fareCondition__group fareCondition_business hidden BR" cls_code="BR">
-                                    <p class="fareCondition__ticket ticket-1">BLUE RIBBON</p>
-                                  </th>
-
                                 </tr>
                                 </thead>
                                 <tbody class="tbody_fareCondition">
@@ -1225,16 +1253,13 @@
                                       </svg><span>Checked baggage</span>
                                     </p>
                                   </td>
-                                  <td class="WP bbb fareCondition_economy">
+                                  <td class="fareCondition_economy">
                                     <p class="fareCondition__text">5KG</p>
                                   </td>
-                                  <td class="WS bbb fareCondition_economy">
+                                  <td class="fareCondition_economy">
                                     <p class="fareCondition__text">5KG</p>
                                   </td>
-                                  <td class="WF bbb fareCondition_economy">
-                                    <p class="fareCondition__text">5KG</p>
-                                  </td>
-                                  <td class="BR bbb hidden fareCondition_business">
+                                  <td class="fareCondition_economy">
                                     <p class="fareCondition__text">5KG</p>
                                   </td>
                                 </tr>
@@ -1255,17 +1280,14 @@
                                       </svg><span>Hand carry</span>
                                     </p>
                                   </td>
-                                  <td class="WP bbb fareCondition_economy">
+                                  <td class="fareCondition_economy">
                                     <p class="fareCondition__text">20KG</p>
                                   </td>
-                                  <td class="WS bbb fareCondition_economy">
+                                  <td class="fareCondition_economy">
                                     <p class="fareCondition__text">20KG</p>
                                   </td>
-                                  <td class="WF bbb fareCondition_economy">
+                                  <td class="fareCondition_economy">
                                     <p class="fareCondition__text">20KG</p>
-                                  </td>
-                                  <td class="BR bbb hidden fareCondition_business">
-                                    <p class="fareCondition__text">40KG</p>
                                   </td>
                                 </tr>
                                 <tr class="tr__tempCondition">
@@ -1278,16 +1300,13 @@
                                       </svg><span>Refund (Penalties fee)</span>
                                     </p>
                                   </td>
-                                  <td class="WP bbb fareCondition_economy">
+                                  <td class="fareCondition_economy">
                                     <p class="fareCondition__text">10KG</p>
                                   </td>
-                                  <td class="WS bbb fareCondition_economy">
+                                  <td class="fareCondition_economy">
                                     <p class="fareCondition__text">10KG</p>
                                   </td>
-                                  <td class="WF bbb fareCondition_economy">
-                                    <p class="fareCondition__text">10KG</p>
-                                  </td>
-                                  <td class="BR bbb hidden fareCondition_business">
+                                  <td class="fareCondition_economy">
                                     <p class="fareCondition__text">10KG</p>
                                   </td>
                                 </tr>
@@ -1308,57 +1327,52 @@
                                       </svg><span>Child Discount</span>
                                     </p>
                                   </td>
-                                  <td class="WP bbb fareCondition_economy">
+                                  <td class="fareCondition_economy">
                                     <p class="fareCondition__text">Permitted with fee</p>
                                   </td>
-                                  <td class="WS bbb fareCondition_economy">
+                                  <td class="fareCondition_economy">
                                     <p class="fareCondition__text">Permitted without fee</p>
                                   </td>
-                                  <td class="WF bbb fareCondition_economy">
+                                  <td class="fareCondition_economy">
                                     <p class="fareCondition__text">Permitted without fee </p>
                                   </td>
-                                  <td class="BR bbb hidden fareCondition_business">
-                                    <p class="fareCondition__text">Permitted without fee</p>
-                                  </td>
                                 </tr>
-
                                 <tr class="trCondition__price__group">
                                   <td></td>
-                                  <td class="priceCondition__group fareCondition_economy aa WP" cls_code="WP">
-                                    <div class="fareCondition__select priceBox select_price ANN_fare ANN_fare-WP" cls_code="WP" refnumber="1" fare_adult="86" total_fare="173" display_fare="86" recommendation_id="3|3|3|3" baggage_id="1">
+                                  <td class="priceCondition__group fareCondition_economy">
+                                    <div class="fareCondition__select priceBox select_price ANN_fare active">
                                       <div class="fareCondition__price">
-                                        <p class="text16 ANN_fare_adult">USD 86</p>
-                                        <p class="text12 ANN_seat_left" style="font-style: italic">(<span>4</span> Seats left)</p>
+                                        <p class="colorNeutral800 medium text14">USD</p>
+                                        <p class="medium colorNeutral800 text24">418.88</p>
                                       </div>
                                       <div class="fareCondition__btn"><button type="button" class="btn btn-orange-1"><span>SELECT</span></button></div>
+                                      <div class="fareCondition__seat">
+                                        <p class="text12 ANN_seat_left colorRed500">Only <span>4</span> Seats left</p>
+                                      </div>
                                     </div>
                                   </td>
-                                  <td class="priceCondition__group fareCondition_economy aa WS" cls_code="WS">
-                                    <div class="fareCondition__select priceBox select_price ANN_fare ANN_fare-WS" cls_code="WS" refnumber="2" fare_adult="114" total_fare="228" display_fare="114" recommendation_id="4|4|4|4" baggage_id="1">
+                                  <td class="priceCondition__group fareCondition_economy">
+                                    <div class="fareCondition__select priceBox select_price ANN_fare">
                                       <div class="fareCondition__price">
-                                        <p class="text16 ANN_fare_adult">USD 114</p>
-                                        <p class="text12 ANN_seat_left" style="font-style: italic">(<span>9</span> Seats left)</p>
+                                        <p class="colorNeutral800 medium text14">USD</p>
+                                        <p class="medium colorNeutral800 text24">418.88</p>
                                       </div>
                                       <div class="fareCondition__btn"><button type="button" class="btn btn-orange-1"><span>SELECT</span></button></div>
+                                      <div class="fareCondition__seat">
+                                        <p class="text12 ANN_seat_left colorRed500">Only <span>4</span> Seats left</p>
+                                      </div>
                                     </div>
                                   </td>
-                                  <td class="priceCondition__group fareCondition_economy aa WF" cls_code="WF">
-                                    <div class="fareCondition__select priceBox select_price ANN_fare ANN_fare-WF" cls_code="WF" refnumber="3" fare_adult="162" total_fare="325" display_fare="162" recommendation_id="5|5|5|5|19|19|19|19|19" baggage_id="3">
+                                  <td class="priceCondition__group fareCondition_economy">
+                                    <div class="fareCondition__select priceBox select_price ANN_fare">
                                       <div class="fareCondition__price">
-                                        <p class="text16 ANN_fare_adult">USD 162</p>
-                                        <p class="text12 ANN_seat_left" style="font-style: italic">(<span>9</span> Seats left)</p>
+                                        <p class="colorNeutral800 medium text14">USD</p>
+                                        <p class="medium colorNeutral800 text24">418.88</p>
                                       </div>
                                       <div class="fareCondition__btn"><button type="button" class="btn btn-orange-1"><span>SELECT</span></button></div>
-                                    </div>
-                                  </td>
-
-                                  <td class="priceCondition__group fareCondition_business hzzz vbajess hidden BR" cls_code="BR">
-                                    <div class="fareCondition__select priceBox select_price hidden ANN_fare ANN_fare-BR" cls_code="BR" refnumber="">
-                                      <div class="fareCondition__price">
-                                        <p class="text16 ANN_fare_adult">USD 0</p>
-                                        <p class="text12 ANN_seat_left" style="font-style: italic">(<span>0</span> Seats left)</p>
+                                      <div class="fareCondition__seat">
+                                        <p class="text12 ANN_seat_left colorRed500">Only <span>4</span> Seats left</p>
                                       </div>
-                                      <div class="fareCondition__btn"><button type="button" class="btn btn-orange-1"><span>SELECT</span></button></div>
                                     </div>
                                   </td>
                                 </tr>
@@ -1379,6 +1393,242 @@
                               </div>
                             </div>
 
+                          </div>
+                        </div>
+                        <div class="flTable__fare flTable__fare_business" style="display: none">
+                          <div class="fareCondition">
+                            <div class="tableGroup-responsive">
+                              <div class="table-responsive"><table>
+                                <thead>
+                                <tr>
+                                  <th>
+                                    <p class="fareCondition__th">Fare conditions</p>
+                                  </th>
+                                  <th class="fareCondition__group fareCondition_business">
+                                    <p class="fareCondition__ticket">WEB PROMOTION</p>
+                                  </th>
+                                  <th class="fareCondition__group fareCondition_business">
+                                    <p class="fareCondition__ticket">WEB SAVER</p>
+                                  </th>
+                                </tr>
+                                </thead>
+                                <tbody class="tbody_fareCondition">
+                                <tr class="tr__tempCondition">
+                                  <td>
+                                    <p class="fareCondition__title">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <g clip-path="url(#clip0_514_2096)">
+                                          <path d="M6.79588 3.26006H5.95521C5.57609 3.26062 5.20283 3.35356 4.8677 3.53082C4.53258 3.70808 4.2457 3.96433 4.03188 4.27739C4.00805 4.31168 3.97222 4.33577 3.93148 4.3449C3.89075 4.35404 3.84806 4.34755 3.81188 4.32673L3.64988 4.23339C3.62609 4.21974 3.60604 4.20043 3.5915 4.17717C3.57696 4.15391 3.56839 4.12742 3.56654 4.10006L3.52721 3.50006C3.51843 3.36448 3.47621 3.23318 3.40432 3.1179C3.33242 3.00261 3.2331 2.90693 3.11521 2.83939L2.18188 2.30073C1.92263 2.15184 1.61489 2.11195 1.32626 2.18983C1.03762 2.2677 0.791709 2.45698 0.642543 2.71606L0.329877 3.25939C0.180579 3.51855 0.140251 3.82638 0.217751 4.11525C0.295251 4.40413 0.484241 4.65043 0.74321 4.80006L1.67988 5.34006C1.80481 5.41121 1.9461 5.44866 2.08988 5.44873C2.21771 5.44851 2.34381 5.41909 2.45854 5.36273L2.99188 5.09606C3.01651 5.08392 3.04376 5.07805 3.07121 5.07898C3.09866 5.07991 3.12545 5.08761 3.14921 5.10139L3.53254 5.32139C3.56137 5.33819 3.58452 5.36323 3.59901 5.39328C3.6135 5.42334 3.61868 5.45704 3.61388 5.49006C3.60246 5.56146 3.59911 5.63391 3.60388 5.70606C3.60388 5.75026 3.58632 5.79265 3.55506 5.82391C3.52381 5.85517 3.48141 5.87273 3.43721 5.87273H1.99588C1.73066 5.87273 1.47631 5.97808 1.28877 6.16562C1.10123 6.35316 0.995877 6.60751 0.995877 6.87273V12.3754C0.995877 12.6406 1.10123 12.895 1.28877 13.0825C1.47631 13.27 1.73066 13.3754 1.99588 13.3754H10.7559C11.0211 13.3754 11.2754 13.27 11.463 13.0825C11.6505 12.895 11.7559 12.6406 11.7559 12.3754V6.87273C11.7559 6.60751 11.6505 6.35316 11.463 6.16562C11.2754 5.97808 11.0211 5.87273 10.7559 5.87273H9.31188C9.26767 5.87273 9.22528 5.85517 9.19403 5.82391C9.16277 5.79265 9.14521 5.75026 9.14521 5.70606V5.60873C9.14433 4.98598 8.89651 4.38899 8.45609 3.94871C8.01568 3.50842 7.41863 3.26076 6.79588 3.26006ZM7.81188 5.70606C7.81188 5.75026 7.79432 5.79265 7.76306 5.82391C7.7318 5.85517 7.68941 5.87273 7.64521 5.87273H5.10654C5.06234 5.87273 5.01995 5.85517 4.98869 5.82391C4.95744 5.79265 4.93988 5.75026 4.93988 5.70606V5.60873C4.94005 5.3395 5.04708 5.08135 5.23746 4.89097C5.42783 4.7006 5.68598 4.59357 5.95521 4.59339H6.79588C7.06517 4.59357 7.32339 4.70058 7.51387 4.89093C7.70435 5.08129 7.81152 5.33944 7.81188 5.60873V5.70606Z" fill="#94A3B8"/>
+                                          <path d="M13.3753 0.500013C12.752 0.499294 12.1492 0.721908 11.676 1.1275C11.2027 1.53309 10.8905 2.0948 10.7959 2.71082C10.7012 3.32684 10.8304 3.95638 11.16 4.48532C11.4897 5.01427 11.9979 5.4076 12.5926 5.59401C12.6264 5.60457 12.6559 5.62568 12.6768 5.65424C12.6976 5.6828 12.7088 5.7173 12.7086 5.75268V13.5333C12.7085 13.7018 12.6415 13.8633 12.5223 13.9824C12.4032 14.1015 12.2417 14.1685 12.0733 14.1687H0.67863C0.501819 14.1687 0.332249 14.2389 0.207225 14.3639C0.0822008 14.489 0.0119629 14.6585 0.0119629 14.8353C0.0119629 15.0122 0.0822008 15.1817 0.207225 15.3067C0.332249 15.4318 0.501819 15.502 0.67863 15.502H12.0733C12.5952 15.5013 13.0955 15.2937 13.4646 14.9246C13.8336 14.5556 14.0413 14.0553 14.042 13.5333V5.75268C14.0419 5.71724 14.0532 5.68272 14.0742 5.65417C14.0952 5.62563 14.1248 5.60454 14.1586 5.59401C14.7543 5.40841 15.2636 5.01526 15.594 4.48602C15.9244 3.95678 16.0539 3.32657 15.9591 2.70992C15.8643 2.09326 15.5514 1.53109 15.0772 1.12557C14.6031 0.720044 13.9992 0.49808 13.3753 0.500013ZM14.6146 2.60868L13.7233 3.47535C13.6759 3.521 13.62 3.55687 13.5587 3.58091C13.4974 3.60495 13.432 3.61669 13.3662 3.61545C13.3004 3.61421 13.2355 3.60002 13.1752 3.5737C13.1148 3.54737 13.0603 3.50942 13.0146 3.46201C12.969 3.4146 12.9331 3.35867 12.9091 3.2974C12.885 3.23613 12.8733 3.17072 12.8745 3.10492C12.8758 3.03911 12.89 2.97419 12.9163 2.91387C12.9426 2.85355 12.9806 2.799 13.028 2.75335L13.9193 1.89001C14.0148 1.79865 14.1425 1.74879 14.2746 1.75134C14.4067 1.75388 14.5325 1.80861 14.6243 1.90357C14.7162 1.99853 14.7668 2.12601 14.765 2.25813C14.7631 2.39025 14.7091 2.51628 14.6146 2.60868Z" fill="#94A3B8"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_514_2096">
+                                            <rect width="16" height="16" fill="white"/>
+                                          </clipPath>
+                                        </defs>
+                                      </svg><span>Checked baggage</span>
+                                    </p>
+                                  </td>
+                                  <td class="fareCondition_business">
+                                    <p class="fareCondition__text">5KG</p>
+                                  </td>
+                                  <td class="fareCondition_business">
+                                    <p class="fareCondition__text">5KG</p>
+                                  </td>
+                                </tr>
+                                <tr class="tr__tempCondition">
+                                  <td>
+                                    <p class="fareCondition__title">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <g clip-path="url(#clip0_514_2101)">
+                                          <path d="M4 14.9167C4 15.0051 4.03512 15.0899 4.09763 15.1524C4.16014 15.2149 4.24493 15.25 4.33333 15.25H11.6667C11.7551 15.25 11.8399 15.2149 11.9024 15.1524C11.9649 15.0899 12 15.0051 12 14.9167V4.25C12 4.16159 11.9649 4.07681 11.9024 4.0143C11.8399 3.95179 11.7551 3.91667 11.6667 3.91667H11.5C11.4116 3.91667 11.3268 3.88155 11.2643 3.81904C11.2018 3.75652 11.1667 3.67174 11.1667 3.58333V2.75C11.1667 2.21957 10.956 1.71086 10.5809 1.33579C10.2058 0.960714 9.6971 0.75 9.16667 0.75H6.83333C6.3029 0.75 5.79419 0.960714 5.41912 1.33579C5.04405 1.71086 4.83333 2.21957 4.83333 2.75V3.58333C4.83333 3.67174 4.79821 3.75652 4.7357 3.81904C4.67319 3.88155 4.58841 3.91667 4.5 3.91667H4.33333C4.24493 3.91667 4.16014 3.95179 4.09763 4.0143C4.03512 4.07681 4 4.16159 4 4.25V14.9167ZM6.16667 2.75C6.16667 2.57319 6.2369 2.40362 6.36193 2.2786C6.48695 2.15357 6.65652 2.08333 6.83333 2.08333H9.16667C9.34348 2.08333 9.51305 2.15357 9.63807 2.2786C9.7631 2.40362 9.83333 2.57319 9.83333 2.75V3.58333C9.83333 3.67174 9.79821 3.75652 9.7357 3.81904C9.67319 3.88155 9.58841 3.91667 9.5 3.91667H6.5C6.41159 3.91667 6.32681 3.88155 6.2643 3.81904C6.20179 3.75652 6.16667 3.67174 6.16667 3.58333V2.75Z" fill="#94A3B8"/>
+                                          <path d="M2.66667 4.24984C2.66667 4.16143 2.63155 4.07665 2.56904 4.01414C2.50652 3.95162 2.42174 3.9165 2.33333 3.9165C1.71449 3.9165 1.121 4.16234 0.683417 4.59992C0.245833 5.03751 0 5.631 0 6.24984L0 12.9165C0 13.5353 0.245833 14.1288 0.683417 14.5664C1.121 15.004 1.71449 15.2498 2.33333 15.2498C2.42174 15.2498 2.50652 15.2147 2.56904 15.1522C2.63155 15.0897 2.66667 15.0049 2.66667 14.9165V4.24984Z" fill="#94A3B8"/>
+                                          <path d="M13.6666 3.9165C13.5782 3.9165 13.4934 3.95162 13.4309 4.01414C13.3684 4.07665 13.3333 4.16143 13.3333 4.24984V14.9165C13.3333 15.0049 13.3684 15.0897 13.4309 15.1522C13.4934 15.2147 13.5782 15.2498 13.6666 15.2498C14.2854 15.2498 14.8789 15.004 15.3165 14.5664C15.7541 14.1288 15.9999 13.5353 15.9999 12.9165V6.24984C15.9999 5.631 15.7541 5.03751 15.3165 4.59992C14.8789 4.16234 14.2854 3.9165 13.6666 3.9165Z" fill="#94A3B8"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_514_2101">
+                                            <rect width="16" height="16" fill="white"/>
+                                          </clipPath>
+                                        </defs>
+                                      </svg><span>Hand carry</span>
+                                    </p>
+                                  </td>
+                                  <td class="fareCondition_business">
+                                    <p class="fareCondition__text">20KG</p>
+                                  </td>
+                                  <td class="fareCondition_business">
+                                    <p class="fareCondition__text">20KG</p>
+                                  </td>
+                                </tr>
+                                <tr class="tr__tempCondition">
+                                  <td>
+                                    <p class="fareCondition__title">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M5.99992 5.33333H9.99992C10.1767 5.33333 10.3463 5.2631 10.4713 5.13807C10.5963 5.01305 10.6666 4.84348 10.6666 4.66667C10.6666 4.48986 10.5963 4.32029 10.4713 4.19526C10.3463 4.07024 10.1767 4 9.99992 4H5.99992C5.82311 4 5.65354 4.07024 5.52851 4.19526C5.40349 4.32029 5.33325 4.48986 5.33325 4.66667C5.33325 4.84348 5.40349 5.01305 5.52851 5.13807C5.65354 5.2631 5.82311 5.33333 5.99992 5.33333Z" fill="#94A3B8"/>
+                                        <path d="M6.31393 2.99981C6.32405 3.08087 6.3636 3.15539 6.42505 3.20922C6.48649 3.26305 6.56557 3.29244 6.64726 3.29181H9.35659C9.43828 3.29244 9.51736 3.26305 9.57881 3.20922C9.64026 3.15539 9.6798 3.08087 9.68993 2.99981C9.83356 2.27943 10.1059 1.59086 10.4939 0.96714C10.5276 0.906158 10.5414 0.836143 10.5333 0.766937C10.5251 0.697731 10.4955 0.632815 10.4486 0.581315C10.4016 0.529814 10.3397 0.494318 10.2716 0.479818C10.2034 0.465317 10.1324 0.472541 10.0686 0.500473L8.82726 1.03381C8.80685 1.0425 8.7849 1.04703 8.76272 1.04713C8.74053 1.04723 8.71855 1.0429 8.69806 1.03439C8.67757 1.02589 8.65898 1.01337 8.64339 0.99759C8.6278 0.981805 8.61551 0.963067 8.60726 0.942473L8.31326 0.20914C8.28847 0.147385 8.24576 0.094464 8.19063 0.0571912C8.1355 0.0199185 8.07047 0 8.00393 0C7.93738 0 7.87236 0.0199185 7.81723 0.0571912C7.7621 0.094464 7.71939 0.147385 7.69459 0.20914L7.40059 0.942473C7.39234 0.963067 7.38006 0.981805 7.36446 0.99759C7.34887 1.01337 7.33029 1.02589 7.3098 1.03439C7.2893 1.0429 7.26732 1.04723 7.24514 1.04713C7.22295 1.04703 7.20101 1.0425 7.18059 1.03381L5.93326 0.50314C5.86942 0.475208 5.79843 0.467984 5.73028 0.482485C5.66212 0.496985 5.60022 0.532481 5.55328 0.583981C5.50634 0.635482 5.47672 0.700398 5.46859 0.769604C5.46045 0.838809 5.47421 0.908825 5.50793 0.969807C5.89634 1.59257 6.16937 2.28022 6.31393 2.99981Z" fill="#94A3B8"/>
+                                        <path d="M10.2919 6.08067C10.2235 6.02852 10.1399 6.00019 10.0539 6H5.94591C5.85985 5.99989 5.77617 6.02826 5.70791 6.08067C4.00724 7.38067 2.10791 9.68067 2.10791 11.6807C2.10658 14.5 3.67858 16 7.99991 16C12.3212 16 13.8932 14.5 13.8932 11.6787C13.8932 9.682 11.9932 7.38067 10.2919 6.08067ZM8.63658 13.42C8.59821 13.427 8.56351 13.4473 8.53854 13.4772C8.51357 13.5072 8.4999 13.545 8.49991 13.584V13.8333C8.49991 13.9659 8.44723 14.0931 8.35346 14.1869C8.2597 14.2807 8.13252 14.3333 7.99991 14.3333C7.8673 14.3333 7.74013 14.2807 7.64636 14.1869C7.55259 14.0931 7.49991 13.9659 7.49991 13.8333V13.618C7.49991 13.5738 7.48235 13.5314 7.4511 13.5001C7.41984 13.4689 7.37745 13.4513 7.33324 13.4513H6.94124C6.80864 13.4513 6.68146 13.3987 6.58769 13.3049C6.49392 13.2111 6.44124 13.0839 6.44124 12.9513C6.44124 12.8187 6.49392 12.6915 6.58769 12.5978C6.68146 12.504 6.80864 12.4513 6.94124 12.4513H8.37591C8.47992 12.4515 8.58071 12.4153 8.66096 12.3492C8.74122 12.283 8.79591 12.191 8.81564 12.0889C8.83537 11.9867 8.8189 11.8809 8.76906 11.7897C8.71923 11.6984 8.63914 11.6273 8.54258 11.5887L7.08591 11.0067C6.79477 10.8907 6.5493 10.6831 6.38661 10.4153C6.22393 10.1475 6.15288 9.83393 6.18421 9.52213C6.21554 9.21032 6.34755 8.9172 6.56027 8.68708C6.77299 8.45696 7.05486 8.30236 7.36324 8.24667C7.40162 8.23965 7.43631 8.21939 7.46128 8.18942C7.48625 8.15945 7.49992 8.12168 7.49991 8.08267V7.83333C7.49991 7.70073 7.55259 7.57355 7.64636 7.47978C7.74013 7.38601 7.8673 7.33333 7.99991 7.33333C8.13252 7.33333 8.2597 7.38601 8.35346 7.47978C8.44723 7.57355 8.49991 7.70073 8.49991 7.83333V8.04867C8.49991 8.09287 8.51747 8.13526 8.54873 8.16652C8.57998 8.19777 8.62238 8.21533 8.66658 8.21533H9.05858C9.19119 8.21533 9.31836 8.26801 9.41213 8.36178C9.5059 8.45555 9.55858 8.58273 9.55858 8.71533C9.55858 8.84794 9.5059 8.97512 9.41213 9.06889C9.31836 9.16266 9.19119 9.21533 9.05858 9.21533H7.62391C7.51991 9.21521 7.41911 9.25134 7.33886 9.31749C7.2586 9.38364 7.20391 9.4757 7.18418 9.57781C7.16445 9.67993 7.18092 9.78573 7.23076 9.87701C7.28059 9.9683 7.36068 10.0394 7.45724 10.078L8.91391 10.66C9.20505 10.7759 9.45052 10.9835 9.61321 11.2514C9.77589 11.5192 9.84694 11.8327 9.81561 12.1445C9.78428 12.4563 9.65227 12.7495 9.43955 12.9796C9.22683 13.2097 8.94496 13.3643 8.63658 13.42Z" fill="#94A3B8"/>
+                                      </svg><span>Refund (Penalties fee)</span>
+                                    </p>
+                                  </td>
+                                  <td class="fareCondition_business">
+                                    <p class="fareCondition__text">10KG</p>
+                                  </td>
+                                  <td class="fareCondition_business">
+                                    <p class="fareCondition__text">10KG</p>
+                                  </td>
+                                </tr>
+                                <tr class="tr__tempCondition">
+                                  <td>
+                                    <p class="fareCondition__title">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <g clip-path="url(#clip0_514_2111)">
+                                          <path d="M11.6666 7.3335C10.8095 7.3335 9.97173 7.58764 9.25912 8.06379C8.5465 8.53995 7.99109 9.21672 7.66311 10.0085C7.33513 10.8003 7.24932 11.6716 7.41652 12.5122C7.58372 13.3528 7.99643 14.1249 8.60246 14.731C9.20848 15.337 9.98061 15.7497 10.8212 15.9169C11.6618 16.0841 12.5331 15.9983 13.3249 15.6703C14.1167 15.3423 14.7935 14.7869 15.2696 14.0743C15.7458 13.3617 15.9999 12.5239 15.9999 11.6668C15.9985 10.518 15.5415 9.41661 14.7292 8.60426C13.9168 7.79191 12.8154 7.33491 11.6666 7.3335ZM12.2999 14.1335C12.2622 14.1411 12.2283 14.1615 12.204 14.1913C12.1797 14.2211 12.1665 14.2584 12.1666 14.2968V14.5015C12.1666 14.6341 12.1139 14.7613 12.0201 14.855C11.9264 14.9488 11.7992 15.0015 11.6666 15.0015C11.534 15.0015 11.4068 14.9488 11.313 14.855C11.2193 14.7613 11.1666 14.6341 11.1666 14.5015V14.3335C11.1666 14.2893 11.149 14.2469 11.1178 14.2156C11.0865 14.1844 11.0441 14.1668 10.9999 14.1668H10.6666C10.534 14.1668 10.4068 14.1142 10.313 14.0204C10.2193 13.9266 10.1666 13.7994 10.1666 13.6668C10.1666 13.5342 10.2193 13.407 10.313 13.3133C10.4068 13.2195 10.534 13.1668 10.6666 13.1668H12.0219C12.1135 13.1666 12.2021 13.1346 12.2726 13.0762C12.3431 13.0178 12.3911 12.9368 12.4085 12.8469C12.4258 12.757 12.4113 12.6639 12.3676 12.5835C12.3238 12.5031 12.2535 12.4404 12.1686 12.4062L10.7933 11.8555C10.5146 11.745 10.2791 11.5474 10.122 11.292C9.96486 11.0367 9.89456 10.7374 9.92156 10.4388C9.94856 10.1402 10.0714 9.85841 10.2718 9.63541C10.4721 9.4124 10.7393 9.26019 11.0333 9.2015C11.071 9.19393 11.1049 9.17351 11.1292 9.14372C11.1535 9.11393 11.1667 9.07662 11.1666 9.03816V8.8335C11.1666 8.70089 11.2193 8.57371 11.313 8.47994C11.4068 8.38617 11.534 8.3335 11.6666 8.3335C11.7992 8.3335 11.9264 8.38617 12.0201 8.47994C12.1139 8.57371 12.1666 8.70089 12.1666 8.8335V9.00016C12.1666 9.04437 12.1841 9.08676 12.2154 9.11801C12.2467 9.14927 12.2891 9.16683 12.3333 9.16683H12.6666C12.7992 9.16683 12.9264 9.21951 13.0201 9.31328C13.1139 9.40704 13.1666 9.53422 13.1666 9.66683C13.1666 9.79944 13.1139 9.92661 13.0201 10.0204C12.9264 10.1142 12.7992 10.1668 12.6666 10.1668H11.3113C11.2197 10.1671 11.1311 10.1991 11.0606 10.2575C10.9901 10.3158 10.9421 10.3969 10.9247 10.4868C10.9074 10.5767 10.9218 10.6698 10.9656 10.7502C11.0094 10.8306 11.0797 10.8932 11.1646 10.9275L12.5399 11.4782C12.8186 11.5886 13.0541 11.7863 13.2112 12.0416C13.3683 12.297 13.4386 12.5963 13.4116 12.8948C13.3846 13.1934 13.2618 13.4752 13.0614 13.6983C12.861 13.9213 12.5939 14.0735 12.2999 14.1322V14.1335Z" fill="#94A3B8"/>
+                                          <path d="M4.66658 6.66667C5.32586 6.66667 5.97032 6.47117 6.51849 6.1049C7.06665 5.73863 7.49389 5.21803 7.74618 4.60895C7.99848 3.99986 8.06449 3.32964 7.93587 2.68303C7.80725 2.03643 7.48978 1.44249 7.02361 0.976312C6.55743 0.510137 5.96349 0.192668 5.31689 0.0640506C4.67028 -0.0645668 4.00006 0.00144428 3.39097 0.253736C2.78189 0.506028 2.26129 0.93327 1.89502 1.48143C1.52875 2.0296 1.33325 2.67406 1.33325 3.33333C1.33431 4.21706 1.68584 5.0643 2.31073 5.68919C2.93562 6.31408 3.78286 6.66561 4.66658 6.66667ZM2.73325 2.83867C2.74653 2.78871 2.77125 2.74252 2.80545 2.70376C2.83965 2.66499 2.8824 2.63471 2.93031 2.61532C2.97823 2.59592 3.03 2.58793 3.08154 2.59198C3.13307 2.59603 3.18296 2.61202 3.22725 2.63867C3.95234 3.08757 4.78714 3.32793 5.63992 3.33333C5.84723 3.33294 6.05423 3.31734 6.25925 3.28667C6.31043 3.27906 6.36268 3.28348 6.41185 3.29956C6.46103 3.31565 6.50579 3.34296 6.54258 3.37933C6.57955 3.41582 6.60749 3.46043 6.62415 3.50963C6.64082 3.55882 6.64576 3.61123 6.63859 3.66267C6.55503 4.15677 6.28904 4.6015 5.89325 4.90885C5.49747 5.2162 5.00072 5.36377 4.50132 5.32236C4.00192 5.28096 3.53626 5.05359 3.1965 4.68525C2.85673 4.31691 2.66762 3.83445 2.66659 3.33333C2.66679 3.16622 2.6892 2.99987 2.73325 2.83867Z" fill="#94A3B8"/>
+                                          <path d="M7.62864 8.0138C7.62123 7.96724 7.60403 7.92279 7.57817 7.88337C7.55231 7.84395 7.51839 7.81047 7.47864 7.78513C6.82757 7.36825 6.08844 7.10856 5.31969 7.02661C4.55095 6.94466 3.77368 7.0427 3.04936 7.31296C2.32504 7.58322 1.67354 8.0183 1.14637 8.58378C0.6192 9.14927 0.23083 9.82966 0.011972 10.5711C-0.00292591 10.621 -0.00591966 10.6737 0.00323089 10.725C0.0123814 10.7763 0.0334216 10.8247 0.0646638 10.8664C0.095906 10.9081 0.136481 10.9419 0.183133 10.965C0.229786 10.9882 0.281219 11.0001 0.333305 10.9998H6.09331C6.17142 10.9998 6.24705 10.9724 6.307 10.9223C6.36694 10.8722 6.4074 10.8027 6.42131 10.7258C6.58213 9.82626 6.97251 8.9835 7.55464 8.27913C7.58517 8.24273 7.60757 8.20022 7.62033 8.15446C7.63309 8.1087 7.63592 8.06074 7.62864 8.0138Z" fill="#94A3B8"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_514_2111">
+                                            <rect width="16" height="16" fill="white"/>
+                                          </clipPath>
+                                        </defs>
+                                      </svg><span>Child Discount</span>
+                                    </p>
+                                  </td>
+                                  <td class="fareCondition_business">
+                                    <p class="fareCondition__text">Permitted with fee</p>
+                                  </td>
+                                  <td class="fareCondition_business">
+                                    <p class="fareCondition__text">Permitted without fee</p>
+                                  </td>
+                                </tr>
+                                <tr class="trCondition__price__group">
+                                  <td></td>
+                                  <td class="priceCondition__group fareCondition_business">
+                                    <div class="fareCondition__select priceBox select_price ANN_fare active">
+                                      <div class="fareCondition__price">
+                                        <p class="colorNeutral800 medium text14">USD</p>
+                                        <p class="medium colorNeutral800 text24">418.88</p>
+                                      </div>
+                                      <div class="fareCondition__btn"><button type="button" class="btn btn-orange-1"><span>SELECT</span></button></div>
+                                      <div class="fareCondition__seat">
+                                        <p class="text12 ANN_seat_left colorRed500">Only <span>4</span> Seats left</p>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="priceCondition__group fareCondition_business">
+                                    <div class="fareCondition__select priceBox select_price ANN_fare">
+                                      <div class="fareCondition__price">
+                                        <p class="colorNeutral800 medium text14">USD</p>
+                                        <p class="medium colorNeutral800 text24">418.88</p>
+                                      </div>
+                                      <div class="fareCondition__btn"><button type="button" class="btn btn-orange-1"><span>SELECT</span></button></div>
+                                      <div class="fareCondition__seat">
+                                        <p class="text12 ANN_seat_left colorRed500">Only <span>4</span> Seats left</p>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                </tbody>
+                              </table></div>
+                              <div class="fareCondition__note">
+                                <div class="alert alert_blue">
+                                  <div class="alert__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1point5">
+                                      <path d="M11 0C4.92545 0 0 4.92545 0 11C0 17.0746 4.92545 22 11 22C17.0746 22 22 17.0746 22 11C22 4.92545 17.0746 0 11 0ZM11 20.1339C5.9567 20.1339 1.86607 16.0433 1.86607 11C1.86607 5.9567 5.9567 1.86607 11 1.86607C16.0433 1.86607 20.1339 5.9567 20.1339 11C20.1339 16.0433 16.0433 20.1339 11 20.1339Z" fill="#1890FF"></path>
+                                      <path d="M9.82129 6.67857C9.82129 6.99115 9.94546 7.29092 10.1665 7.51195C10.3875 7.73297 10.6873 7.85714 10.9999 7.85714C11.3124 7.85714 11.6122 7.73297 11.8332 7.51195C12.0543 7.29092 12.1784 6.99115 12.1784 6.67857C12.1784 6.36599 12.0543 6.06622 11.8332 5.8452C11.6122 5.62417 11.3124 5.5 10.9999 5.5C10.6873 5.5 10.3875 5.62417 10.1665 5.8452C9.94546 6.06622 9.82129 6.36599 9.82129 6.67857ZM11.5891 9.42857H10.4106C10.3025 9.42857 10.2141 9.51696 10.2141 9.625V16.3036C10.2141 16.4116 10.3025 16.5 10.4106 16.5H11.5891C11.6972 16.5 11.7856 16.4116 11.7856 16.3036V9.625C11.7856 9.51696 11.6972 9.42857 11.5891 9.42857Z" fill="#1890FF"></path>
+                                    </svg>
+                                  </div>
+                                  <div class="alert__text">
+                                    <p class="colorNeutral700">Note: The fare is applied for 1 Adult and not inclusive of Taxes, Fees &amp; Service Charges</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flightDetail" style="display: none">
+                          <div class="flightDetail__cont">
+                            <div class="flightDetail__group">
+                              <div class="flightDetail__header">
+                                <p class="colorNeutral800 medium text16 mr15">Total Duration</p>
+                                <p class="colorRed800 medium text16">02h05m, 1 stops</p>
+                              </div>
+                              <div class="flightDetail__row">
+                                <div class="flightDetail__item">
+                                  <div class="flightDetail__airline">
+                                    <img src="images/logo-vnairline.png">
+                                    <p class="text12 colorNeutral600">Cathay pacific</p>
+                                    <div class="flightTime__dot"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                                      <circle cx="2.5" cy="2.5" r="2.5" fill="#94A3B8"></circle>
+                                    </svg></div>
+                                    <p class="text12 colorNeutral600">688</p>
+                                  </div>
+                                  <div class="flightDetail__line">
+                                    <div class="flightDetail__left">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="8" height="82" viewBox="0 0 8 82" fill="none">
+                                        <circle cx="4" cy="4" r="4" fill="#64748B"/>
+                                        <circle cx="4" cy="78" r="4" fill="#64748B"/>
+                                        <line x1="4" y1="4" x2="4" y2="75" stroke="#64748B" stroke-width="2"/>
+                                      </svg>
+                                    </div>
+                                    <div class="flightDetail__right">
+                                      <div class="flightDetail__airport">
+                                        <p class="text16 colorNeutral800 medium">Wed, 15 Jan</p>
+                                        <p class="text16 colorNeutral800 medium">15:35 HAN</p>
+                                        <p class="text16 colorNeutral800 medium">Noi Bai Airport</p>
+                                      </div>
+                                      <p class="colorNeutral600">Hanoi</p>
+                                      <p class="colorNeutral600">Travel time: 1 hrs</p>
+                                      <div class="flightDetail__airport">
+                                        <p class="text16 colorNeutral800 medium">Wed, 15 Jan</p>
+                                        <p class="text16 colorNeutral800 medium">15:35 DAD</p>
+                                        <p class="text16 colorNeutral800 medium">Noi Bai Airport</p>
+                                      </div>
+                                      <p class="colorNeutral600">Danang</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="flightDetail__transit">
+                                <p class="colorNeutral600">1 hrs 30 mins layover</p>
+                              </div>
+                              <div class="flightDetail__row">
+                                <div class="flightDetail__item">
+                                  <div class="flightDetail__airline">
+                                    <img src="images/logo-vnairline.png">
+                                    <p class="text12 colorNeutral600">Cathay pacific</p>
+                                    <div class="flightTime__dot"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                                      <circle cx="2.5" cy="2.5" r="2.5" fill="#94A3B8"></circle>
+                                    </svg></div>
+                                    <p class="text12 colorNeutral600">688</p>
+                                  </div>
+                                  <div class="flightDetail__line">
+                                    <div class="flightDetail__left">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="8" height="82" viewBox="0 0 8 82" fill="none">
+                                        <circle cx="4" cy="4" r="4" fill="#64748B"/>
+                                        <circle cx="4" cy="78" r="4" fill="#64748B"/>
+                                        <line x1="4" y1="4" x2="4" y2="75" stroke="#64748B" stroke-width="2"/>
+                                      </svg>
+                                    </div>
+                                    <div class="flightDetail__right">
+                                      <div class="flightDetail__airport">
+                                        <p class="text16 colorNeutral800 medium">Wed, 15 Jan</p>
+                                        <p class="text16 colorNeutral800 medium">15:35 HAN</p>
+                                        <p class="text16 colorNeutral800 medium">Noi Bai Airport</p>
+                                      </div>
+                                      <p class="colorNeutral600">Hanoi</p>
+                                      <p class="colorNeutral600">Travel time: 1 hrs</p>
+                                      <div class="flightDetail__airport">
+                                        <p class="text16 colorNeutral800 medium">Wed, 15 Jan</p>
+                                        <p class="text16 colorNeutral800 medium">15:35 DAD</p>
+                                        <p class="text16 colorNeutral800 medium">Noi Bai Airport</p>
+                                      </div>
+                                      <p class="colorNeutral600">Danang</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1418,7 +1668,16 @@
                                   </svg></div>
                                   <div class="flightTime__code__item"><img src="images/logo-vnairline.png"><span class="ml5 text12 colorNeutral600">CX 688</span></div>
                                 </div>
-                                <button type="button" data-toggle="modal" data-target="#flightDetailPopup" class="viewMore text-left"><span class="blue1">Flight details</span></button>
+                                <button type="button" data-toggle="modal" data-target="#flightDetailPopup" class="viewMore text-left"><span class="blue1">Flight details</span><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                                  <g clip-path="url(#clip0_1083_7200)">
+                                    <path d="M4.66192 6.67836L7.90359 1.33036C7.96482 1.22924 7.99807 1.11366 7.99992 0.995462C8.00177 0.877263 7.97216 0.760698 7.91412 0.657713C7.85608 0.554728 7.7717 0.469028 7.66963 0.409396C7.56756 0.349764 7.45147 0.318345 7.33325 0.31836L0.84992 0.31836C0.731657 0.31831 0.615508 0.349721 0.51339 0.40937C0.411271 0.469019 0.326858 0.554759 0.268808 0.657796C0.210759 0.760832 0.181163 0.877456 0.183058 0.995705C0.184952 1.11395 0.218267 1.22957 0.279587 1.33069L3.52125 6.67836C3.58064 6.77647 3.66433 6.85761 3.76424 6.91392C3.86415 6.97024 3.9769 6.99982 4.09159 6.99982C4.20628 6.99982 4.31902 6.97024 4.41893 6.91392C4.51884 6.85761 4.60254 6.77647 4.66192 6.67836Z" fill="#2F80ED"/>
+                                  </g>
+                                  <defs>
+                                    <clipPath id="clip0_1083_7200">
+                                      <rect width="8" height="8" fill="white" transform="translate(0 8) rotate(-90)"/>
+                                    </clipPath>
+                                  </defs>
+                                </svg></button>
                               </div>
                             </div>
                             <div class="flightItem__table__cell">
@@ -1453,7 +1712,7 @@
                                     </defs>
                                   </svg>
                                 </div>
-                                <p class="text12 colorRed500">2 Seats left</p>
+                                <p class="text12 ANN_seat_left colorRed500">Only <span>4</span> Seats left</p>
                               </div>
                             </div>
                             <div class="flightItem__table__cell priceBox soldOut">
@@ -1465,243 +1724,181 @@
                         </div>
                         <div class="flTable__fare flTable__fare_economy" style="display: none">
                           <div class="fareCondition">
-                            <div class="table-responsive"><table>
-                              <colgroup>
-                                <col span="1" style="width: 35%;">
-                              </colgroup>
-                              <thead>
-                              <tr>
-                                <th>
-                                  <p class="fareCondition__th">Fare conditions</p>
-                                </th>
-                                <th class="fareCondition__group fareCondition_economy WP" cls_code="WP">
-                                  <p class="fareCondition__ticket ticket-1">WEB PROMOTION</p>
-                                </th>
-                                <th class="fareCondition__group fareCondition_economy WS" cls_code="WS">
-                                  <p class="fareCondition__ticket ticket-1">WEB SAVER</p>
-                                </th>
-                                <th class="fareCondition__group fareCondition_economy WF" cls_code="WF">
-                                  <p class="fareCondition__ticket ticket-1">WEB FREEDOM</p>
-                                </th>
-                                <th class="fareCondition__group fareCondition_business hidden BR" cls_code="BR">
-                                  <p class="fareCondition__ticket ticket-1">BLUE RIBBON</p>
-                                </th>
-
-                              </tr>
-                              </thead>
-                              <tbody class="tbody_fareCondition">
-                              <tr class="tr__tempCondition">
-                                <td>
-                                  <p class="fareCondition__title">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1">
-                                      <path d="M8.25 24C9.35457 24 10.25 23.1046 10.25 22C10.25 20.8954 9.35457 20 8.25 20C7.14543 20 6.25 20.8954 6.25 22C6.25 23.1046 7.14543 24 8.25 24Z" fill="#662F8E"></path>
-                                      <path d="M19.25 24C20.3546 24 21.25 23.1046 21.25 22C21.25 20.8954 20.3546 20 19.25 20C18.1454 20 17.25 20.8954 17.25 22C17.25 23.1046 18.1454 24 19.25 24Z" fill="#662F8E"></path>
-                                      <path d="M22.9999 17.25H5.99993C5.73471 17.25 5.48036 17.1447 5.29282 16.9571C5.10529 16.7696 4.99993 16.5152 4.99993 16.25V4.50802C5.00258 3.71852 4.78403 2.94407 4.36903 2.27244C3.95403 1.60081 3.35919 1.05886 2.65193 0.708018L1.45193 0.108018C1.2143 -0.0111968 0.939038 -0.0311292 0.686708 0.0526058C0.434378 0.136341 0.225646 0.316884 0.106431 0.554518C-0.0127837 0.792152 -0.0327161 1.06741 0.0510189 1.31974C0.134754 1.57207 0.315297 1.7808 0.552931 1.90002L1.75293 2.50002C2.12769 2.68471 2.44318 2.97075 2.6636 3.32568C2.88402 3.68061 3.00054 4.09022 2.99993 4.50802V16.25C2.99993 17.0457 3.316 17.8087 3.87861 18.3713C4.44122 18.9339 5.20428 19.25 5.99993 19.25H22.9999C23.2651 19.25 23.5195 19.1447 23.707 18.9571C23.8946 18.7696 23.9999 18.5152 23.9999 18.25C23.9999 17.9848 23.8946 17.7304 23.707 17.5429C23.5195 17.3554 23.2651 17.25 22.9999 17.25Z" fill="#662F8E"></path>
-                                      <path d="M11 15.75H18C18.1326 15.75 18.2598 15.6973 18.3536 15.6035C18.4473 15.5098 18.5 15.3826 18.5 15.25V5.05098C18.3685 4.07848 17.8925 3.18541 17.1585 2.534C16.4245 1.88259 15.4812 1.51606 14.5 1.50098C11.109 1.50098 10.5 5.00098 10.5 5.00098V15.25C10.5 15.3826 10.5527 15.5098 10.6464 15.6035C10.7402 15.6973 10.8674 15.75 11 15.75ZM13.017 4.16798C13.203 3.95824 13.4313 3.79034 13.6869 3.67535C13.9426 3.56036 14.2197 3.5009 14.5 3.5009C14.7803 3.5009 15.0574 3.56036 15.3131 3.67535C15.5687 3.79034 15.797 3.95824 15.983 4.16798C16.0469 4.23998 16.0887 4.32892 16.1033 4.4241C16.118 4.51928 16.1048 4.61665 16.0654 4.70452C16.026 4.79239 15.9621 4.86702 15.8813 4.91943C15.8005 4.97184 15.7063 4.99981 15.61 4.99998H13.39C13.2935 4.99998 13.1991 4.97207 13.1181 4.91961C13.0371 4.86715 12.9731 4.79238 12.9336 4.70432C12.8942 4.61626 12.8811 4.51867 12.8959 4.42332C12.9107 4.32798 12.9527 4.23895 13.017 4.16698V4.16798Z" fill="#662F8E"></path>
-                                      <path d="M20.5 15.75H21C21.3978 15.75 21.7794 15.592 22.0607 15.3107C22.342 15.0294 22.5 14.6478 22.5 14.25V6.5C22.5 6.10218 22.342 5.72064 22.0607 5.43934C21.7794 5.15804 21.3978 5 21 5H20.5C20.3674 5 20.2402 5.05268 20.1464 5.14645C20.0527 5.24021 20 5.36739 20 5.5V15.25C20 15.3826 20.0527 15.5098 20.1464 15.6036C20.2402 15.6973 20.3674 15.75 20.5 15.75Z" fill="#662F8E"></path>
-                                      <path d="M8 15.75H8.5C8.63261 15.75 8.75979 15.6973 8.85355 15.6036C8.94732 15.5098 9 15.3826 9 15.25V5.5C9 5.36739 8.94732 5.24021 8.85355 5.14645C8.75979 5.05268 8.63261 5 8.5 5H8C7.60218 5 7.22064 5.15804 6.93934 5.43934C6.65804 5.72064 6.5 6.10218 6.5 6.5V14.25C6.5 14.6478 6.65804 15.0294 6.93934 15.3107C7.22064 15.592 7.60218 15.75 8 15.75Z" fill="#662F8E"></path>
-                                    </svg><span>Carry-on Baggage </span>
-                                  </p>
-                                </td>
-                                <td class="WP bbb fareCondition_economy">
-                                  <p class="fareCondition__text">5KG</p>
-                                </td>
-                                <td class="WS bbb fareCondition_economy">
-                                  <p class="fareCondition__text">5KG</p>
-                                </td>
-                                <td class="WF bbb fareCondition_economy">
-                                  <p class="fareCondition__text">5KG</p>
-                                </td>
-                                <td class="BR bbb hidden fareCondition_business">
-                                  <p class="fareCondition__text">5KG</p>
-                                </td>
-                              </tr>
-                              <tr class="tr__tempCondition">
-                                <td>
-                                  <p class="fareCondition__title">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1">
-                                      <path d="M8.25 24C9.35457 24 10.25 23.1046 10.25 22C10.25 20.8954 9.35457 20 8.25 20C7.14543 20 6.25 20.8954 6.25 22C6.25 23.1046 7.14543 24 8.25 24Z" fill="#662F8E"></path>
-                                      <path d="M19.25 24C20.3546 24 21.25 23.1046 21.25 22C21.25 20.8954 20.3546 20 19.25 20C18.1454 20 17.25 20.8954 17.25 22C17.25 23.1046 18.1454 24 19.25 24Z" fill="#662F8E"></path>
-                                      <path d="M22.9999 17.25H5.99993C5.73471 17.25 5.48036 17.1447 5.29282 16.9571C5.10529 16.7696 4.99993 16.5152 4.99993 16.25V4.50802C5.00258 3.71852 4.78403 2.94407 4.36903 2.27244C3.95403 1.60081 3.35919 1.05886 2.65193 0.708018L1.45193 0.108018C1.2143 -0.0111968 0.939038 -0.0311292 0.686708 0.0526058C0.434378 0.136341 0.225646 0.316884 0.106431 0.554518C-0.0127837 0.792152 -0.0327161 1.06741 0.0510189 1.31974C0.134754 1.57207 0.315297 1.7808 0.552931 1.90002L1.75293 2.50002C2.12769 2.68471 2.44318 2.97075 2.6636 3.32568C2.88402 3.68061 3.00054 4.09022 2.99993 4.50802V16.25C2.99993 17.0457 3.316 17.8087 3.87861 18.3713C4.44122 18.9339 5.20428 19.25 5.99993 19.25H22.9999C23.2651 19.25 23.5195 19.1447 23.707 18.9571C23.8946 18.7696 23.9999 18.5152 23.9999 18.25C23.9999 17.9848 23.8946 17.7304 23.707 17.5429C23.5195 17.3554 23.2651 17.25 22.9999 17.25Z" fill="#662F8E"></path>
-                                      <path d="M11 15.75H18C18.1326 15.75 18.2598 15.6973 18.3536 15.6035C18.4473 15.5098 18.5 15.3826 18.5 15.25V5.05098C18.3685 4.07848 17.8925 3.18541 17.1585 2.534C16.4245 1.88259 15.4812 1.51606 14.5 1.50098C11.109 1.50098 10.5 5.00098 10.5 5.00098V15.25C10.5 15.3826 10.5527 15.5098 10.6464 15.6035C10.7402 15.6973 10.8674 15.75 11 15.75ZM13.017 4.16798C13.203 3.95824 13.4313 3.79034 13.6869 3.67535C13.9426 3.56036 14.2197 3.5009 14.5 3.5009C14.7803 3.5009 15.0574 3.56036 15.3131 3.67535C15.5687 3.79034 15.797 3.95824 15.983 4.16798C16.0469 4.23998 16.0887 4.32892 16.1033 4.4241C16.118 4.51928 16.1048 4.61665 16.0654 4.70452C16.026 4.79239 15.9621 4.86702 15.8813 4.91943C15.8005 4.97184 15.7063 4.99981 15.61 4.99998H13.39C13.2935 4.99998 13.1991 4.97207 13.1181 4.91961C13.0371 4.86715 12.9731 4.79238 12.9336 4.70432C12.8942 4.61626 12.8811 4.51867 12.8959 4.42332C12.9107 4.32798 12.9527 4.23895 13.017 4.16698V4.16798Z" fill="#662F8E"></path>
-                                      <path d="M20.5 15.75H21C21.3978 15.75 21.7794 15.592 22.0607 15.3107C22.342 15.0294 22.5 14.6478 22.5 14.25V6.5C22.5 6.10218 22.342 5.72064 22.0607 5.43934C21.7794 5.15804 21.3978 5 21 5H20.5C20.3674 5 20.2402 5.05268 20.1464 5.14645C20.0527 5.24021 20 5.36739 20 5.5V15.25C20 15.3826 20.0527 15.5098 20.1464 15.6036C20.2402 15.6973 20.3674 15.75 20.5 15.75Z" fill="#662F8E"></path>
-                                      <path d="M8 15.75H8.5C8.63261 15.75 8.75979 15.6973 8.85355 15.6036C8.94732 15.5098 9 15.3826 9 15.25V5.5C9 5.36739 8.94732 5.24021 8.85355 5.14645C8.75979 5.05268 8.63261 5 8.5 5H8C7.60218 5 7.22064 5.15804 6.93934 5.43934C6.65804 5.72064 6.5 6.10218 6.5 6.5V14.25C6.5 14.6478 6.65804 15.0294 6.93934 15.3107C7.22064 15.592 7.60218 15.75 8 15.75Z" fill="#662F8E"></path>
-                                    </svg><span>Checked Baggage (adult and child)</span>
-                                  </p>
-                                </td>
-                                <td class="WP bbb fareCondition_economy">
-                                  <p class="fareCondition__text">20KG</p>
-                                </td>
-                                <td class="WS bbb fareCondition_economy">
-                                  <p class="fareCondition__text">20KG</p>
-                                </td>
-                                <td class="WF bbb fareCondition_economy">
-                                  <p class="fareCondition__text">20KG</p>
-                                </td>
-                                <td class="BR bbb hidden fareCondition_business">
-                                  <p class="fareCondition__text">40KG</p>
-                                </td>
-                              </tr>
-                              <tr class="tr__tempCondition">
-                                <td>
-                                  <p class="fareCondition__title">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1">
-                                      <path d="M8.25 24C9.35457 24 10.25 23.1046 10.25 22C10.25 20.8954 9.35457 20 8.25 20C7.14543 20 6.25 20.8954 6.25 22C6.25 23.1046 7.14543 24 8.25 24Z" fill="#662F8E"></path>
-                                      <path d="M19.25 24C20.3546 24 21.25 23.1046 21.25 22C21.25 20.8954 20.3546 20 19.25 20C18.1454 20 17.25 20.8954 17.25 22C17.25 23.1046 18.1454 24 19.25 24Z" fill="#662F8E"></path>
-                                      <path d="M22.9999 17.25H5.99993C5.73471 17.25 5.48036 17.1447 5.29282 16.9571C5.10529 16.7696 4.99993 16.5152 4.99993 16.25V4.50802C5.00258 3.71852 4.78403 2.94407 4.36903 2.27244C3.95403 1.60081 3.35919 1.05886 2.65193 0.708018L1.45193 0.108018C1.2143 -0.0111968 0.939038 -0.0311292 0.686708 0.0526058C0.434378 0.136341 0.225646 0.316884 0.106431 0.554518C-0.0127837 0.792152 -0.0327161 1.06741 0.0510189 1.31974C0.134754 1.57207 0.315297 1.7808 0.552931 1.90002L1.75293 2.50002C2.12769 2.68471 2.44318 2.97075 2.6636 3.32568C2.88402 3.68061 3.00054 4.09022 2.99993 4.50802V16.25C2.99993 17.0457 3.316 17.8087 3.87861 18.3713C4.44122 18.9339 5.20428 19.25 5.99993 19.25H22.9999C23.2651 19.25 23.5195 19.1447 23.707 18.9571C23.8946 18.7696 23.9999 18.5152 23.9999 18.25C23.9999 17.9848 23.8946 17.7304 23.707 17.5429C23.5195 17.3554 23.2651 17.25 22.9999 17.25Z" fill="#662F8E"></path>
-                                      <path d="M11 15.75H18C18.1326 15.75 18.2598 15.6973 18.3536 15.6035C18.4473 15.5098 18.5 15.3826 18.5 15.25V5.05098C18.3685 4.07848 17.8925 3.18541 17.1585 2.534C16.4245 1.88259 15.4812 1.51606 14.5 1.50098C11.109 1.50098 10.5 5.00098 10.5 5.00098V15.25C10.5 15.3826 10.5527 15.5098 10.6464 15.6035C10.7402 15.6973 10.8674 15.75 11 15.75ZM13.017 4.16798C13.203 3.95824 13.4313 3.79034 13.6869 3.67535C13.9426 3.56036 14.2197 3.5009 14.5 3.5009C14.7803 3.5009 15.0574 3.56036 15.3131 3.67535C15.5687 3.79034 15.797 3.95824 15.983 4.16798C16.0469 4.23998 16.0887 4.32892 16.1033 4.4241C16.118 4.51928 16.1048 4.61665 16.0654 4.70452C16.026 4.79239 15.9621 4.86702 15.8813 4.91943C15.8005 4.97184 15.7063 4.99981 15.61 4.99998H13.39C13.2935 4.99998 13.1991 4.97207 13.1181 4.91961C13.0371 4.86715 12.9731 4.79238 12.9336 4.70432C12.8942 4.61626 12.8811 4.51867 12.8959 4.42332C12.9107 4.32798 12.9527 4.23895 13.017 4.16698V4.16798Z" fill="#662F8E"></path>
-                                      <path d="M20.5 15.75H21C21.3978 15.75 21.7794 15.592 22.0607 15.3107C22.342 15.0294 22.5 14.6478 22.5 14.25V6.5C22.5 6.10218 22.342 5.72064 22.0607 5.43934C21.7794 5.15804 21.3978 5 21 5H20.5C20.3674 5 20.2402 5.05268 20.1464 5.14645C20.0527 5.24021 20 5.36739 20 5.5V15.25C20 15.3826 20.0527 15.5098 20.1464 15.6036C20.2402 15.6973 20.3674 15.75 20.5 15.75Z" fill="#662F8E"></path>
-                                      <path d="M8 15.75H8.5C8.63261 15.75 8.75979 15.6973 8.85355 15.6036C8.94732 15.5098 9 15.3826 9 15.25V5.5C9 5.36739 8.94732 5.24021 8.85355 5.14645C8.75979 5.05268 8.63261 5 8.5 5H8C7.60218 5 7.22064 5.15804 6.93934 5.43934C6.65804 5.72064 6.5 6.10218 6.5 6.5V14.25C6.5 14.6478 6.65804 15.0294 6.93934 15.3107C7.22064 15.592 7.60218 15.75 8 15.75Z" fill="#662F8E"></path>
-                                    </svg><span>Checked Baggage (infant)</span>
-                                  </p>
-                                </td>
-                                <td class="WP bbb fareCondition_economy">
-                                  <p class="fareCondition__text">10KG</p>
-                                </td>
-                                <td class="WS bbb fareCondition_economy">
-                                  <p class="fareCondition__text">10KG</p>
-                                </td>
-                                <td class="WF bbb fareCondition_economy">
-                                  <p class="fareCondition__text">10KG</p>
-                                </td>
-                                <td class="BR bbb hidden fareCondition_business">
-                                  <p class="fareCondition__text">10KG</p>
-                                </td>
-                              </tr>
-                              <tr class="tr__tempCondition">
-                                <td>
-                                  <p class="fareCondition__title">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1">
-                                      <path d="M8.25 24C9.35457 24 10.25 23.1046 10.25 22C10.25 20.8954 9.35457 20 8.25 20C7.14543 20 6.25 20.8954 6.25 22C6.25 23.1046 7.14543 24 8.25 24Z" fill="#662F8E"></path>
-                                      <path d="M19.25 24C20.3546 24 21.25 23.1046 21.25 22C21.25 20.8954 20.3546 20 19.25 20C18.1454 20 17.25 20.8954 17.25 22C17.25 23.1046 18.1454 24 19.25 24Z" fill="#662F8E"></path>
-                                      <path d="M22.9999 17.25H5.99993C5.73471 17.25 5.48036 17.1447 5.29282 16.9571C5.10529 16.7696 4.99993 16.5152 4.99993 16.25V4.50802C5.00258 3.71852 4.78403 2.94407 4.36903 2.27244C3.95403 1.60081 3.35919 1.05886 2.65193 0.708018L1.45193 0.108018C1.2143 -0.0111968 0.939038 -0.0311292 0.686708 0.0526058C0.434378 0.136341 0.225646 0.316884 0.106431 0.554518C-0.0127837 0.792152 -0.0327161 1.06741 0.0510189 1.31974C0.134754 1.57207 0.315297 1.7808 0.552931 1.90002L1.75293 2.50002C2.12769 2.68471 2.44318 2.97075 2.6636 3.32568C2.88402 3.68061 3.00054 4.09022 2.99993 4.50802V16.25C2.99993 17.0457 3.316 17.8087 3.87861 18.3713C4.44122 18.9339 5.20428 19.25 5.99993 19.25H22.9999C23.2651 19.25 23.5195 19.1447 23.707 18.9571C23.8946 18.7696 23.9999 18.5152 23.9999 18.25C23.9999 17.9848 23.8946 17.7304 23.707 17.5429C23.5195 17.3554 23.2651 17.25 22.9999 17.25Z" fill="#662F8E"></path>
-                                      <path d="M11 15.75H18C18.1326 15.75 18.2598 15.6973 18.3536 15.6035C18.4473 15.5098 18.5 15.3826 18.5 15.25V5.05098C18.3685 4.07848 17.8925 3.18541 17.1585 2.534C16.4245 1.88259 15.4812 1.51606 14.5 1.50098C11.109 1.50098 10.5 5.00098 10.5 5.00098V15.25C10.5 15.3826 10.5527 15.5098 10.6464 15.6035C10.7402 15.6973 10.8674 15.75 11 15.75ZM13.017 4.16798C13.203 3.95824 13.4313 3.79034 13.6869 3.67535C13.9426 3.56036 14.2197 3.5009 14.5 3.5009C14.7803 3.5009 15.0574 3.56036 15.3131 3.67535C15.5687 3.79034 15.797 3.95824 15.983 4.16798C16.0469 4.23998 16.0887 4.32892 16.1033 4.4241C16.118 4.51928 16.1048 4.61665 16.0654 4.70452C16.026 4.79239 15.9621 4.86702 15.8813 4.91943C15.8005 4.97184 15.7063 4.99981 15.61 4.99998H13.39C13.2935 4.99998 13.1991 4.97207 13.1181 4.91961C13.0371 4.86715 12.9731 4.79238 12.9336 4.70432C12.8942 4.61626 12.8811 4.51867 12.8959 4.42332C12.9107 4.32798 12.9527 4.23895 13.017 4.16698V4.16798Z" fill="#662F8E"></path>
-                                      <path d="M20.5 15.75H21C21.3978 15.75 21.7794 15.592 22.0607 15.3107C22.342 15.0294 22.5 14.6478 22.5 14.25V6.5C22.5 6.10218 22.342 5.72064 22.0607 5.43934C21.7794 5.15804 21.3978 5 21 5H20.5C20.3674 5 20.2402 5.05268 20.1464 5.14645C20.0527 5.24021 20 5.36739 20 5.5V15.25C20 15.3826 20.0527 15.5098 20.1464 15.6036C20.2402 15.6973 20.3674 15.75 20.5 15.75Z" fill="#662F8E"></path>
-                                      <path d="M8 15.75H8.5C8.63261 15.75 8.75979 15.6973 8.85355 15.6036C8.94732 15.5098 9 15.3826 9 15.25V5.5C9 5.36739 8.94732 5.24021 8.85355 5.14645C8.75979 5.05268 8.63261 5 8.5 5H8C7.60218 5 7.22064 5.15804 6.93934 5.43934C6.65804 5.72064 6.5 6.10218 6.5 6.5V14.25C6.5 14.6478 6.65804 15.0294 6.93934 15.3107C7.22064 15.592 7.60218 15.75 8 15.75Z" fill="#662F8E"></path>
-                                    </svg><span>Booking Change</span>
-                                  </p>
-                                </td>
-                                <td class="WP bbb fareCondition_economy">
-                                  <p class="fareCondition__text">Permitted with fee</p>
-                                </td>
-                                <td class="WS bbb fareCondition_economy">
-                                  <p class="fareCondition__text">Permitted without fee</p>
-                                </td>
-                                <td class="WF bbb fareCondition_economy">
-                                  <p class="fareCondition__text">Permitted without fee </p>
-                                </td>
-                                <td class="BR bbb hidden fareCondition_business">
-                                  <p class="fareCondition__text">Permitted without fee</p>
-                                </td>
-                              </tr>
-                              <tr class="tr__tempCondition">
-                                <td>
-                                  <p class="fareCondition__title">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1">
-                                      <path d="M8.25 24C9.35457 24 10.25 23.1046 10.25 22C10.25 20.8954 9.35457 20 8.25 20C7.14543 20 6.25 20.8954 6.25 22C6.25 23.1046 7.14543 24 8.25 24Z" fill="#662F8E"></path>
-                                      <path d="M19.25 24C20.3546 24 21.25 23.1046 21.25 22C21.25 20.8954 20.3546 20 19.25 20C18.1454 20 17.25 20.8954 17.25 22C17.25 23.1046 18.1454 24 19.25 24Z" fill="#662F8E"></path>
-                                      <path d="M22.9999 17.25H5.99993C5.73471 17.25 5.48036 17.1447 5.29282 16.9571C5.10529 16.7696 4.99993 16.5152 4.99993 16.25V4.50802C5.00258 3.71852 4.78403 2.94407 4.36903 2.27244C3.95403 1.60081 3.35919 1.05886 2.65193 0.708018L1.45193 0.108018C1.2143 -0.0111968 0.939038 -0.0311292 0.686708 0.0526058C0.434378 0.136341 0.225646 0.316884 0.106431 0.554518C-0.0127837 0.792152 -0.0327161 1.06741 0.0510189 1.31974C0.134754 1.57207 0.315297 1.7808 0.552931 1.90002L1.75293 2.50002C2.12769 2.68471 2.44318 2.97075 2.6636 3.32568C2.88402 3.68061 3.00054 4.09022 2.99993 4.50802V16.25C2.99993 17.0457 3.316 17.8087 3.87861 18.3713C4.44122 18.9339 5.20428 19.25 5.99993 19.25H22.9999C23.2651 19.25 23.5195 19.1447 23.707 18.9571C23.8946 18.7696 23.9999 18.5152 23.9999 18.25C23.9999 17.9848 23.8946 17.7304 23.707 17.5429C23.5195 17.3554 23.2651 17.25 22.9999 17.25Z" fill="#662F8E"></path>
-                                      <path d="M11 15.75H18C18.1326 15.75 18.2598 15.6973 18.3536 15.6035C18.4473 15.5098 18.5 15.3826 18.5 15.25V5.05098C18.3685 4.07848 17.8925 3.18541 17.1585 2.534C16.4245 1.88259 15.4812 1.51606 14.5 1.50098C11.109 1.50098 10.5 5.00098 10.5 5.00098V15.25C10.5 15.3826 10.5527 15.5098 10.6464 15.6035C10.7402 15.6973 10.8674 15.75 11 15.75ZM13.017 4.16798C13.203 3.95824 13.4313 3.79034 13.6869 3.67535C13.9426 3.56036 14.2197 3.5009 14.5 3.5009C14.7803 3.5009 15.0574 3.56036 15.3131 3.67535C15.5687 3.79034 15.797 3.95824 15.983 4.16798C16.0469 4.23998 16.0887 4.32892 16.1033 4.4241C16.118 4.51928 16.1048 4.61665 16.0654 4.70452C16.026 4.79239 15.9621 4.86702 15.8813 4.91943C15.8005 4.97184 15.7063 4.99981 15.61 4.99998H13.39C13.2935 4.99998 13.1991 4.97207 13.1181 4.91961C13.0371 4.86715 12.9731 4.79238 12.9336 4.70432C12.8942 4.61626 12.8811 4.51867 12.8959 4.42332C12.9107 4.32798 12.9527 4.23895 13.017 4.16698V4.16798Z" fill="#662F8E"></path>
-                                      <path d="M20.5 15.75H21C21.3978 15.75 21.7794 15.592 22.0607 15.3107C22.342 15.0294 22.5 14.6478 22.5 14.25V6.5C22.5 6.10218 22.342 5.72064 22.0607 5.43934C21.7794 5.15804 21.3978 5 21 5H20.5C20.3674 5 20.2402 5.05268 20.1464 5.14645C20.0527 5.24021 20 5.36739 20 5.5V15.25C20 15.3826 20.0527 15.5098 20.1464 15.6036C20.2402 15.6973 20.3674 15.75 20.5 15.75Z" fill="#662F8E"></path>
-                                      <path d="M8 15.75H8.5C8.63261 15.75 8.75979 15.6973 8.85355 15.6036C8.94732 15.5098 9 15.3826 9 15.25V5.5C9 5.36739 8.94732 5.24021 8.85355 5.14645C8.75979 5.05268 8.63261 5 8.5 5H8C7.60218 5 7.22064 5.15804 6.93934 5.43934C6.65804 5.72064 6.5 6.10218 6.5 6.5V14.25C6.5 14.6478 6.65804 15.0294 6.93934 15.3107C7.22064 15.592 7.60218 15.75 8 15.75Z" fill="#662F8E"></path>
-                                    </svg><span>Cancellation</span>
-                                  </p>
-                                </td>
-                                <td class="WP bbb fareCondition_economy">
-                                  <p class="fareCondition__text">Not permitted</p>
-                                </td>
-                                <td class="WS bbb fareCondition_economy">
-                                  <p class="fareCondition__text">Permitted with fee </p>
-                                </td>
-                                <td class="WF bbb fareCondition_economy">
-                                  <p class="fareCondition__text">Permitted with fee</p>
-                                </td>
-                                <td class="BR bbb hidden fareCondition_business">
-                                  <p class="fareCondition__text">Permitted with fee</p>
-                                </td>
-                              </tr>
-                              <tr class="tr__tempCondition">
-                                <td>
-                                  <p class="fareCondition__title">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1">
-                                      <path d="M8.25 24C9.35457 24 10.25 23.1046 10.25 22C10.25 20.8954 9.35457 20 8.25 20C7.14543 20 6.25 20.8954 6.25 22C6.25 23.1046 7.14543 24 8.25 24Z" fill="#662F8E"></path>
-                                      <path d="M19.25 24C20.3546 24 21.25 23.1046 21.25 22C21.25 20.8954 20.3546 20 19.25 20C18.1454 20 17.25 20.8954 17.25 22C17.25 23.1046 18.1454 24 19.25 24Z" fill="#662F8E"></path>
-                                      <path d="M22.9999 17.25H5.99993C5.73471 17.25 5.48036 17.1447 5.29282 16.9571C5.10529 16.7696 4.99993 16.5152 4.99993 16.25V4.50802C5.00258 3.71852 4.78403 2.94407 4.36903 2.27244C3.95403 1.60081 3.35919 1.05886 2.65193 0.708018L1.45193 0.108018C1.2143 -0.0111968 0.939038 -0.0311292 0.686708 0.0526058C0.434378 0.136341 0.225646 0.316884 0.106431 0.554518C-0.0127837 0.792152 -0.0327161 1.06741 0.0510189 1.31974C0.134754 1.57207 0.315297 1.7808 0.552931 1.90002L1.75293 2.50002C2.12769 2.68471 2.44318 2.97075 2.6636 3.32568C2.88402 3.68061 3.00054 4.09022 2.99993 4.50802V16.25C2.99993 17.0457 3.316 17.8087 3.87861 18.3713C4.44122 18.9339 5.20428 19.25 5.99993 19.25H22.9999C23.2651 19.25 23.5195 19.1447 23.707 18.9571C23.8946 18.7696 23.9999 18.5152 23.9999 18.25C23.9999 17.9848 23.8946 17.7304 23.707 17.5429C23.5195 17.3554 23.2651 17.25 22.9999 17.25Z" fill="#662F8E"></path>
-                                      <path d="M11 15.75H18C18.1326 15.75 18.2598 15.6973 18.3536 15.6035C18.4473 15.5098 18.5 15.3826 18.5 15.25V5.05098C18.3685 4.07848 17.8925 3.18541 17.1585 2.534C16.4245 1.88259 15.4812 1.51606 14.5 1.50098C11.109 1.50098 10.5 5.00098 10.5 5.00098V15.25C10.5 15.3826 10.5527 15.5098 10.6464 15.6035C10.7402 15.6973 10.8674 15.75 11 15.75ZM13.017 4.16798C13.203 3.95824 13.4313 3.79034 13.6869 3.67535C13.9426 3.56036 14.2197 3.5009 14.5 3.5009C14.7803 3.5009 15.0574 3.56036 15.3131 3.67535C15.5687 3.79034 15.797 3.95824 15.983 4.16798C16.0469 4.23998 16.0887 4.32892 16.1033 4.4241C16.118 4.51928 16.1048 4.61665 16.0654 4.70452C16.026 4.79239 15.9621 4.86702 15.8813 4.91943C15.8005 4.97184 15.7063 4.99981 15.61 4.99998H13.39C13.2935 4.99998 13.1991 4.97207 13.1181 4.91961C13.0371 4.86715 12.9731 4.79238 12.9336 4.70432C12.8942 4.61626 12.8811 4.51867 12.8959 4.42332C12.9107 4.32798 12.9527 4.23895 13.017 4.16698V4.16798Z" fill="#662F8E"></path>
-                                      <path d="M20.5 15.75H21C21.3978 15.75 21.7794 15.592 22.0607 15.3107C22.342 15.0294 22.5 14.6478 22.5 14.25V6.5C22.5 6.10218 22.342 5.72064 22.0607 5.43934C21.7794 5.15804 21.3978 5 21 5H20.5C20.3674 5 20.2402 5.05268 20.1464 5.14645C20.0527 5.24021 20 5.36739 20 5.5V15.25C20 15.3826 20.0527 15.5098 20.1464 15.6036C20.2402 15.6973 20.3674 15.75 20.5 15.75Z" fill="#662F8E"></path>
-                                      <path d="M8 15.75H8.5C8.63261 15.75 8.75979 15.6973 8.85355 15.6036C8.94732 15.5098 9 15.3826 9 15.25V5.5C9 5.36739 8.94732 5.24021 8.85355 5.14645C8.75979 5.05268 8.63261 5 8.5 5H8C7.60218 5 7.22064 5.15804 6.93934 5.43934C6.65804 5.72064 6.5 6.10218 6.5 6.5V14.25C6.5 14.6478 6.65804 15.0294 6.93934 15.3107C7.22064 15.592 7.60218 15.75 8 15.75Z" fill="#662F8E"></path>
-                                    </svg><span>No show</span>
-                                  </p>
-                                </td>
-                                <td class="WP bbb fareCondition_economy">
-                                  <p class="fareCondition__text">Not permitted</p>
-                                </td>
-                                <td class="WS bbb fareCondition_economy">
-                                  <p class="fareCondition__text">Permitted with fee</p>
-                                </td>
-                                <td class="WF bbb fareCondition_economy">
-                                  <p class="fareCondition__text">Permitted with fee</p>
-                                </td>
-                                <td class="BR bbb hidden fareCondition_business">
-                                  <p class="fareCondition__text">Permitted with fee</p>
-                                </td>
-                              </tr>
-                              <tr class="trCondition__price__group">
-                                <td>
-                                  <div class="fareCondition__note">
-                                    <div class="alert alert_blue">
-                                      <div class="alert__icon">
-                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1point5">
-                                          <path d="M11 0C4.92545 0 0 4.92545 0 11C0 17.0746 4.92545 22 11 22C17.0746 22 22 17.0746 22 11C22 4.92545 17.0746 0 11 0ZM11 20.1339C5.9567 20.1339 1.86607 16.0433 1.86607 11C1.86607 5.9567 5.9567 1.86607 11 1.86607C16.0433 1.86607 20.1339 5.9567 20.1339 11C20.1339 16.0433 16.0433 20.1339 11 20.1339Z" fill="#1890FF"></path>
-                                          <path d="M9.82129 6.67857C9.82129 6.99115 9.94546 7.29092 10.1665 7.51195C10.3875 7.73297 10.6873 7.85714 10.9999 7.85714C11.3124 7.85714 11.6122 7.73297 11.8332 7.51195C12.0543 7.29092 12.1784 6.99115 12.1784 6.67857C12.1784 6.36599 12.0543 6.06622 11.8332 5.8452C11.6122 5.62417 11.3124 5.5 10.9999 5.5C10.6873 5.5 10.3875 5.62417 10.1665 5.8452C9.94546 6.06622 9.82129 6.36599 9.82129 6.67857ZM11.5891 9.42857H10.4106C10.3025 9.42857 10.2141 9.51696 10.2141 9.625V16.3036C10.2141 16.4116 10.3025 16.5 10.4106 16.5H11.5891C11.6972 16.5 11.7856 16.4116 11.7856 16.3036V9.625C11.7856 9.51696 11.6972 9.42857 11.5891 9.42857Z" fill="#1890FF"></path>
-                                        </svg>
+                            <div class="tableGroup-responsive">
+                              <div class="table-responsive"><table>
+                                <thead>
+                                <tr>
+                                  <th>
+                                    <p class="fareCondition__th">Fare conditions</p>
+                                  </th>
+                                  <th class="fareCondition__group fareCondition_economy">
+                                    <p class="fareCondition__ticket">WEB PROMOTION</p>
+                                  </th>
+                                  <th class="fareCondition__group fareCondition_economy">
+                                    <p class="fareCondition__ticket">WEB SAVER</p>
+                                  </th>
+                                  <th class="fareCondition__group fareCondition_economy">
+                                    <p class="fareCondition__ticket">WEB FREEDOM</p>
+                                  </th>
+                                </tr>
+                                </thead>
+                                <tbody class="tbody_fareCondition">
+                                <tr class="tr__tempCondition">
+                                  <td>
+                                    <p class="fareCondition__title">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <g clip-path="url(#clip0_514_2096)">
+                                          <path d="M6.79588 3.26006H5.95521C5.57609 3.26062 5.20283 3.35356 4.8677 3.53082C4.53258 3.70808 4.2457 3.96433 4.03188 4.27739C4.00805 4.31168 3.97222 4.33577 3.93148 4.3449C3.89075 4.35404 3.84806 4.34755 3.81188 4.32673L3.64988 4.23339C3.62609 4.21974 3.60604 4.20043 3.5915 4.17717C3.57696 4.15391 3.56839 4.12742 3.56654 4.10006L3.52721 3.50006C3.51843 3.36448 3.47621 3.23318 3.40432 3.1179C3.33242 3.00261 3.2331 2.90693 3.11521 2.83939L2.18188 2.30073C1.92263 2.15184 1.61489 2.11195 1.32626 2.18983C1.03762 2.2677 0.791709 2.45698 0.642543 2.71606L0.329877 3.25939C0.180579 3.51855 0.140251 3.82638 0.217751 4.11525C0.295251 4.40413 0.484241 4.65043 0.74321 4.80006L1.67988 5.34006C1.80481 5.41121 1.9461 5.44866 2.08988 5.44873C2.21771 5.44851 2.34381 5.41909 2.45854 5.36273L2.99188 5.09606C3.01651 5.08392 3.04376 5.07805 3.07121 5.07898C3.09866 5.07991 3.12545 5.08761 3.14921 5.10139L3.53254 5.32139C3.56137 5.33819 3.58452 5.36323 3.59901 5.39328C3.6135 5.42334 3.61868 5.45704 3.61388 5.49006C3.60246 5.56146 3.59911 5.63391 3.60388 5.70606C3.60388 5.75026 3.58632 5.79265 3.55506 5.82391C3.52381 5.85517 3.48141 5.87273 3.43721 5.87273H1.99588C1.73066 5.87273 1.47631 5.97808 1.28877 6.16562C1.10123 6.35316 0.995877 6.60751 0.995877 6.87273V12.3754C0.995877 12.6406 1.10123 12.895 1.28877 13.0825C1.47631 13.27 1.73066 13.3754 1.99588 13.3754H10.7559C11.0211 13.3754 11.2754 13.27 11.463 13.0825C11.6505 12.895 11.7559 12.6406 11.7559 12.3754V6.87273C11.7559 6.60751 11.6505 6.35316 11.463 6.16562C11.2754 5.97808 11.0211 5.87273 10.7559 5.87273H9.31188C9.26767 5.87273 9.22528 5.85517 9.19403 5.82391C9.16277 5.79265 9.14521 5.75026 9.14521 5.70606V5.60873C9.14433 4.98598 8.89651 4.38899 8.45609 3.94871C8.01568 3.50842 7.41863 3.26076 6.79588 3.26006ZM7.81188 5.70606C7.81188 5.75026 7.79432 5.79265 7.76306 5.82391C7.7318 5.85517 7.68941 5.87273 7.64521 5.87273H5.10654C5.06234 5.87273 5.01995 5.85517 4.98869 5.82391C4.95744 5.79265 4.93988 5.75026 4.93988 5.70606V5.60873C4.94005 5.3395 5.04708 5.08135 5.23746 4.89097C5.42783 4.7006 5.68598 4.59357 5.95521 4.59339H6.79588C7.06517 4.59357 7.32339 4.70058 7.51387 4.89093C7.70435 5.08129 7.81152 5.33944 7.81188 5.60873V5.70606Z" fill="#94A3B8"/>
+                                          <path d="M13.3753 0.500013C12.752 0.499294 12.1492 0.721908 11.676 1.1275C11.2027 1.53309 10.8905 2.0948 10.7959 2.71082C10.7012 3.32684 10.8304 3.95638 11.16 4.48532C11.4897 5.01427 11.9979 5.4076 12.5926 5.59401C12.6264 5.60457 12.6559 5.62568 12.6768 5.65424C12.6976 5.6828 12.7088 5.7173 12.7086 5.75268V13.5333C12.7085 13.7018 12.6415 13.8633 12.5223 13.9824C12.4032 14.1015 12.2417 14.1685 12.0733 14.1687H0.67863C0.501819 14.1687 0.332249 14.2389 0.207225 14.3639C0.0822008 14.489 0.0119629 14.6585 0.0119629 14.8353C0.0119629 15.0122 0.0822008 15.1817 0.207225 15.3067C0.332249 15.4318 0.501819 15.502 0.67863 15.502H12.0733C12.5952 15.5013 13.0955 15.2937 13.4646 14.9246C13.8336 14.5556 14.0413 14.0553 14.042 13.5333V5.75268C14.0419 5.71724 14.0532 5.68272 14.0742 5.65417C14.0952 5.62563 14.1248 5.60454 14.1586 5.59401C14.7543 5.40841 15.2636 5.01526 15.594 4.48602C15.9244 3.95678 16.0539 3.32657 15.9591 2.70992C15.8643 2.09326 15.5514 1.53109 15.0772 1.12557C14.6031 0.720044 13.9992 0.49808 13.3753 0.500013ZM14.6146 2.60868L13.7233 3.47535C13.6759 3.521 13.62 3.55687 13.5587 3.58091C13.4974 3.60495 13.432 3.61669 13.3662 3.61545C13.3004 3.61421 13.2355 3.60002 13.1752 3.5737C13.1148 3.54737 13.0603 3.50942 13.0146 3.46201C12.969 3.4146 12.9331 3.35867 12.9091 3.2974C12.885 3.23613 12.8733 3.17072 12.8745 3.10492C12.8758 3.03911 12.89 2.97419 12.9163 2.91387C12.9426 2.85355 12.9806 2.799 13.028 2.75335L13.9193 1.89001C14.0148 1.79865 14.1425 1.74879 14.2746 1.75134C14.4067 1.75388 14.5325 1.80861 14.6243 1.90357C14.7162 1.99853 14.7668 2.12601 14.765 2.25813C14.7631 2.39025 14.7091 2.51628 14.6146 2.60868Z" fill="#94A3B8"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_514_2096">
+                                            <rect width="16" height="16" fill="white"/>
+                                          </clipPath>
+                                        </defs>
+                                      </svg><span>Checked baggage</span>
+                                    </p>
+                                  </td>
+                                  <td class="fareCondition_economy">
+                                    <p class="fareCondition__text">5KG</p>
+                                  </td>
+                                  <td class="fareCondition_economy">
+                                    <p class="fareCondition__text">5KG</p>
+                                  </td>
+                                  <td class="fareCondition_economy">
+                                    <p class="fareCondition__text">5KG</p>
+                                  </td>
+                                </tr>
+                                <tr class="tr__tempCondition">
+                                  <td>
+                                    <p class="fareCondition__title">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <g clip-path="url(#clip0_514_2101)">
+                                          <path d="M4 14.9167C4 15.0051 4.03512 15.0899 4.09763 15.1524C4.16014 15.2149 4.24493 15.25 4.33333 15.25H11.6667C11.7551 15.25 11.8399 15.2149 11.9024 15.1524C11.9649 15.0899 12 15.0051 12 14.9167V4.25C12 4.16159 11.9649 4.07681 11.9024 4.0143C11.8399 3.95179 11.7551 3.91667 11.6667 3.91667H11.5C11.4116 3.91667 11.3268 3.88155 11.2643 3.81904C11.2018 3.75652 11.1667 3.67174 11.1667 3.58333V2.75C11.1667 2.21957 10.956 1.71086 10.5809 1.33579C10.2058 0.960714 9.6971 0.75 9.16667 0.75H6.83333C6.3029 0.75 5.79419 0.960714 5.41912 1.33579C5.04405 1.71086 4.83333 2.21957 4.83333 2.75V3.58333C4.83333 3.67174 4.79821 3.75652 4.7357 3.81904C4.67319 3.88155 4.58841 3.91667 4.5 3.91667H4.33333C4.24493 3.91667 4.16014 3.95179 4.09763 4.0143C4.03512 4.07681 4 4.16159 4 4.25V14.9167ZM6.16667 2.75C6.16667 2.57319 6.2369 2.40362 6.36193 2.2786C6.48695 2.15357 6.65652 2.08333 6.83333 2.08333H9.16667C9.34348 2.08333 9.51305 2.15357 9.63807 2.2786C9.7631 2.40362 9.83333 2.57319 9.83333 2.75V3.58333C9.83333 3.67174 9.79821 3.75652 9.7357 3.81904C9.67319 3.88155 9.58841 3.91667 9.5 3.91667H6.5C6.41159 3.91667 6.32681 3.88155 6.2643 3.81904C6.20179 3.75652 6.16667 3.67174 6.16667 3.58333V2.75Z" fill="#94A3B8"/>
+                                          <path d="M2.66667 4.24984C2.66667 4.16143 2.63155 4.07665 2.56904 4.01414C2.50652 3.95162 2.42174 3.9165 2.33333 3.9165C1.71449 3.9165 1.121 4.16234 0.683417 4.59992C0.245833 5.03751 0 5.631 0 6.24984L0 12.9165C0 13.5353 0.245833 14.1288 0.683417 14.5664C1.121 15.004 1.71449 15.2498 2.33333 15.2498C2.42174 15.2498 2.50652 15.2147 2.56904 15.1522C2.63155 15.0897 2.66667 15.0049 2.66667 14.9165V4.24984Z" fill="#94A3B8"/>
+                                          <path d="M13.6666 3.9165C13.5782 3.9165 13.4934 3.95162 13.4309 4.01414C13.3684 4.07665 13.3333 4.16143 13.3333 4.24984V14.9165C13.3333 15.0049 13.3684 15.0897 13.4309 15.1522C13.4934 15.2147 13.5782 15.2498 13.6666 15.2498C14.2854 15.2498 14.8789 15.004 15.3165 14.5664C15.7541 14.1288 15.9999 13.5353 15.9999 12.9165V6.24984C15.9999 5.631 15.7541 5.03751 15.3165 4.59992C14.8789 4.16234 14.2854 3.9165 13.6666 3.9165Z" fill="#94A3B8"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_514_2101">
+                                            <rect width="16" height="16" fill="white"/>
+                                          </clipPath>
+                                        </defs>
+                                      </svg><span>Hand carry</span>
+                                    </p>
+                                  </td>
+                                  <td class="fareCondition_economy">
+                                    <p class="fareCondition__text">20KG</p>
+                                  </td>
+                                  <td class="fareCondition_economy">
+                                    <p class="fareCondition__text">20KG</p>
+                                  </td>
+                                  <td class="fareCondition_economy">
+                                    <p class="fareCondition__text">20KG</p>
+                                  </td>
+                                </tr>
+                                <tr class="tr__tempCondition">
+                                  <td>
+                                    <p class="fareCondition__title">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M5.99992 5.33333H9.99992C10.1767 5.33333 10.3463 5.2631 10.4713 5.13807C10.5963 5.01305 10.6666 4.84348 10.6666 4.66667C10.6666 4.48986 10.5963 4.32029 10.4713 4.19526C10.3463 4.07024 10.1767 4 9.99992 4H5.99992C5.82311 4 5.65354 4.07024 5.52851 4.19526C5.40349 4.32029 5.33325 4.48986 5.33325 4.66667C5.33325 4.84348 5.40349 5.01305 5.52851 5.13807C5.65354 5.2631 5.82311 5.33333 5.99992 5.33333Z" fill="#94A3B8"/>
+                                        <path d="M6.31393 2.99981C6.32405 3.08087 6.3636 3.15539 6.42505 3.20922C6.48649 3.26305 6.56557 3.29244 6.64726 3.29181H9.35659C9.43828 3.29244 9.51736 3.26305 9.57881 3.20922C9.64026 3.15539 9.6798 3.08087 9.68993 2.99981C9.83356 2.27943 10.1059 1.59086 10.4939 0.96714C10.5276 0.906158 10.5414 0.836143 10.5333 0.766937C10.5251 0.697731 10.4955 0.632815 10.4486 0.581315C10.4016 0.529814 10.3397 0.494318 10.2716 0.479818C10.2034 0.465317 10.1324 0.472541 10.0686 0.500473L8.82726 1.03381C8.80685 1.0425 8.7849 1.04703 8.76272 1.04713C8.74053 1.04723 8.71855 1.0429 8.69806 1.03439C8.67757 1.02589 8.65898 1.01337 8.64339 0.99759C8.6278 0.981805 8.61551 0.963067 8.60726 0.942473L8.31326 0.20914C8.28847 0.147385 8.24576 0.094464 8.19063 0.0571912C8.1355 0.0199185 8.07047 0 8.00393 0C7.93738 0 7.87236 0.0199185 7.81723 0.0571912C7.7621 0.094464 7.71939 0.147385 7.69459 0.20914L7.40059 0.942473C7.39234 0.963067 7.38006 0.981805 7.36446 0.99759C7.34887 1.01337 7.33029 1.02589 7.3098 1.03439C7.2893 1.0429 7.26732 1.04723 7.24514 1.04713C7.22295 1.04703 7.20101 1.0425 7.18059 1.03381L5.93326 0.50314C5.86942 0.475208 5.79843 0.467984 5.73028 0.482485C5.66212 0.496985 5.60022 0.532481 5.55328 0.583981C5.50634 0.635482 5.47672 0.700398 5.46859 0.769604C5.46045 0.838809 5.47421 0.908825 5.50793 0.969807C5.89634 1.59257 6.16937 2.28022 6.31393 2.99981Z" fill="#94A3B8"/>
+                                        <path d="M10.2919 6.08067C10.2235 6.02852 10.1399 6.00019 10.0539 6H5.94591C5.85985 5.99989 5.77617 6.02826 5.70791 6.08067C4.00724 7.38067 2.10791 9.68067 2.10791 11.6807C2.10658 14.5 3.67858 16 7.99991 16C12.3212 16 13.8932 14.5 13.8932 11.6787C13.8932 9.682 11.9932 7.38067 10.2919 6.08067ZM8.63658 13.42C8.59821 13.427 8.56351 13.4473 8.53854 13.4772C8.51357 13.5072 8.4999 13.545 8.49991 13.584V13.8333C8.49991 13.9659 8.44723 14.0931 8.35346 14.1869C8.2597 14.2807 8.13252 14.3333 7.99991 14.3333C7.8673 14.3333 7.74013 14.2807 7.64636 14.1869C7.55259 14.0931 7.49991 13.9659 7.49991 13.8333V13.618C7.49991 13.5738 7.48235 13.5314 7.4511 13.5001C7.41984 13.4689 7.37745 13.4513 7.33324 13.4513H6.94124C6.80864 13.4513 6.68146 13.3987 6.58769 13.3049C6.49392 13.2111 6.44124 13.0839 6.44124 12.9513C6.44124 12.8187 6.49392 12.6915 6.58769 12.5978C6.68146 12.504 6.80864 12.4513 6.94124 12.4513H8.37591C8.47992 12.4515 8.58071 12.4153 8.66096 12.3492C8.74122 12.283 8.79591 12.191 8.81564 12.0889C8.83537 11.9867 8.8189 11.8809 8.76906 11.7897C8.71923 11.6984 8.63914 11.6273 8.54258 11.5887L7.08591 11.0067C6.79477 10.8907 6.5493 10.6831 6.38661 10.4153C6.22393 10.1475 6.15288 9.83393 6.18421 9.52213C6.21554 9.21032 6.34755 8.9172 6.56027 8.68708C6.77299 8.45696 7.05486 8.30236 7.36324 8.24667C7.40162 8.23965 7.43631 8.21939 7.46128 8.18942C7.48625 8.15945 7.49992 8.12168 7.49991 8.08267V7.83333C7.49991 7.70073 7.55259 7.57355 7.64636 7.47978C7.74013 7.38601 7.8673 7.33333 7.99991 7.33333C8.13252 7.33333 8.2597 7.38601 8.35346 7.47978C8.44723 7.57355 8.49991 7.70073 8.49991 7.83333V8.04867C8.49991 8.09287 8.51747 8.13526 8.54873 8.16652C8.57998 8.19777 8.62238 8.21533 8.66658 8.21533H9.05858C9.19119 8.21533 9.31836 8.26801 9.41213 8.36178C9.5059 8.45555 9.55858 8.58273 9.55858 8.71533C9.55858 8.84794 9.5059 8.97512 9.41213 9.06889C9.31836 9.16266 9.19119 9.21533 9.05858 9.21533H7.62391C7.51991 9.21521 7.41911 9.25134 7.33886 9.31749C7.2586 9.38364 7.20391 9.4757 7.18418 9.57781C7.16445 9.67993 7.18092 9.78573 7.23076 9.87701C7.28059 9.9683 7.36068 10.0394 7.45724 10.078L8.91391 10.66C9.20505 10.7759 9.45052 10.9835 9.61321 11.2514C9.77589 11.5192 9.84694 11.8327 9.81561 12.1445C9.78428 12.4563 9.65227 12.7495 9.43955 12.9796C9.22683 13.2097 8.94496 13.3643 8.63658 13.42Z" fill="#94A3B8"/>
+                                      </svg><span>Refund (Penalties fee)</span>
+                                    </p>
+                                  </td>
+                                  <td class="fareCondition_economy">
+                                    <p class="fareCondition__text">10KG</p>
+                                  </td>
+                                  <td class="fareCondition_economy">
+                                    <p class="fareCondition__text">10KG</p>
+                                  </td>
+                                  <td class="fareCondition_economy">
+                                    <p class="fareCondition__text">10KG</p>
+                                  </td>
+                                </tr>
+                                <tr class="tr__tempCondition">
+                                  <td>
+                                    <p class="fareCondition__title">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <g clip-path="url(#clip0_514_2111)">
+                                          <path d="M11.6666 7.3335C10.8095 7.3335 9.97173 7.58764 9.25912 8.06379C8.5465 8.53995 7.99109 9.21672 7.66311 10.0085C7.33513 10.8003 7.24932 11.6716 7.41652 12.5122C7.58372 13.3528 7.99643 14.1249 8.60246 14.731C9.20848 15.337 9.98061 15.7497 10.8212 15.9169C11.6618 16.0841 12.5331 15.9983 13.3249 15.6703C14.1167 15.3423 14.7935 14.7869 15.2696 14.0743C15.7458 13.3617 15.9999 12.5239 15.9999 11.6668C15.9985 10.518 15.5415 9.41661 14.7292 8.60426C13.9168 7.79191 12.8154 7.33491 11.6666 7.3335ZM12.2999 14.1335C12.2622 14.1411 12.2283 14.1615 12.204 14.1913C12.1797 14.2211 12.1665 14.2584 12.1666 14.2968V14.5015C12.1666 14.6341 12.1139 14.7613 12.0201 14.855C11.9264 14.9488 11.7992 15.0015 11.6666 15.0015C11.534 15.0015 11.4068 14.9488 11.313 14.855C11.2193 14.7613 11.1666 14.6341 11.1666 14.5015V14.3335C11.1666 14.2893 11.149 14.2469 11.1178 14.2156C11.0865 14.1844 11.0441 14.1668 10.9999 14.1668H10.6666C10.534 14.1668 10.4068 14.1142 10.313 14.0204C10.2193 13.9266 10.1666 13.7994 10.1666 13.6668C10.1666 13.5342 10.2193 13.407 10.313 13.3133C10.4068 13.2195 10.534 13.1668 10.6666 13.1668H12.0219C12.1135 13.1666 12.2021 13.1346 12.2726 13.0762C12.3431 13.0178 12.3911 12.9368 12.4085 12.8469C12.4258 12.757 12.4113 12.6639 12.3676 12.5835C12.3238 12.5031 12.2535 12.4404 12.1686 12.4062L10.7933 11.8555C10.5146 11.745 10.2791 11.5474 10.122 11.292C9.96486 11.0367 9.89456 10.7374 9.92156 10.4388C9.94856 10.1402 10.0714 9.85841 10.2718 9.63541C10.4721 9.4124 10.7393 9.26019 11.0333 9.2015C11.071 9.19393 11.1049 9.17351 11.1292 9.14372C11.1535 9.11393 11.1667 9.07662 11.1666 9.03816V8.8335C11.1666 8.70089 11.2193 8.57371 11.313 8.47994C11.4068 8.38617 11.534 8.3335 11.6666 8.3335C11.7992 8.3335 11.9264 8.38617 12.0201 8.47994C12.1139 8.57371 12.1666 8.70089 12.1666 8.8335V9.00016C12.1666 9.04437 12.1841 9.08676 12.2154 9.11801C12.2467 9.14927 12.2891 9.16683 12.3333 9.16683H12.6666C12.7992 9.16683 12.9264 9.21951 13.0201 9.31328C13.1139 9.40704 13.1666 9.53422 13.1666 9.66683C13.1666 9.79944 13.1139 9.92661 13.0201 10.0204C12.9264 10.1142 12.7992 10.1668 12.6666 10.1668H11.3113C11.2197 10.1671 11.1311 10.1991 11.0606 10.2575C10.9901 10.3158 10.9421 10.3969 10.9247 10.4868C10.9074 10.5767 10.9218 10.6698 10.9656 10.7502C11.0094 10.8306 11.0797 10.8932 11.1646 10.9275L12.5399 11.4782C12.8186 11.5886 13.0541 11.7863 13.2112 12.0416C13.3683 12.297 13.4386 12.5963 13.4116 12.8948C13.3846 13.1934 13.2618 13.4752 13.0614 13.6983C12.861 13.9213 12.5939 14.0735 12.2999 14.1322V14.1335Z" fill="#94A3B8"/>
+                                          <path d="M4.66658 6.66667C5.32586 6.66667 5.97032 6.47117 6.51849 6.1049C7.06665 5.73863 7.49389 5.21803 7.74618 4.60895C7.99848 3.99986 8.06449 3.32964 7.93587 2.68303C7.80725 2.03643 7.48978 1.44249 7.02361 0.976312C6.55743 0.510137 5.96349 0.192668 5.31689 0.0640506C4.67028 -0.0645668 4.00006 0.00144428 3.39097 0.253736C2.78189 0.506028 2.26129 0.93327 1.89502 1.48143C1.52875 2.0296 1.33325 2.67406 1.33325 3.33333C1.33431 4.21706 1.68584 5.0643 2.31073 5.68919C2.93562 6.31408 3.78286 6.66561 4.66658 6.66667ZM2.73325 2.83867C2.74653 2.78871 2.77125 2.74252 2.80545 2.70376C2.83965 2.66499 2.8824 2.63471 2.93031 2.61532C2.97823 2.59592 3.03 2.58793 3.08154 2.59198C3.13307 2.59603 3.18296 2.61202 3.22725 2.63867C3.95234 3.08757 4.78714 3.32793 5.63992 3.33333C5.84723 3.33294 6.05423 3.31734 6.25925 3.28667C6.31043 3.27906 6.36268 3.28348 6.41185 3.29956C6.46103 3.31565 6.50579 3.34296 6.54258 3.37933C6.57955 3.41582 6.60749 3.46043 6.62415 3.50963C6.64082 3.55882 6.64576 3.61123 6.63859 3.66267C6.55503 4.15677 6.28904 4.6015 5.89325 4.90885C5.49747 5.2162 5.00072 5.36377 4.50132 5.32236C4.00192 5.28096 3.53626 5.05359 3.1965 4.68525C2.85673 4.31691 2.66762 3.83445 2.66659 3.33333C2.66679 3.16622 2.6892 2.99987 2.73325 2.83867Z" fill="#94A3B8"/>
+                                          <path d="M7.62864 8.0138C7.62123 7.96724 7.60403 7.92279 7.57817 7.88337C7.55231 7.84395 7.51839 7.81047 7.47864 7.78513C6.82757 7.36825 6.08844 7.10856 5.31969 7.02661C4.55095 6.94466 3.77368 7.0427 3.04936 7.31296C2.32504 7.58322 1.67354 8.0183 1.14637 8.58378C0.6192 9.14927 0.23083 9.82966 0.011972 10.5711C-0.00292591 10.621 -0.00591966 10.6737 0.00323089 10.725C0.0123814 10.7763 0.0334216 10.8247 0.0646638 10.8664C0.095906 10.9081 0.136481 10.9419 0.183133 10.965C0.229786 10.9882 0.281219 11.0001 0.333305 10.9998H6.09331C6.17142 10.9998 6.24705 10.9724 6.307 10.9223C6.36694 10.8722 6.4074 10.8027 6.42131 10.7258C6.58213 9.82626 6.97251 8.9835 7.55464 8.27913C7.58517 8.24273 7.60757 8.20022 7.62033 8.15446C7.63309 8.1087 7.63592 8.06074 7.62864 8.0138Z" fill="#94A3B8"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_514_2111">
+                                            <rect width="16" height="16" fill="white"/>
+                                          </clipPath>
+                                        </defs>
+                                      </svg><span>Child Discount</span>
+                                    </p>
+                                  </td>
+                                  <td class="fareCondition_economy">
+                                    <p class="fareCondition__text">Permitted with fee</p>
+                                  </td>
+                                  <td class="fareCondition_economy">
+                                    <p class="fareCondition__text">Permitted without fee</p>
+                                  </td>
+                                  <td class="fareCondition_economy">
+                                    <p class="fareCondition__text">Permitted without fee </p>
+                                  </td>
+                                </tr>
+                                <tr class="trCondition__price__group">
+                                  <td></td>
+                                  <td class="priceCondition__group fareCondition_economy">
+                                    <div class="fareCondition__select priceBox select_price ANN_fare active">
+                                      <div class="fareCondition__price">
+                                        <p class="colorNeutral800 medium text14">USD</p>
+                                        <p class="medium colorNeutral800 text24">418.88</p>
                                       </div>
-                                      <div class="alert__text">
-                                        <p>Note: The fare is applied for 1 Adult and not inclusive of Taxes, Fees &amp; Service Charges</p>
+                                      <div class="fareCondition__btn"><button type="button" class="btn btn-orange-1"><span>SELECT</span></button></div>
+                                      <div class="fareCondition__seat">
+                                        <p class="text12 ANN_seat_left colorRed500">Only <span>4</span> Seats left</p>
                                       </div>
                                     </div>
-                                  </div>
-                                </td>
-                                <td class="priceCondition__group fareCondition_economy aa WP" cls_code="WP">
-                                  <div class="fareCondition__select priceBox select_price ANN_fare ANN_fare-WP" cls_code="WP" refnumber="1" fare_adult="86" total_fare="173" display_fare="86" recommendation_id="3|3|3|3" baggage_id="1">
-                                    <div class="fareCondition__price">
-                                      <p class="text16 ANN_fare_adult">USD 86</p>
-                                      <p class="text12 ANN_seat_left" style="font-style: italic">(<span>4</span> Seats left)</p>
+                                  </td>
+                                  <td class="priceCondition__group fareCondition_economy">
+                                    <div class="fareCondition__select priceBox select_price ANN_fare">
+                                      <div class="fareCondition__price">
+                                        <p class="colorNeutral800 medium text14">USD</p>
+                                        <p class="medium colorNeutral800 text24">418.88</p>
+                                      </div>
+                                      <div class="fareCondition__btn"><button type="button" class="btn btn-orange-1"><span>SELECT</span></button></div>
+                                      <div class="fareCondition__seat">
+                                        <p class="text12 ANN_seat_left colorRed500">Only <span>4</span> Seats left</p>
+                                      </div>
                                     </div>
-                                    <div class="fareCondition__btn"><button type="button" class="btn btn-orange-1"><span>SELECT</span></button></div>
-                                  </div>
-                                </td>
-                                <td class="priceCondition__group fareCondition_economy aa WS" cls_code="WS">
-                                  <div class="fareCondition__select priceBox select_price ANN_fare ANN_fare-WS" cls_code="WS" refnumber="2" fare_adult="114" total_fare="228" display_fare="114" recommendation_id="4|4|4|4" baggage_id="1">
-                                    <div class="fareCondition__price">
-                                      <p class="text16 ANN_fare_adult">USD 114</p>
-                                      <p class="text12 ANN_seat_left" style="font-style: italic">(<span>9</span> Seats left)</p>
+                                  </td>
+                                  <td class="priceCondition__group fareCondition_economy">
+                                    <div class="fareCondition__select priceBox select_price ANN_fare">
+                                      <div class="fareCondition__price">
+                                        <p class="colorNeutral800 medium text14">USD</p>
+                                        <p class="medium colorNeutral800 text24">418.88</p>
+                                      </div>
+                                      <div class="fareCondition__btn"><button type="button" class="btn btn-orange-1"><span>SELECT</span></button></div>
+                                      <div class="fareCondition__seat">
+                                        <p class="text12 ANN_seat_left colorRed500">Only <span>4</span> Seats left</p>
+                                      </div>
                                     </div>
-                                    <div class="fareCondition__btn"><button type="button" class="btn btn-orange-1"><span>SELECT</span></button></div>
+                                  </td>
+                                </tr>
+                                </tbody>
+                              </table></div>
+                              <div class="fareCondition__note">
+                                <div class="alert alert_blue">
+                                  <div class="alert__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1point5">
+                                      <path d="M11 0C4.92545 0 0 4.92545 0 11C0 17.0746 4.92545 22 11 22C17.0746 22 22 17.0746 22 11C22 4.92545 17.0746 0 11 0ZM11 20.1339C5.9567 20.1339 1.86607 16.0433 1.86607 11C1.86607 5.9567 5.9567 1.86607 11 1.86607C16.0433 1.86607 20.1339 5.9567 20.1339 11C20.1339 16.0433 16.0433 20.1339 11 20.1339Z" fill="#1890FF"></path>
+                                      <path d="M9.82129 6.67857C9.82129 6.99115 9.94546 7.29092 10.1665 7.51195C10.3875 7.73297 10.6873 7.85714 10.9999 7.85714C11.3124 7.85714 11.6122 7.73297 11.8332 7.51195C12.0543 7.29092 12.1784 6.99115 12.1784 6.67857C12.1784 6.36599 12.0543 6.06622 11.8332 5.8452C11.6122 5.62417 11.3124 5.5 10.9999 5.5C10.6873 5.5 10.3875 5.62417 10.1665 5.8452C9.94546 6.06622 9.82129 6.36599 9.82129 6.67857ZM11.5891 9.42857H10.4106C10.3025 9.42857 10.2141 9.51696 10.2141 9.625V16.3036C10.2141 16.4116 10.3025 16.5 10.4106 16.5H11.5891C11.6972 16.5 11.7856 16.4116 11.7856 16.3036V9.625C11.7856 9.51696 11.6972 9.42857 11.5891 9.42857Z" fill="#1890FF"></path>
+                                    </svg>
                                   </div>
-                                </td>
-                                <td class="priceCondition__group fareCondition_economy aa WF" cls_code="WF">
-                                  <div class="fareCondition__select priceBox select_price ANN_fare ANN_fare-WF" cls_code="WF" refnumber="3" fare_adult="162" total_fare="325" display_fare="162" recommendation_id="5|5|5|5|19|19|19|19|19" baggage_id="3">
-                                    <div class="fareCondition__price">
-                                      <p class="text16 ANN_fare_adult">USD 162</p>
-                                      <p class="text12 ANN_seat_left" style="font-style: italic">(<span>9</span> Seats left)</p>
-                                    </div>
-                                    <div class="fareCondition__btn"><button type="button" class="btn btn-orange-1"><span>SELECT</span></button></div>
+                                  <div class="alert__text">
+                                    <p class="colorNeutral700">Note: The fare is applied for 1 Adult and not inclusive of Taxes, Fees &amp; Service Charges</p>
                                   </div>
-                                </td>
+                                </div>
+                              </div>
+                            </div>
 
-                                <td class="priceCondition__group fareCondition_business hzzz vbajess hidden BR" cls_code="BR">
-                                  <div class="fareCondition__select priceBox select_price hidden ANN_fare ANN_fare-BR" cls_code="BR" refnumber="">
-                                    <div class="fareCondition__price">
-                                      <p class="text16 ANN_fare_adult">USD 0</p>
-                                      <p class="text12 ANN_seat_left" style="font-style: italic">(<span>0</span> Seats left)</p>
-                                    </div>
-                                    <div class="fareCondition__btn"><button type="button" class="btn btn-orange-1"><span>SELECT</span></button></div>
-                                  </div>
-                                </td>
-                              </tr>
-                              </tbody>
-                            </table></div>
                           </div>
                         </div>
                       </div>
@@ -1804,7 +2001,16 @@
                               <div class="flightTime__code__item"><img src="images/logo-vnairline.png"><span class="ml5">CX 688</span></div>
                               <div class="flightTime__code__item"><img src="images/logo-vnairline.png"><span class="ml5">CX 688</span></div>
                             </div>
-                            <button type="button" data-toggle="modal" data-target="#flightDetailPopup" class="viewMore text-left"><span>More details</span></button>
+                            <button type="button" data-toggle="modal" data-target="#flightDetailPopup" class="viewMore text-left"><span>More details</span><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                              <g clip-path="url(#clip0_1083_7200)">
+                                <path d="M4.66192 6.67836L7.90359 1.33036C7.96482 1.22924 7.99807 1.11366 7.99992 0.995462C8.00177 0.877263 7.97216 0.760698 7.91412 0.657713C7.85608 0.554728 7.7717 0.469028 7.66963 0.409396C7.56756 0.349764 7.45147 0.318345 7.33325 0.31836L0.84992 0.31836C0.731657 0.31831 0.615508 0.349721 0.51339 0.40937C0.411271 0.469019 0.326858 0.554759 0.268808 0.657796C0.210759 0.760832 0.181163 0.877456 0.183058 0.995705C0.184952 1.11395 0.218267 1.22957 0.279587 1.33069L3.52125 6.67836C3.58064 6.77647 3.66433 6.85761 3.76424 6.91392C3.86415 6.97024 3.9769 6.99982 4.09159 6.99982C4.20628 6.99982 4.31902 6.97024 4.41893 6.91392C4.51884 6.85761 4.60254 6.77647 4.66192 6.67836Z" fill="#2F80ED"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1083_7200">
+                                  <rect width="8" height="8" fill="white" transform="translate(0 8) rotate(-90)"/>
+                                </clipPath>
+                              </defs>
+                            </svg></button>
                           </div>
                           <div class="flightDuration">
                             <div class="flexGroup2">
@@ -1906,7 +2112,16 @@
                               <div class="flightTime__code__item"><img src="images/logo-vnairline.png"><span class="ml5">CX 688</span></div>
                               <div class="flightTime__code__item"><img src="images/logo-vnairline.png"><span class="ml5">CX 688</span></div>
                             </div>
-                            <button type="button" data-toggle="modal" data-target="#flightDetailPopup" class="viewMore text-left"><span>More details</span></button>
+                            <button type="button" data-toggle="modal" data-target="#flightDetailPopup" class="viewMore text-left"><span>More details</span><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                              <g clip-path="url(#clip0_1083_7200)">
+                                <path d="M4.66192 6.67836L7.90359 1.33036C7.96482 1.22924 7.99807 1.11366 7.99992 0.995462C8.00177 0.877263 7.97216 0.760698 7.91412 0.657713C7.85608 0.554728 7.7717 0.469028 7.66963 0.409396C7.56756 0.349764 7.45147 0.318345 7.33325 0.31836L0.84992 0.31836C0.731657 0.31831 0.615508 0.349721 0.51339 0.40937C0.411271 0.469019 0.326858 0.554759 0.268808 0.657796C0.210759 0.760832 0.181163 0.877456 0.183058 0.995705C0.184952 1.11395 0.218267 1.22957 0.279587 1.33069L3.52125 6.67836C3.58064 6.77647 3.66433 6.85761 3.76424 6.91392C3.86415 6.97024 3.9769 6.99982 4.09159 6.99982C4.20628 6.99982 4.31902 6.97024 4.41893 6.91392C4.51884 6.85761 4.60254 6.77647 4.66192 6.67836Z" fill="#2F80ED"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1083_7200">
+                                  <rect width="8" height="8" fill="white" transform="translate(0 8) rotate(-90)"/>
+                                </clipPath>
+                              </defs>
+                            </svg></button>
                           </div>
                           <div class="flightDuration">
                             <div class="flexGroup2">
@@ -1982,77 +2197,288 @@
                 </div>
               </div>
             </div>
-            <div class="flightResult__right hidden">
+            <div class="flightResult__left flightResult__selected">
+              <div class="box_after_choosing_flight">
+                <div class="flTable__group">
+                  <div class="flightItem__table__row">
+                    <div class="reChange__up">
+                      <div class="reChange__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M12 23.5C5.6585 23.5 0.5 18.341 0.5 12C0.5 5.659 5.6585 0.5 12 0.5C18.3415 0.5 23.5 5.659 23.5 12C23.5 18.341 18.3415 23.5 12 23.5Z" fill="#27AE60"></path>
+                          <path d="M9.99994 17.4144L4.58594 11.9999L5.99994 10.5854L9.99994 14.5854L17.9999 6.58545L19.4139 7.99995L9.99994 17.4144Z" fill="white"></path>
+                        </svg>
+                        <p class="medium text16">Departing flight</p>
+                      </div>
+                      <button class="text16 button_rechange">Re-change</button>
+                    </div>
+                    <div class="reChange__down">
+                      <div class="flightItem__table__left">
+                        <div class="flightItem__table__cell">
+                          <div class="flightTime">
+                            <div class="flightTime__trip">
+                              <div class="d-block">
+                                <p class="text16 medium colorNeutral800">08:45 AM</p>
+                                <p class="colorNeutral500">HAN</p>
+                                <p class="colorNeutral500">Wed, 15 Jan</p>
+                              </div>
+                              <div class="d-block">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                  <g clip-path="url(#clip0_352_1807)">
+                                    <path d="M23.5397 12.0134L23.5397 11.9874C23.5072 10.695 21.0655 10.491 21.0655 10.491L16.7727 9.98005L14.6923 7.0034C15.5859 6.8394 16.2207 6.42435 16.2207 5.93797C16.2207 5.308 15.1563 4.79733 13.8434 4.79733C13.6137 4.79733 13.392 4.81327 13.182 4.84241L11.5846 2.55685L9.18948 2.36553L12.0422 10.0561L4.57888 10.7601L2.8686 8.26055L1.8032 8.25979L1.8033 15.7411L2.8686 15.7403L4.57892 13.2408L12.0422 13.9448L9.18958 21.6353L11.5847 21.444L13.1821 19.1584C13.3921 19.1876 13.6138 19.2036 13.8435 19.2036C15.1564 19.2036 16.2208 18.6929 16.2208 18.063C16.2207 17.5765 15.5859 17.1615 14.6924 16.9974L16.7727 14.0208L21.0655 13.5099C21.0655 13.5099 23.5073 13.3059 23.5397 12.0134Z" fill="#94A3B8"></path>
+                                  </g>
+                                  <defs>
+                                    <clipPath id="clip0_352_1807">
+                                      <rect width="24" height="24" fill="white"></rect>
+                                    </clipPath>
+                                  </defs>
+                                </svg>
+                              </div>
+                              <div class="d-block">
+                                <p class="text16 medium colorNeutral800">11:00 AM</p>
+                                <p class="colorNeutral500">BKK</p>
+                                <p class="colorNeutral500">Wed, 15 Jan</p>
+                              </div>
+                            </div>
+                            <div class="flightTime__code">
+                              <div class="flightTime__code__item"><img src="images/logo-vnairline.png"><span class="ml5 text12 colorNeutral600">CX 688</span></div>
+                              <div class="flightTime__dot"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                                <circle cx="2.5" cy="2.5" r="2.5" fill="#94A3B8"></circle>
+                              </svg></div>
+                              <div class="flightTime__code__item"><img src="images/logo-vnairline.png"><span class="ml5 text12 colorNeutral600">CX 688</span></div>
+                            </div>
+                            <button type="button" class="viewMore text-left"><span class="blue1">Flight details</span><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                              <g clip-path="url(#clip0_1083_7200)">
+                                <path d="M4.66192 6.67836L7.90359 1.33036C7.96482 1.22924 7.99807 1.11366 7.99992 0.995462C8.00177 0.877263 7.97216 0.760698 7.91412 0.657713C7.85608 0.554728 7.7717 0.469028 7.66963 0.409396C7.56756 0.349764 7.45147 0.318345 7.33325 0.31836L0.84992 0.31836C0.731657 0.31831 0.615508 0.349721 0.51339 0.40937C0.411271 0.469019 0.326858 0.554759 0.268808 0.657796C0.210759 0.760832 0.181163 0.877456 0.183058 0.995705C0.184952 1.11395 0.218267 1.22957 0.279587 1.33069L3.52125 6.67836C3.58064 6.77647 3.66433 6.85761 3.76424 6.91392C3.86415 6.97024 3.9769 6.99982 4.09159 6.99982C4.20628 6.99982 4.31902 6.97024 4.41893 6.91392C4.51884 6.85761 4.60254 6.77647 4.66192 6.67836Z" fill="#2F80ED"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1083_7200">
+                                  <rect width="8" height="8" fill="white" transform="translate(0 8) rotate(-90)"/>
+                                </clipPath>
+                              </defs>
+                            </svg></button>
+                          </div>
+                        </div>
+                        <div class="flightItem__table__cell">
+                          <div class="flightDuration">
+                            <p class="medium colorNeutral800 text16">02 hrs 35 mins</p>
+                            <p class="text14 medium colorRed800">1 stop</p>
+                            <p class="text14 medium colorNeutral500">Direct</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flightItem__table__right">
+                        <p class="medium colorNeutral800">ECONOMY PROMOTION</p>
+                        <p class="colorNeutral500">Fare Basis: RTXYZ</p>
+                        <p class="colorNeutral500">Checked Bagagge: 20Kg</p>
+                        <p class="colorNeutral500">Carry On Baggage: 5Kg</p>
+                        <p class="colorNeutral500">Refund: Not Allowed</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flightDetail" style="display: none">
+                    <div class="flightDetail__cont">
+                      <div class="flightDetail__group">
+                        <div class="flightDetail__header">
+                          <p class="colorNeutral800 medium text16 mr15">Total Duration</p>
+                          <p class="colorRed800 medium text16">02h05m, 1 stops</p>
+                        </div>
+                        <div class="flightDetail__row">
+                          <div class="flightDetail__item">
+                            <div class="flightDetail__airline">
+                              <img src="images/logo-vnairline.png">
+                              <p class="text12 colorNeutral600">Cathay pacific</p>
+                              <div class="flightTime__dot"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                                <circle cx="2.5" cy="2.5" r="2.5" fill="#94A3B8"></circle>
+                              </svg></div>
+                              <p class="text12 colorNeutral600">688</p>
+                            </div>
+                            <div class="flightDetail__line">
+                              <div class="flightDetail__left">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="82" viewBox="0 0 8 82" fill="none">
+                                  <circle cx="4" cy="4" r="4" fill="#64748B"/>
+                                  <circle cx="4" cy="78" r="4" fill="#64748B"/>
+                                  <line x1="4" y1="4" x2="4" y2="75" stroke="#64748B" stroke-width="2"/>
+                                </svg>
+                              </div>
+                              <div class="flightDetail__right">
+                                <div class="flightDetail__airport">
+                                  <p class="text16 colorNeutral800 medium">Wed, 15 Jan</p>
+                                  <p class="text16 colorNeutral800 medium">15:35 HAN</p>
+                                  <p class="text16 colorNeutral800 medium">Noi Bai Airport</p>
+                                </div>
+                                <p class="colorNeutral600">Hanoi</p>
+                                <p class="colorNeutral600">Travel time: 1 hrs</p>
+                                <div class="flightDetail__airport">
+                                  <p class="text16 colorNeutral800 medium">Wed, 15 Jan</p>
+                                  <p class="text16 colorNeutral800 medium">15:35 DAD</p>
+                                  <p class="text16 colorNeutral800 medium">Noi Bai Airport</p>
+                                </div>
+                                <p class="colorNeutral600">Danang</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flightDetail__transit">
+                          <p class="colorNeutral600">1 hrs 30 mins layover</p>
+                        </div>
+                        <div class="flightDetail__row">
+                          <div class="flightDetail__item">
+                            <div class="flightDetail__airline">
+                              <img src="images/logo-vnairline.png">
+                              <p class="text12 colorNeutral600">Cathay pacific</p>
+                              <div class="flightTime__dot"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                                <circle cx="2.5" cy="2.5" r="2.5" fill="#94A3B8"></circle>
+                              </svg></div>
+                              <p class="text12 colorNeutral600">688</p>
+                            </div>
+                            <div class="flightDetail__line">
+                              <div class="flightDetail__left">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="82" viewBox="0 0 8 82" fill="none">
+                                  <circle cx="4" cy="4" r="4" fill="#64748B"/>
+                                  <circle cx="4" cy="78" r="4" fill="#64748B"/>
+                                  <line x1="4" y1="4" x2="4" y2="75" stroke="#64748B" stroke-width="2"/>
+                                </svg>
+                              </div>
+                              <div class="flightDetail__right">
+                                <div class="flightDetail__airport">
+                                  <p class="text16 colorNeutral800 medium">Wed, 15 Jan</p>
+                                  <p class="text16 colorNeutral800 medium">15:35 HAN</p>
+                                  <p class="text16 colorNeutral800 medium">Noi Bai Airport</p>
+                                </div>
+                                <p class="colorNeutral600">Hanoi</p>
+                                <p class="colorNeutral600">Travel time: 1 hrs</p>
+                                <div class="flightDetail__airport">
+                                  <p class="text16 colorNeutral800 medium">Wed, 15 Jan</p>
+                                  <p class="text16 colorNeutral800 medium">15:35 DAD</p>
+                                  <p class="text16 colorNeutral800 medium">Noi Bai Airport</p>
+                                </div>
+                                <p class="colorNeutral600">Danang</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flightResult__right">
               <div class="tripSummary">
-                <div class="tripSummary__header"><span class="text20 colorWhite medium">Trip summary</span></div>
+                <div class="tripSummary__header">
+                  <p class="text16 colorNeutral800 medium">SUMMARY</p>
+                  <p class="text14 colorNeutral600">Roundtrip, Economy, 2 Adults</p>
+                </div>
                 <div class="tripSummary__body">
                   <div class="tripSummary__group">
                     <div class="tripSummary__item">
-                      <div class="tripSummary__title"><span class="text16 medium">Passenger</span>
-                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1">
-                          <path d="M1.06254 1.9393L5.43066 7.0368C5.50107 7.11892 5.58841 7.18484 5.68669 7.23003C5.78497 7.27522 5.89186 7.29862 6.00004 7.29862C6.10821 7.29862 6.2151 7.27522 6.31338 7.23003C6.41166 7.18484 6.499 7.11892 6.56941 7.0368L10.9375 1.9393C11.3544 1.45273 11.0088 0.701172 10.3682 0.701172H1.63066C0.990037 0.701172 0.644412 1.45273 1.06254 1.9393Z" fill="black" fill-opacity="0.25"></path>
-                        </svg>
-                      </div>
-                      <div class="tripSummary__cont">
-                        <p class="medium colorBlack65">3 Passenger</p>
-                        <p>2 Adult, 1 child</p>
-                      </div>
-                    </div>
-                    <div class="tripSummary__item">
-                      <div class="tripSummary__title"><span class="text16 medium">Flights</span>
-                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1">
-                          <path d="M1.06254 1.9393L5.43066 7.0368C5.50107 7.11892 5.58841 7.18484 5.68669 7.23003C5.78497 7.27522 5.89186 7.29862 6.00004 7.29862C6.10821 7.29862 6.2151 7.27522 6.31338 7.23003C6.41166 7.18484 6.499 7.11892 6.56941 7.0368L10.9375 1.9393C11.3544 1.45273 11.0088 0.701172 10.3682 0.701172H1.63066C0.990037 0.701172 0.644412 1.45273 1.06254 1.9393Z" fill="black" fill-opacity="0.25"></path>
-                        </svg>
+                      <div class="tripSummary__title">
+                        <p class="text16 medium colorNeutral800">Fare</p>
+                        <div class="tripSummary__icon">
+                          <p class="text16 medium colorNeutral800 mr5">USD 988.88</p>
+                          <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1">
+                            <path d="M1.06254 1.9393L5.43066 7.0368C5.50107 7.11892 5.58841 7.18484 5.68669 7.23003C5.78497 7.27522 5.89186 7.29862 6.00004 7.29862C6.10821 7.29862 6.2151 7.27522 6.31338 7.23003C6.41166 7.18484 6.499 7.11892 6.56941 7.0368L10.9375 1.9393C11.3544 1.45273 11.0088 0.701172 10.3682 0.701172H1.63066C0.990037 0.701172 0.644412 1.45273 1.06254 1.9393Z" fill="#64748B"></path>
+                          </svg>
+                        </div>
                       </div>
                       <div class="tripSummary__cont">
                         <ul class="tripSummary__trip">
                           <li>
-                            <p class="medium text16">HAN - BKK</p>
-                            <p class="p1"><span>Wed, 15 Jan 2020</span><span>08:45 - 11:00</span></p>
-                            <p class="p1"><span>Duration: 02h05m</span><span class="medium text12">1 stop (SGN)</span></p>
-                            <div class="flightTime__code__item mr-0"><img src="images/logo-vnairline.png"><span class="ml5">CX 688</span></div>
-                            <div class="tripSummary__label colorWhite medium bgDarkGreen1">Eco promotion</div>
-                            <div class="flexGroup1 mt15">
-                              <p class="medium">Fare</p>
-                              <p class="medium colorYellow">USD 566.88</p>
+                            <div class="tripSummary__content_up">
+                              <p class="colorNeutral800">Depart</p>
+                              <p class="colorNeutral800 medium ml5 mr15">15:35</p>
+                              <p class="colorNeutral800 medium">Wed, 15 Jan</p>
+                            </div>
+                            <div class="tripSummary__content_down">
+                              <div class="tripSummary__content_flight">
+                                <p class="colorNeutral500">HAN</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                  <g clip-path="url(#clip0_352_1807)">
+                                    <path d="M23.5397 12.0134L23.5397 11.9874C23.5072 10.695 21.0655 10.491 21.0655 10.491L16.7727 9.98005L14.6923 7.0034C15.5859 6.8394 16.2207 6.42435 16.2207 5.93797C16.2207 5.308 15.1563 4.79733 13.8434 4.79733C13.6137 4.79733 13.392 4.81327 13.182 4.84241L11.5846 2.55685L9.18948 2.36553L12.0422 10.0561L4.57888 10.7601L2.8686 8.26055L1.8032 8.25979L1.8033 15.7411L2.8686 15.7403L4.57892 13.2408L12.0422 13.9448L9.18958 21.6353L11.5847 21.444L13.1821 19.1584C13.3921 19.1876 13.6138 19.2036 13.8435 19.2036C15.1564 19.2036 16.2208 18.6929 16.2208 18.063C16.2207 17.5765 15.5859 17.1615 14.6924 16.9974L16.7727 14.0208L21.0655 13.5099C21.0655 13.5099 23.5073 13.3059 23.5397 12.0134Z" fill="#94A3B8"></path>
+                                  </g>
+                                  <defs>
+                                    <clipPath id="clip0_352_1807">
+                                      <rect width="24" height="24" fill="white"></rect>
+                                    </clipPath>
+                                  </defs>
+                                </svg>
+                                <p class="colorNeutral500">BKK</p>
+                              </div>
+                              <p class="colorNeutral800">Duration: 02 hrs 35 mins</p>
+                              <p class="colorRed800 medium">1 stop</p>
+                              <div class="flightTime__code__item_group">
+                                <div class="flightTime__code__item mr-0"><img src="images/logo-vnairline.png"><span class="ml5">CX 688</span></div>
+                                <div class="flightTime__dot"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                                  <circle cx="2.5" cy="2.5" r="2.5" fill="#94A3B8"></circle>
+                                </svg></div>
+                                <div class="flightTime__code__item mr-0"><img src="images/logo-vnairline.png"><span class="ml5">CX 688</span></div>
+                              </div>
                             </div>
                           </li>
                           <li>
-                            <p class="medium text16">HAN - BKK</p>
-                            <p class="p1"><span>Wed, 15 Jan 2020</span><span>08:45 - 11:00</span></p>
-                            <p class="p1"><span>Duration: 02h05m</span><span class="medium text12">1 stop (SGN)</span></p>
-                            <div class="flightTime__code__item mr-0"><img src="images/logo-vnairline.png"><span class="ml5">CX 688</span></div>
-                            <div class="tripSummary__label colorWhite medium bgDarkGreen2">Economy saver</div>
-                            <div class="flexGroup1 mt15">
-                              <p class="medium">Fare</p>
-                              <p class="medium colorYellow">USD 566.88</p>
+                            <div class="tripSummary__content_up">
+                              <p class="colorNeutral800">Depart</p>
+                              <p class="colorNeutral800 medium ml5 mr15">15:35</p>
+                              <p class="colorNeutral800 medium">Wed, 15 Jan</p>
                             </div>
+                            <div class="tripSummary__content_down">
+                              <div class="tripSummary__content_flight">
+                                <p class="colorNeutral500">HAN</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                  <g clip-path="url(#clip0_352_1807)">
+                                    <path d="M23.5397 12.0134L23.5397 11.9874C23.5072 10.695 21.0655 10.491 21.0655 10.491L16.7727 9.98005L14.6923 7.0034C15.5859 6.8394 16.2207 6.42435 16.2207 5.93797C16.2207 5.308 15.1563 4.79733 13.8434 4.79733C13.6137 4.79733 13.392 4.81327 13.182 4.84241L11.5846 2.55685L9.18948 2.36553L12.0422 10.0561L4.57888 10.7601L2.8686 8.26055L1.8032 8.25979L1.8033 15.7411L2.8686 15.7403L4.57892 13.2408L12.0422 13.9448L9.18958 21.6353L11.5847 21.444L13.1821 19.1584C13.3921 19.1876 13.6138 19.2036 13.8435 19.2036C15.1564 19.2036 16.2208 18.6929 16.2208 18.063C16.2207 17.5765 15.5859 17.1615 14.6924 16.9974L16.7727 14.0208L21.0655 13.5099C21.0655 13.5099 23.5073 13.3059 23.5397 12.0134Z" fill="#94A3B8"></path>
+                                  </g>
+                                  <defs>
+                                    <clipPath id="clip0_352_1807">
+                                      <rect width="24" height="24" fill="white"></rect>
+                                    </clipPath>
+                                  </defs>
+                                </svg>
+                                <p class="colorNeutral500">BKK</p>
+                              </div>
+                              <p class="colorNeutral800">Duration: 02 hrs 35 mins</p>
+                              <p class="colorRed800 medium">1 stop</p>
+                              <div class="flightTime__code__item_group">
+                                <div class="flightTime__code__item mr-0"><img src="images/logo-vnairline.png"><span class="ml5">CX 688</span></div>
+                                <div class="flightTime__dot"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                                  <circle cx="2.5" cy="2.5" r="2.5" fill="#94A3B8"></circle>
+                                </svg></div>
+                                <div class="flightTime__code__item mr-0"><img src="images/logo-vnairline.png"><span class="ml5">CX 688</span></div>
+                              </div>
+                            </div>
+
                           </li>
+                        </ul>
+                        <ul class="tripSummary__per_passenger">
+                          <div class="flexGroup1">
+                            <p class="colorNeutral800 medium">Adult x 1</p>
+                            <p class="colorNeutral800 medium">USD 988.88</p>
+                          </div>
                         </ul>
                       </div>
                     </div>
                     <div class="tripSummary__item">
-                      <div class="tripSummary__title"><span class="text16 medium">Price</span>
-                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1">
-                          <path d="M1.06254 1.9393L5.43066 7.0368C5.50107 7.11892 5.58841 7.18484 5.68669 7.23003C5.78497 7.27522 5.89186 7.29862 6.00004 7.29862C6.10821 7.29862 6.2151 7.27522 6.31338 7.23003C6.41166 7.18484 6.499 7.11892 6.56941 7.0368L10.9375 1.9393C11.3544 1.45273 11.0088 0.701172 10.3682 0.701172H1.63066C0.990037 0.701172 0.644412 1.45273 1.06254 1.9393Z" fill="black" fill-opacity="0.25"></path>
-                        </svg>
+                      <div class="tripSummary__title">
+                        <p class="text16 medium colorNeutral800">Taxes & fees</p>
+                        <div class="tripSummary__icon">
+                          <p class="text16 medium colorNeutral800 mr5">USD 66.88</p>
+                          <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1">
+                            <path d="M1.06254 1.9393L5.43066 7.0368C5.50107 7.11892 5.58841 7.18484 5.68669 7.23003C5.78497 7.27522 5.89186 7.29862 6.00004 7.29862C6.10821 7.29862 6.2151 7.27522 6.31338 7.23003C6.41166 7.18484 6.499 7.11892 6.56941 7.0368L10.9375 1.9393C11.3544 1.45273 11.0088 0.701172 10.3682 0.701172H1.63066C0.990037 0.701172 0.644412 1.45273 1.06254 1.9393Z" fill="#64748B"></path>
+                          </svg>
+                        </div>
                       </div>
                       <div class="tripSummary__cont">
                         <ul class="tripSummary__price">
                           <li>
-                            <p class="medium">Adult:</p>
-                            <p><span>2x&nbsp;</span><span class="colorYellow medium">USD 1233.76</span></p>
-                          </li>
-                          <li>
-                            <p class="medium">Child:</p>
-                            <p><span>2x&nbsp;</span><span class="colorYellow medium">USD 1233.76</span></p>
-                          </li>
-                          <li class="liTotal">
-                            <p class="medium">Total</p>
-                            <p><span class="colorYellow medium">USD 16233.88</span></p>
+                            <p class="colorNeutral800">Taxes, Fees</p>
+                            <p class="colorNeutral800">USD 66.88</p>
                           </li>
                         </ul>
                       </div>
+                    </div>
+                    <div class="tripSummary__total">
+                      <p class="medium text16 colorNeutral800">Total price</p>
+                      <p class="medium text16 colorRed800">USD 1,288.66</p>
                     </div>
                   </div>
                   <div class="tripSummary__btn"><a href="flightPassenger.html" class="btn btn-orange btn-lg"><span>CONTINUE</span></a></div>
@@ -2062,112 +2488,6 @@
           </div>
         </div>
       </section>
-      <div id="flightDetailPopup" class="modal fade">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-body">
-              <button type="button" data-dismiss="modal" class="close">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1point5">
-                  <path d="M14.3001 12.1788C14.2768 12.1556 14.2584 12.128 14.2458 12.0976C14.2332 12.0672 14.2267 12.0347 14.2267 12.0018C14.2267 11.9689 14.2332 11.9364 14.2458 11.906C14.2584 11.8756 14.2768 11.848 14.3001 11.8248L23.5631 2.5628C23.8444 2.28114 24.0022 1.89928 24.002 1.50124C24.0017 1.10319 23.8433 0.721561 23.5616 0.440299C23.28 0.159037 22.8981 0.00118392 22.5001 0.00146522C22.102 0.00174652 21.7204 0.160139 21.4391 0.441799L12.1771 9.6998C12.1539 9.72308 12.1263 9.74155 12.0959 9.75416C12.0656 9.76676 12.033 9.77325 12.0001 9.77325C11.9672 9.77325 11.9347 9.76676 11.9043 9.75416C11.8739 9.74155 11.8463 9.72308 11.8231 9.6998L2.56113 0.441799C2.42186 0.302467 2.25651 0.191929 2.07453 0.116498C1.89254 0.0410666 1.69748 0.00221873 1.50048 0.0021723C1.10262 0.00207854 0.721022 0.160037 0.439627 0.441299C0.158232 0.722561 9.38099e-05 1.10409 4.17235e-08 1.50195C-9.37265e-05 1.8998 0.157865 2.2814 0.439127 2.5628L9.70013 11.8248C9.72341 11.848 9.74188 11.8756 9.75448 11.906C9.76709 11.9364 9.77357 11.9689 9.77357 12.0018C9.77357 12.0347 9.76709 12.0672 9.75448 12.0976C9.74188 12.128 9.72341 12.1556 9.70013 12.1788L0.439127 21.4418C0.29986 21.5811 0.189401 21.7465 0.114055 21.9286C0.0387096 22.1106 -4.63876e-05 22.3057 4.17235e-08 22.5027C9.38099e-05 22.9005 0.158232 23.282 0.439627 23.5633C0.57896 23.7026 0.744358 23.813 0.92638 23.8884C1.1084 23.9637 1.30348 24.0025 1.50048 24.0024C1.89834 24.0023 2.27987 23.8442 2.56113 23.5628L11.8231 14.2998C11.8463 14.2765 11.8739 14.258 11.9043 14.2454C11.9347 14.2328 11.9672 14.2264 12.0001 14.2264C12.033 14.2264 12.0656 14.2328 12.0959 14.2454C12.1263 14.258 12.1539 14.2765 12.1771 14.2998L21.4391 23.5628C21.7204 23.8442 22.1019 24.0023 22.4998 24.0024C22.8976 24.0025 23.2792 23.8446 23.5606 23.5633C23.842 23.282 24.0002 22.9005 24.0003 22.5027C24.0003 22.1048 23.8424 21.7232 23.5611 21.4418L14.3001 12.1788Z" fill="black" fill-opacity="0.25"></path>
-                </svg>
-              </button>
-              <h2>Flight details</h2>
-              <div class="flightDetail">
-                <div class="flexGroup1 mb15">
-                  <div class="flightDetail__title"><span class="medium text16">Hanoi to Bangkok</span></div>
-                  <p>Total Duration:<span class="medium ml10">02h05m, 2 Stop</span></p>
-                </div>
-                <div class="flightDetail__cont">
-                  <div class="flightDetail__row">
-                    <div class="flightDetail__item">
-                      <p class="text18 medium">08:45 AM</p>
-                      <p class="text18 medium">HAN</p>
-                      <p class="colorBlack55">Ha noi, Hanoi International Airport</p>
-                      <p class="colorBlack55">Wed, 15 Jan 2020</p>
-                      <p class="colorBlack55">Airbus A321, Boeing 788</p>
-                    </div>
-                    <div class="flightDetail__item">
-                      <div class="flightDetail__arrow">
-                        <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1point5">
-                          <path d="M23.725 5.33638C23.7248 5.3361 23.7245 5.33577 23.7242 5.33549L18.8256 0.460497C18.4586 0.095294 17.865 0.096653 17.4997 0.463684C17.1345 0.830668 17.1359 1.42424 17.5028 1.78949L20.7918 5.06249H0.9375C0.419719 5.06249 0 5.48221 0 5.99999C0 6.51777 0.419719 6.93749 0.9375 6.93749H20.7917L17.5029 10.2105C17.1359 10.5757 17.1345 11.1693 17.4998 11.5363C17.865 11.9034 18.4587 11.9046 18.8256 11.5395L23.7242 6.66449C23.7245 6.66421 23.7248 6.66388 23.7251 6.6636C24.0923 6.29713 24.0911 5.70163 23.725 5.33638Z" fill="black" fill-opacity="0.45"></path>
-                        </svg>
-                      </div>
-                      <div class="flightDetail__time"><img src="images/logo-vnairline.png">
-                        <p class="mt15">
-                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1">
-                            <path d="M8 0.5C7.01509 0.5 6.03982 0.693993 5.12987 1.0709C4.21993 1.44781 3.39314 2.00026 2.6967 2.6967C1.29018 4.10322 0.5 6.01088 0.5 8C0.5 9.98912 1.29018 11.8968 2.6967 13.3033C3.39314 13.9997 4.21993 14.5522 5.12987 14.9291C6.03982 15.306 7.01509 15.5 8 15.5C9.98912 15.5 11.8968 14.7098 13.3033 13.3033C14.7098 11.8968 15.5 9.98912 15.5 8C15.5 7.01509 15.306 6.03982 14.9291 5.12987C14.5522 4.21993 13.9997 3.39314 13.3033 2.6967C12.6069 2.00026 11.7801 1.44781 10.8701 1.0709C9.96018 0.693993 8.98491 0.5 8 0.5ZM11.15 11.15L7.25 8.75V4.25H8.375V8.15L11.75 10.175L11.15 11.15Z" fill="black" fill-opacity="0.45"></path>
-                          </svg><span class="ml10 colorBlack55">Connection time&nbsp;<span class="medium colorBlack">55mins</span></span>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="flightDetail__item">
-                      <p class="text18 medium">08:45 AM</p>
-                      <p class="text18 medium">HAN</p>
-                      <p class="colorBlack55">Ha noi, Hanoi International Airport</p>
-                      <p class="colorBlack55">Wed, 15 Jan 2020</p>
-                      <p class="colorBlack55">Airbus A321, Boeing 788</p>
-                    </div>
-                  </div>
-                  <div class="flightDetail__row">
-                    <div class="flightDetail__item">
-                      <p class="text18 medium">08:45 AM</p>
-                      <p class="text18 medium">HAN</p>
-                      <p class="colorBlack55">Ha noi, Hanoi International Airport</p>
-                      <p class="colorBlack55">Wed, 15 Jan 2020</p>
-                      <p class="colorBlack55">Airbus A321, Boeing 788</p>
-                    </div>
-                    <div class="flightDetail__item">
-                      <div class="flightDetail__arrow">
-                        <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1point5">
-                          <path d="M23.725 5.33638C23.7248 5.3361 23.7245 5.33577 23.7242 5.33549L18.8256 0.460497C18.4586 0.095294 17.865 0.096653 17.4997 0.463684C17.1345 0.830668 17.1359 1.42424 17.5028 1.78949L20.7918 5.06249H0.9375C0.419719 5.06249 0 5.48221 0 5.99999C0 6.51777 0.419719 6.93749 0.9375 6.93749H20.7917L17.5029 10.2105C17.1359 10.5757 17.1345 11.1693 17.4998 11.5363C17.865 11.9034 18.4587 11.9046 18.8256 11.5395L23.7242 6.66449C23.7245 6.66421 23.7248 6.66388 23.7251 6.6636C24.0923 6.29713 24.0911 5.70163 23.725 5.33638Z" fill="black" fill-opacity="0.45"></path>
-                        </svg>
-                      </div>
-                      <div class="flightDetail__time"><img src="images/logo-vnairline.png">
-                        <p class="mt15">
-                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1">
-                            <path d="M8 0.5C7.01509 0.5 6.03982 0.693993 5.12987 1.0709C4.21993 1.44781 3.39314 2.00026 2.6967 2.6967C1.29018 4.10322 0.5 6.01088 0.5 8C0.5 9.98912 1.29018 11.8968 2.6967 13.3033C3.39314 13.9997 4.21993 14.5522 5.12987 14.9291C6.03982 15.306 7.01509 15.5 8 15.5C9.98912 15.5 11.8968 14.7098 13.3033 13.3033C14.7098 11.8968 15.5 9.98912 15.5 8C15.5 7.01509 15.306 6.03982 14.9291 5.12987C14.5522 4.21993 13.9997 3.39314 13.3033 2.6967C12.6069 2.00026 11.7801 1.44781 10.8701 1.0709C9.96018 0.693993 8.98491 0.5 8 0.5ZM11.15 11.15L7.25 8.75V4.25H8.375V8.15L11.75 10.175L11.15 11.15Z" fill="black" fill-opacity="0.45"></path>
-                          </svg><span class="ml10 colorBlack55">Connection time&nbsp;<span class="medium colorBlack">55mins</span></span>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="flightDetail__item">
-                      <p class="text18 medium">08:45 AM</p>
-                      <p class="text18 medium">HAN</p>
-                      <p class="colorBlack55">Ha noi, Hanoi International Airport</p>
-                      <p class="colorBlack55">Wed, 15 Jan 2020</p>
-                      <p class="colorBlack55">Airbus A321, Boeing 788</p>
-                    </div>
-                  </div>
-                  <div class="flightDetail__row">
-                    <div class="flightDetail__item">
-                      <p class="text18 medium">08:45 AM</p>
-                      <p class="text18 medium">HAN</p>
-                      <p class="colorBlack55">Ha noi, Hanoi International Airport</p>
-                      <p class="colorBlack55">Wed, 15 Jan 2020</p>
-                      <p class="colorBlack55">Airbus A321, Boeing 788</p>
-                    </div>
-                    <div class="flightDetail__item">
-                      <div class="flightDetail__arrow">
-                        <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1point5">
-                          <path d="M23.725 5.33638C23.7248 5.3361 23.7245 5.33577 23.7242 5.33549L18.8256 0.460497C18.4586 0.095294 17.865 0.096653 17.4997 0.463684C17.1345 0.830668 17.1359 1.42424 17.5028 1.78949L20.7918 5.06249H0.9375C0.419719 5.06249 0 5.48221 0 5.99999C0 6.51777 0.419719 6.93749 0.9375 6.93749H20.7917L17.5029 10.2105C17.1359 10.5757 17.1345 11.1693 17.4998 11.5363C17.865 11.9034 18.4587 11.9046 18.8256 11.5395L23.7242 6.66449C23.7245 6.66421 23.7248 6.66388 23.7251 6.6636C24.0923 6.29713 24.0911 5.70163 23.725 5.33638Z" fill="black" fill-opacity="0.45"></path>
-                        </svg>
-                      </div>
-                      <div class="flightDetail__time"><img src="images/logo-vnairline.png"></div>
-                    </div>
-                    <div class="flightDetail__item">
-                      <p class="text18 medium">08:45 AM</p>
-                      <p class="text18 medium">HAN</p>
-                      <p class="colorBlack55">Ha noi, Hanoi International Airport</p>
-                      <p class="colorBlack55">Wed, 15 Jan 2020</p>
-                      <p class="colorBlack55">Airbus A321, Boeing 788</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </main>
     <footer class="footer">
       <div class="footer__top">
@@ -2323,29 +2643,42 @@
         if (!listBox__form.is(e.target) && listBox__form.has(e.target).length === 0) {
           $('.listBox__form').removeClass('show');
           $('.listBox__form').parent().removeClass('active');
-        };
+        }
+        ;
       });
 
       $('.priceBox__cont').click(function () {
-        var fareCondition = $(this).parents('.flTable__group').find('.flTable__fare');
-        if($(this).hasClass('active')){
-          $(this).removeClass('active');
+        var type = $(this).parent().attr('type');
+        var fareCondition = $(this).parents('.flTable__group').find('.flTable__fare.flTable__fare_' + type);
+        if ($(this).parent().hasClass('active')) {
+          $(this).parent().removeClass('active');
           fareCondition.slideUp(400);
-
         } else {
-         // $('.flTable__ticket').removeClass('active');
-          $(this).addClass('active');
+          $(this).parent().addClass('active');
           fareCondition.slideDown(400);
         }
       });
+      $('.viewMore').click(function () {
+        var flightDetail = $(this).parents('.flTable__group').find('.flightDetail');
+        if ($(this).parent().hasClass('active')) {
+          $(this).parent().removeClass('active');
+          flightDetail.slideUp(400);
+        } else {
+          $(this).parent().addClass('active');
+          flightDetail.slideDown(400);
+        }
+      });
+      $('.tripSummary__title').click(function () {
+        $(this).next('.tripSummary__cont').slideToggle(300);
+        $(this).toggleClass('rotate');
+      });
 
-
-      $('.t-datepicker').tDatePicker({
-          autoClose: true,
-          titleCheckIn: 'Depart',
-          titleCheckOut: 'Return',
-          titleDateRange: 'day',
-          titleDateRanges: 'days',
+    $('.t-datepicker').tDatePicker({
+    autoClose: true,
+    titleCheckIn: 'Depart',
+    titleCheckOut: 'Return',
+    titleDateRange: 'day',
+    titleDateRanges: 'days',
           iconDate: '',
           iconArrowTop: false
       });

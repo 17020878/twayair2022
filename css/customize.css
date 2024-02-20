@@ -255,6 +255,9 @@
     }
 }
 @media (min-width: 767px){
+    .flightResult__selected{
+        width: calc(100% - 310px) !important;
+    }
     .flightItem__label {
         margin-right: 16px;
         border-radius: 4px;
@@ -340,6 +343,82 @@
     vertical-align: middle;
     position: relative;
 }
+.tripSummary__content_up{
+    background: #F1F5F9;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+.reChange__up {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px;
+    padding: 12px 16px;
+}
+.box_after_choosing_flight .flightItem__table__row {
+    display: block;
+    border-radius: 8px;
+    background: #fff;
+}
+.reChange__down .flightItem__table__left{
+    width: 65%;
+}
+.reChange__down .flightItem__table__right{
+    display: block;
+    text-align: end;
+    padding: 16px 24px;
+    width: 35%;
+}
+.reChange__down .flightItem__table__right p{
+    padding: 3px 0;
+}
+.reChange__icon {
+    display: flex;
+}
+.reChange__icon p {
+    padding-left: 12px;
+}
+.reChange__up .button_rechange {
+    color: #2F80ED;
+}
+.reChange__down {
+    display: flex;
+    border-top: 1px solid #E0E0E0;
+}
+.tripSummary__price{
+    padding: 8px 15px;
+    border-top: 1px solid rgba(0,0,0,.15);
+}
+.tripSummary__content_down{
+    padding: 12px;
+}
+.tripSummary__per_passenger{
+    padding: 12px;
+    border-top: 1px solid #E2E8F0;
+}
+.tripSummary__content_down > div,.tripSummary__content_down p{
+    padding: 3px 0;
+}
+.tripSummary__content_flight svg{
+    margin: 0 8px;
+}
+.tripSummary__icon,.tripSummary__content_flight,.flightTime__code__item_group{
+    display: flex;
+    align-items: center;
+}
+.tripSummary__total p{
+    padding: 0 4px;
+}
+.tripSummary__total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.tripSummary{
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+}
 .fareCondition .tableGroup-responsive{
     border-top: 1px solid #E2E8F0;
     margin-top: 3px;
@@ -352,26 +431,98 @@
     border-right: 1px solid #E2E8F0;
     color: #1E293B;
 }
+.tbody_fareCondition tr td{
+    padding-bottom: 12px;
+}
 .tableGroup-responsive table{
     width: 100%;
 }
 .alert{
     margin-bottom: 0;
 }
-.table-responsive .fareCondition_economy{
+.table-responsive .fareCondition_economy,.table-responsive .fareCondition_business{
     text-align: center;
 }
 .table-responsive thead tr th:nth-child(1){
     background: #F1F5F9;
 }
-.table-responsive thead tr th:nth-child(2){
+.table-responsive thead tr th.fareCondition_economy:nth-child(2){
     background: #E2E8F0;
 }
-.table-responsive thead tr th:nth-child(3){
+.table-responsive thead tr th.fareCondition_economy:nth-child(3){
     background: #CBD5E1;
 }
-.table-responsive thead tr th:nth-child(4){
+.table-responsive thead tr th.fareCondition_economy:nth-child(4){
     background: #94A3B8;
+}
+
+.table-responsive thead tr th.fareCondition_business:nth-child(2){
+    background: #DF152F;
+    color: #fff;
+}
+.table-responsive thead tr th.fareCondition_business:nth-child(3){
+    background: #D20526;
+    color: #fff;
+}
+.table-responsive thead tr th.fareCondition_business:nth-child(4){
+    background: #DF152F;
+    color: #fff;
+}
+.flightDetail{
+    background: #fff;
+    padding: 16px 24px;
+    border-radius: 8px;
+}
+.flightDetail__header{
+    border-bottom: 1px solid #E2E8F0;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+}
+.flightDetail__transit p{
+    background: #F1F5F9;
+    border-radius: 8px;
+    padding: 4px 10px;
+}
+.flightDetail__transit{
+    width: fit-content;
+    padding: 0 16px;
+}
+.flightDetail__line{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+.flightDetail__right p{
+    padding: 2px 0;
+}
+.flightDetail__airport p:nth-child(2),.flightDetail__airport p:nth-child(3){
+    margin-left: 20px;
+}
+.flightDetail__left{
+    margin-right: 20px;
+}
+.flightDetail__airport{
+    display: flex;
+    align-items: center;
+}
+.flightDetail__group{
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+}
+.flightDetail__airline img{
+    margin-right: 10px;
+}
+.flightDetail__airline{
+    display: flex;
+    align-items: center;
+}
+.flightDetail__row{
+    padding: 16px;
+}
+.flightDetail__cont{
+    border-top: 1px solid #E2E8F0;
+    padding-top: 20px;
 }
 .fareCondition__th {
     color: #1E293B;
@@ -379,7 +530,18 @@
 }
 .fareCondition table th p {
     font-weight: 500;
-    padding: 0.5vw;
+    padding: 1vw;
+}
+.fareCondition__select.active .fareCondition__btn button,.fareCondition__btn button:hover{
+    background: #D20526;
+    color: #fff;
+}
+.fareCondition__btn button{
+    margin-top: 12px;
+    margin-bottom: 5px;
+    border: 1px solid #D20526;
+    color: #D20526;
+    width: 150px;
 }
 .priceCondition__group{
     border-top: 1px solid #E2E8F0;
@@ -574,11 +736,14 @@
 .colorNeutral600{
     color: #475569;
 }
-.boxPrice p:first-child{
+.boxPrice p:first-child,.fareCondition__price p:first-child {
     margin-top: 4px;
     margin-right: 2px;
 }
-.boxPrice{
+.priceCondition__group{
+    padding: 12px;
+}
+.boxPrice,.fareCondition__price{
     display: flex;
     justify-content: center;
 }
