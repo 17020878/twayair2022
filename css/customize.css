@@ -9,11 +9,81 @@
     textarea.form-control{
         height: 100px!important;
     }
+    .formBox__itinerary .formBox__right{
+        border-top: 1px dashed #E2E8F0;
+        padding-top: 12px;
+    }
+    .formBox__right{
+        margin: 14px 0;
+    }
+    .flightReview .formBox{
+        padding: 0!important;
+    }
+    .flightReview .formBox__itinerary .formBox__left, .formBox__contact .formBox__left{
+        border-right: unset!important;
+    }
+    .formBox__itinerary__trip{
+        padding-bottom: 0!important;
+    }
+    .formBox__itinerary__trip .flightTime,.formBox__itinerary__trip .flightDuration{
+        width: 100% !important;
+    }
+    .formBox__itinerary__trip .flightDuration{
+        margin-top: 10px;
+    }
+    .formBox__itinerary__item{
+        padding: 0;
+        margin: 0;
+    }
     .formBox__special{
         margin: 18px 0;
     }
-    .formBox__text,.formBox__header,.formBox__body{
+    .travelerTable__row .travelerTable__cell:last-child{
+        border-bottom: unset;
+    }
+    .formBox__contact__item p,.formBox__right .formBox__contact__item{
+        border-bottom: unset!important;
+    }
+    .formBox__contact__item .ml15{
+        margin-left: 0;
+    }
+    .flightReview__btn a{
+        width: 100% !important;
+    }
+    .formBox__contact__item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px dashed #E2E8F0;
+    }
+    .travelerTable__cell{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px dashed #E2E8F0;
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+    }
+    .formBox__price .formBox__left ul .flexGroup1:last-child{
+        margin-bottom: 20px!important;
+    }
+    .flightReview .formBox__cont,.formBox__itinerary__header{
+        padding-top: 0!important;
+    }
+    .formBox__price .borderBottom{
+        padding-top: 0!important;
+    }
+    .formBox__text,.formBox__header{
         padding: 12px!important;
+    }
+    .formBox__itinerary .formBox__itinerary__item:last-child{
+        margin-top: 10px;
+    }
+    .orderCode{
+        margin-bottom: 16px!important;
+    }
+    .formBox__body{
+        padding: 0 12px!important;
     }
     .header__group{
         justify-content: space-between;
@@ -807,7 +877,12 @@
 }
 .formBox__itinerary__trip{
     padding-bottom: 16px;
-    margin-bottom: 16px;
+}
+#flightDetailPopup .modal-dialog .modal-content{
+    border-radius: 8px;
+}
+#flightDetailPopup .flightDetail__cont{
+    border-top: unset;
 }
 .flightReview .formBox__itinerary .formBox__left,.formBox__contact .formBox__left{
     border-right:1px dashed #E2E8F0
