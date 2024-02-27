@@ -721,6 +721,22 @@
 
 }
 @media (min-width: 768px) and (max-width: 1199px){
+    .homeServices__text p{
+        font-size: 1.1vw!important;
+    }
+    .homeServices__icon svg{
+        width: 4vw;
+        height: 4vw;
+    }
+    .homeDes__title{
+        font-size: 1.5vw!important;
+    }
+    .homeDestination .col-md-6{
+        padding: .5vw 0!important;
+    }
+    .homeIntern__title p{
+        font-size: 3vw!important;
+    }
     .flightDetail__row{
         padding: 1.2vw!important;
     }
@@ -809,6 +825,9 @@
     border: 1px solid #E2E8F0;
     border-radius: 8px;
     margin-top: 24px;
+}
+.homeServices__item{
+    align-items: center;
 }
 .fareCondition table th {
     vertical-align: middle;
@@ -1890,6 +1909,7 @@
     border-radius: 50%;
     font-size: unset;
     z-index: 999;
+    margin-top: 6px;
 }
 #searchModal .inputSearch__group{
     padding-bottom: 16px;
