@@ -3,6 +3,18 @@
     .header__title{
         display: none;
     }
+    .flightPassenger__row{
+        display: block;
+    }
+    textarea.form-control{
+        height: 100px!important;
+    }
+    .formBox__special{
+        margin: 18px 0;
+    }
+    .formBox__text,.formBox__header,.formBox__body{
+        padding: 12px!important;
+    }
     .header__group{
         justify-content: space-between;
     }
@@ -31,23 +43,29 @@
         transform: none;
         visibility: visible;
     }
+    .btnEditSearch{
+        margin: -15px;
+    }
     .searchBox__body{
         box-shadow: unset;
     }
-    .searchBox__main{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 100;
-        background-color: #fff;
-        overflow-y: auto;
-        -webkit-overflow-scrolling: touch;
-        transition: all .3s ease-in-out;
-        transform: translateX(-100%);
-        visibility: hidden;
+    #searchModal .searchBox__body{
+        margin-top: 30px;
     }
+    /*.searchBox__main{*/
+    /*    position: fixed;*/
+    /*    top: 0;*/
+    /*    left: 0;*/
+    /*    right: 0;*/
+    /*    bottom: 0;*/
+    /*    z-index: 100;*/
+    /*    background-color: #fff;*/
+    /*    overflow-y: auto;*/
+    /*    -webkit-overflow-scrolling: touch;*/
+    /*    transition: all .3s ease-in-out;*/
+    /*    transform: translateX(-100%);*/
+    /*    visibility: hidden;*/
+    /*}*/
     .navbarBox__list.hidden{
         display: block!important;
     }
@@ -55,6 +73,13 @@
         height: calc(100% - 80px);
         position: relative;
         bottom: 0;
+    }
+    .protect__passenger span{
+        padding-top: 6px!important;
+        padding-bottom: 6px!important;
+    }
+    .protect__passenger{
+        margin: 20px 0!important;
     }
     .navbarBox__search{
         position: absolute;
@@ -64,9 +89,26 @@
     .navbarBox__list ul li a{
         font-size: 16px;
     }
-    .flightItem__table__row{
-        border: 1px solid #E2E8F0;
-        margin-bottom: 8px;
+    .reChange__down{
+        display: block!important;
+    }
+    .flightDetail{
+        padding: 12px!important;
+    }
+    .flightItem__table__left .flightItem__table__cell:nth-child(2){
+        margin-top: -15px;
+    }
+    .reChange__down .flightItem__table__left,.flightItem__table__left .flightItem__table__cell:nth-child(1),.flightItem__table__left .flightItem__table__cell:nth-child(2){
+        width: 100% !important;
+        display: block;
+    }
+    .flightDuration p{
+        padding-right: 6px;
+    }
+    .flightDuration{
+        flex-direction: row;
+        text-align: start;
+        align-items: center;
     }
     .searchBooking{
         display: flex;
@@ -78,6 +120,10 @@
     .priceBoxMobile.open {
         transform: none;
         visibility: visible;
+    }
+    .flightPassenger__btn a{
+        width: 100% !important;
+        margin-top: 20px;
     }
     .priceBoxMobile__header p{
         display: flex;
@@ -143,9 +189,49 @@
         visibility: visible;
         opacity: 1;
     }
+    .flightResult__left{
+        margin-top: 12px;
+    }
+    .boxFilter .navbarBox__filter__main{
+        height: calc(100% - 80px) !important;
+        overflow: auto;
+    }
     .navbarBox__filter.open .navbarBox__filter__main {
         visibility: visible;
         transform: translateY(0);
+    }
+    .listBox__filter{
+        position: unset!important;
+        margin-left: 0!important;
+        padding: 0!important;
+        border: unset!important;
+        box-shadow: unset!important;
+        margin-top: 0!important;
+    }
+    .boxFilter__group {
+        padding-top: 0!important;
+        display: block!important;
+    }
+    .boxFilter__left {
+        padding: 0 12px!important;
+        border-right: unset!important;
+        width: 100%!important;
+    }
+    .flboxAirlines {
+        padding-top: 0!important;
+    }
+    .flboxTransit {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+        padding-top: 10px!important;
+        padding-bottom: 10px!important;
+    }
+    .boxFilter__right {
+        padding: 0 12px!important;
+        width: 100% !important;
+        padding-top: 14px!important;
+    }
+    .flBoxArrival {
+        padding-top: 14px!important;
     }
     .navbarBox__filter__main {
         border-radius: 8px 8px 0 0;
@@ -168,8 +254,10 @@
     .dropdown-menu-box a:last-child{
         margin-bottom: 10px;
     }
-
-
+    .flightItem__table__class{
+        padding: 12px;
+        border-top: 1px dashed #E2E8F0;
+    }
 
     #flightDetailPopup .flightDetail__cont{
         padding-top: 0;
@@ -471,6 +559,16 @@
     }
 }
 @media (min-width: 767px){
+    .protect__passenger{
+        width: max-content;
+    }
+    .flightResult__right {
+        width: 300px;
+        padding-left: 16px;
+    }
+    .flightResult__body .container {
+        display: flex;
+    }
     .tabInfo li {
         width: 100%;
         margin-right: auto;
@@ -499,7 +597,7 @@
         padding: 0.8vw 0;
     }
     .flightResult__selected{
-        width: calc(100% - 310px) !important;
+        width: calc(100% - 300px) !important;
     }
     .flightItem__label {
         margin-right: 16px;
@@ -522,7 +620,7 @@
         border: 1px solid #E2E8F0;
         margin-bottom: 15px;
     }
-    .flightResult__left {
+    .flightResult__group {
         width: 100%;
     }
     .searchBox__main {
@@ -669,11 +767,16 @@
     padding: 16px 24px;
 }
 .protect__passenger__icon{
-    width: fit-content;
+    position: absolute;
+    width: 65px;
+    height: 65px;
     border: 1px solid #E2E8F0;
     border-radius: 50%;
     padding: 8px;
     background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .flightReview .formBox__cont{
     padding-top: 12px;
@@ -731,21 +834,24 @@
 .formBox__itinerary__trip{
     margin-top: 8px;
 }
+.flightPassenger{
+    margin: 24px 0;
+}
 .flightPassenger__btn a{
     width: 220px;
 }
 .protect__passenger span{
     background: #fff;
     border: 1px solid #E2E8F0;
-    border-left: unset;
-    padding: 5px 15px;
-    margin-left: -6px;
-    max-width: fit-content;
+    padding: 10px 10px 10px 45px;
+    margin-left: 30px;
     border-radius: 0 8px 8px 0;
 }
 .protect__passenger{
     display: flex;
     align-items: center;
+    position: relative;
+    margin: 34px 0;
 }
 .formBox__special>button:hover span{
     text-decoration: underline;

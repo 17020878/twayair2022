@@ -149,7 +149,7 @@
     </header>
     <main class="wrapper">
       <div id="searchModal" class="modal fade">
-        <div class="searchBox searchBox_shadow">
+        <div class="searchBox searchBox_shadow showDesktop">
           <div class="flightHeader">
             <div class="header__group">
               <div class="logo"><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="280" height="34" viewBox="0 0 280 34" fill="none">
@@ -363,8 +363,8 @@
               </button>
               <div class="searchBox">
                 <div class="container">
-                  <div class="btnEditSearch flexGroup1"><span class="text20 colorDarkGreen medium">Edit search</span>
-                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <div class="btnEditSearch flexGroup1"><span class="text20 colorNeutral800 medium">Edit search</span>
+                    <svg class="showDesktop" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M5.98606 7.51538C5.82252 7.51559 5.66081 7.4809 5.51174 7.41365C5.36266 7.3464 5.22964 7.24812 5.12156 7.12538L0.216062 1.54938C0.0610168 1.36461 -0.0155831 1.12651 0.00264176 0.885989C0.0208666 0.645472 0.13247 0.421631 0.313587 0.262329C0.494704 0.103026 0.73096 0.0209076 0.971836 0.0335318C1.21271 0.046156 1.43909 0.152521 1.60256 0.329883L5.89206 5.20588C5.90379 5.21927 5.91825 5.22999 5.93446 5.23734C5.95067 5.24469 5.96826 5.24849 5.98606 5.24849C6.00386 5.24849 6.02145 5.24469 6.03766 5.23734C6.05387 5.22999 6.06833 5.21927 6.08006 5.20588L10.3696 0.329883C10.4487 0.235596 10.5458 0.158075 10.6554 0.101878C10.7649 0.0456801 10.8845 0.0119398 11.0072 0.00263991C11.13 -0.00665995 11.2533 0.00866819 11.37 0.0477234C11.4868 0.0867787 11.5945 0.148773 11.6869 0.230062C11.7793 0.311352 11.8546 0.410296 11.9082 0.52108C11.9618 0.631863 11.9928 0.752251 11.9992 0.875166C12.0057 0.998082 11.9875 1.12104 11.9457 1.23683C11.904 1.35261 11.8395 1.45888 11.7561 1.54938L6.85206 7.12338C6.74379 7.24643 6.61057 7.34502 6.46126 7.4126C6.31195 7.48019 6.14996 7.51523 5.98606 7.51538Z" fill="#0F5A5E"></path>
                     </svg>
                   </div>
@@ -883,7 +883,7 @@
       <section class="flightResult">
         <div class="flightResult__body">
           <div class="container">
-            <div class="flightResult__left">
+            <div class="flightResult__group hidden">
               <div class="showDesktop">
                 <div class="flightItem">
                   <div class="flightItem__title">
@@ -1980,110 +1980,120 @@
                             </defs>
                           </svg>
                         </div>
-                        <div class="listBox__form listBox__filter">
-                          <button type="button" class="close colorRed85">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1point5">
-                              <path d="M14.3001 12.1788C14.2768 12.1556 14.2584 12.128 14.2458 12.0976C14.2332 12.0672 14.2267 12.0347 14.2267 12.0018C14.2267 11.9689 14.2332 11.9364 14.2458 11.906C14.2584 11.8756 14.2768 11.848 14.3001 11.8248L23.5631 2.5628C23.8444 2.28114 24.0022 1.89928 24.002 1.50124C24.0017 1.10319 23.8433 0.721561 23.5616 0.440299C23.28 0.159037 22.8981 0.00118392 22.5001 0.00146522C22.102 0.00174652 21.7204 0.160139 21.4391 0.441799L12.1771 9.6998C12.1539 9.72308 12.1263 9.74155 12.0959 9.75416C12.0656 9.76676 12.033 9.77325 12.0001 9.77325C11.9672 9.77325 11.9347 9.76676 11.9043 9.75416C11.8739 9.74155 11.8463 9.72308 11.8231 9.6998L2.56113 0.441799C2.42186 0.302467 2.25651 0.191929 2.07453 0.116498C1.89254 0.0410666 1.69748 0.00221873 1.50048 0.0021723C1.10262 0.00207854 0.721022 0.160037 0.439627 0.441299C0.158232 0.722561 9.38099e-05 1.10409 4.17235e-08 1.50195C-9.37265e-05 1.8998 0.157865 2.2814 0.439127 2.5628L9.70013 11.8248C9.72341 11.848 9.74188 11.8756 9.75448 11.906C9.76709 11.9364 9.77357 11.9689 9.77357 12.0018C9.77357 12.0347 9.76709 12.0672 9.75448 12.0976C9.74188 12.128 9.72341 12.1556 9.70013 12.1788L0.439127 21.4418C0.29986 21.5811 0.189401 21.7465 0.114055 21.9286C0.0387096 22.1106 -4.63876e-05 22.3057 4.17235e-08 22.5027C9.38099e-05 22.9005 0.158232 23.282 0.439627 23.5633C0.57896 23.7026 0.744358 23.813 0.92638 23.8884C1.1084 23.9637 1.30348 24.0025 1.50048 24.0024C1.89834 24.0023 2.27987 23.8442 2.56113 23.5628L11.8231 14.2998C11.8463 14.2765 11.8739 14.258 11.9043 14.2454C11.9347 14.2328 11.9672 14.2264 12.0001 14.2264C12.033 14.2264 12.0656 14.2328 12.0959 14.2454C12.1263 14.258 12.1539 14.2765 12.1771 14.2998L21.4391 23.5628C21.7204 23.8442 22.1019 24.0023 22.4998 24.0024C22.8976 24.0025 23.2792 23.8446 23.5606 23.5633C23.842 23.282 24.0002 22.9005 24.0003 22.5027C24.0003 22.1048 23.8424 21.7232 23.5611 21.4418L14.3001 12.1788Z" fill="#fff" fill-opacity="1"></path>
-                            </svg>
-                            <span class="text14 medium ml5">Close</span>
-                          </button>
-                          <div class="boxFilter__group">
-                            <div class="boxFilter__left">
-                              <div class="flboxAirlines">
-                                <div class="boxAirlines__title boxDelete" type="Airlines">
-                                  <p class="medium">Airlines</p>
-                                  <p class="colorRed85 deleteFilter">Delete</p>
-                                </div>
-                                <div class="boxAirlines__checkbox">
-                                  <div class="container b">
-                                    <input type="radio" value="" name="airlineRadio" checked="checked">
-                                    <img src="https://webservice.annguyen.vn/sites/default/files/logo/cambodia.png" style="width: 24px;margin-right:12px">
-                                    <label class="text12">Cambodia Angkorair</label><br>
-                                  </div>
-                                  <div class="container a">
-                                    <input type="radio" name="airlineRadio" value="">
-                                    <img class="airlineLogoImg" src="https://flightlibrary.com/sites/default/files/logo/lanmei.png" style="width: 24px;margin-right:12px">
-                                    <label class="ANN_airline_logo text12">Lanmei Airlines</label><br>
-                                  </div>
+                        <div class="navbarBox__filter">
+                          <div class="navbarBox__filter__main">
+                            <div class="navbarBox__filter__body">
+                              <div class="navbarBox__filter__header">
+                                <p class="text16 colorWhite medium">Short by</p>
+                              </div>
+                              <div class="listBox__form listBox__filter">
+                                <button type="button" class="close colorRed85 showDesktop">
+                                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1point5">
+                                    <path d="M14.3001 12.1788C14.2768 12.1556 14.2584 12.128 14.2458 12.0976C14.2332 12.0672 14.2267 12.0347 14.2267 12.0018C14.2267 11.9689 14.2332 11.9364 14.2458 11.906C14.2584 11.8756 14.2768 11.848 14.3001 11.8248L23.5631 2.5628C23.8444 2.28114 24.0022 1.89928 24.002 1.50124C24.0017 1.10319 23.8433 0.721561 23.5616 0.440299C23.28 0.159037 22.8981 0.00118392 22.5001 0.00146522C22.102 0.00174652 21.7204 0.160139 21.4391 0.441799L12.1771 9.6998C12.1539 9.72308 12.1263 9.74155 12.0959 9.75416C12.0656 9.76676 12.033 9.77325 12.0001 9.77325C11.9672 9.77325 11.9347 9.76676 11.9043 9.75416C11.8739 9.74155 11.8463 9.72308 11.8231 9.6998L2.56113 0.441799C2.42186 0.302467 2.25651 0.191929 2.07453 0.116498C1.89254 0.0410666 1.69748 0.00221873 1.50048 0.0021723C1.10262 0.00207854 0.721022 0.160037 0.439627 0.441299C0.158232 0.722561 9.38099e-05 1.10409 4.17235e-08 1.50195C-9.37265e-05 1.8998 0.157865 2.2814 0.439127 2.5628L9.70013 11.8248C9.72341 11.848 9.74188 11.8756 9.75448 11.906C9.76709 11.9364 9.77357 11.9689 9.77357 12.0018C9.77357 12.0347 9.76709 12.0672 9.75448 12.0976C9.74188 12.128 9.72341 12.1556 9.70013 12.1788L0.439127 21.4418C0.29986 21.5811 0.189401 21.7465 0.114055 21.9286C0.0387096 22.1106 -4.63876e-05 22.3057 4.17235e-08 22.5027C9.38099e-05 22.9005 0.158232 23.282 0.439627 23.5633C0.57896 23.7026 0.744358 23.813 0.92638 23.8884C1.1084 23.9637 1.30348 24.0025 1.50048 24.0024C1.89834 24.0023 2.27987 23.8442 2.56113 23.5628L11.8231 14.2998C11.8463 14.2765 11.8739 14.258 11.9043 14.2454C11.9347 14.2328 11.9672 14.2264 12.0001 14.2264C12.033 14.2264 12.0656 14.2328 12.0959 14.2454C12.1263 14.258 12.1539 14.2765 12.1771 14.2998L21.4391 23.5628C21.7204 23.8442 22.1019 24.0023 22.4998 24.0024C22.8976 24.0025 23.2792 23.8446 23.5606 23.5633C23.842 23.282 24.0002 22.9005 24.0003 22.5027C24.0003 22.1048 23.8424 21.7232 23.5611 21.4418L14.3001 12.1788Z" fill="#fff" fill-opacity="1"></path>
+                                  </svg>
+                                  <span class="text14 medium ml5">Close</span>
+                                </button>
+                                <div class="boxFilter__group">
+                                  <div class="boxFilter__left">
+                                    <div class="flboxAirlines">
+                                      <div class="boxAirlines__title boxDelete" type="Airlines">
+                                        <p class="medium">Airlines</p>
+                                        <p class="colorRed85 deleteFilter">Delete</p>
+                                      </div>
+                                      <div class="boxAirlines__checkbox">
+                                        <div class="container b">
+                                          <input type="radio" value="" name="airlineRadio" checked="checked">
+                                          <img src="https://webservice.annguyen.vn/sites/default/files/logo/cambodia.png" style="width: 24px;margin-right:12px">
+                                          <label class="text12">Cambodia Angkorair</label><br>
+                                        </div>
+                                        <div class="container a">
+                                          <input type="radio" name="airlineRadio" value="">
+                                          <img class="airlineLogoImg" src="https://flightlibrary.com/sites/default/files/logo/lanmei.png" style="width: 24px;margin-right:12px">
+                                          <label class="ANN_airline_logo text12">Lanmei Airlines</label><br>
+                                        </div>
 
-                                </div>
-                              </div>
-                              <div class="flboxTransit">
-                                <div class="boxTransit__title boxDelete" type="Transit">
-                                  <p class="medium">Transit</p>
-                                  <p class="colorRed85 deleteFilter">Delete</p>
-                                </div>
-                                <div class="boxTransit__checkbox">
-                                  <div class="container">
-                                    <input type="radio" name="transit" value="">
-                                    <label for="0_stop1">Direct</label><br>
-                                  </div>
-                                  <div class="container">
-                                    <input type="radio" name="transit" value="">
-                                    <label for="1_stop1">1 Stop</label><br>
-                                  </div>
-                                  <div class="container">
-                                    <input type="radio" name="transit" value="">
-                                    <label for="2_stop1">2 Stops</label>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="boxFilter__right">
-                              <div class="flBoxDeparture flBox__time">
-                                <div class="boxDepartTime__title boxDelete" type="Departure">
-                                  <p class="medium">Departure Time</p>
-                                  <p class="colorRed85 deleteFilter">Delete</p>
-                                </div>
-                                <div class="boxDepartTime__space">
-                                  <div class="grid-container">
-                                    <div class="grid-item" spacetime="eMorning">
-                                      <p class="text12 medium colorNeutral800">Early Morning</p>
-                                      <p class="medium colorNeutral800">00:00 - 06:00</p>
+                                      </div>
                                     </div>
-                                    <div class="grid-item" spacetime="Morning">
-                                      <p class="text12 medium colorNeutral800">Morning</p>
-                                      <p class="medium colorNeutral800">06:00 - 12:00</p>
-                                    </div>
-                                    <div class="grid-item" spacetime="Afternoon">
-                                      <p class="text12 medium colorNeutral800">Afternoon</p>
-                                      <p class="medium colorNeutral800">12:00 - 18:00</p>
-                                    </div>
-                                    <div class="grid-item" spacetime="Evening">
-                                      <p class="text12 medium colorNeutral800">Evening</p>
-                                      <p class="medium colorNeutral800">18:00 - 24:00</p>
+                                    <div class="flboxTransit">
+                                      <div class="boxTransit__title boxDelete" type="Transit">
+                                        <p class="medium">Transit</p>
+                                        <p class="colorRed85 deleteFilter">Delete</p>
+                                      </div>
+                                      <div class="boxTransit__checkbox">
+                                        <div class="container">
+                                          <input type="radio" name="transit" value="">
+                                          <label for="0_stop1">Direct</label><br>
+                                        </div>
+                                        <div class="container">
+                                          <input type="radio" name="transit" value="">
+                                          <label for="1_stop1">1 Stop</label><br>
+                                        </div>
+                                        <div class="container">
+                                          <input type="radio" name="transit" value="">
+                                          <label for="2_stop1">2 Stops</label>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
-                                </div>
-                              </div>
-                              <div class="flBoxArrival flBox__time">
-                                <div class="boxArrival__title boxDelete" type="Arrival">
-                                  <p class="medium">Arrival Time</p>
-                                  <p class="colorRed85 deleteFilter">Delete</p>
-                                </div>
-                                <div class="boxArrival__space">
-                                  <div class="grid-container">
-                                    <div class="grid-item" spacetime="eMorning">
-                                      <p class="text12 medium colorNeutral800">Early Morning</p>
-                                      <p class="medium colorNeutral800">00:00 - 06:00</p>
+                                  <div class="boxFilter__right">
+                                    <div class="flBoxDeparture flBox__time">
+                                      <div class="boxDepartTime__title boxDelete" type="Departure">
+                                        <p class="medium">Departure Time</p>
+                                        <p class="colorRed85 deleteFilter">Delete</p>
+                                      </div>
+                                      <div class="boxDepartTime__space">
+                                        <div class="grid-container">
+                                          <div class="grid-item" spacetime="eMorning">
+                                            <p class="text12 medium colorNeutral800">Early Morning</p>
+                                            <p class="medium colorNeutral800">00:00 - 06:00</p>
+                                          </div>
+                                          <div class="grid-item" spacetime="Morning">
+                                            <p class="text12 medium colorNeutral800">Morning</p>
+                                            <p class="medium colorNeutral800">06:00 - 12:00</p>
+                                          </div>
+                                          <div class="grid-item" spacetime="Afternoon">
+                                            <p class="text12 medium colorNeutral800">Afternoon</p>
+                                            <p class="medium colorNeutral800">12:00 - 18:00</p>
+                                          </div>
+                                          <div class="grid-item" spacetime="Evening">
+                                            <p class="text12 medium colorNeutral800">Evening</p>
+                                            <p class="medium colorNeutral800">18:00 - 24:00</p>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
-                                    <div class="grid-item" spacetime="Morning">
-                                      <p class="text12 medium colorNeutral800">Morning</p>
-                                      <p class="medium colorNeutral800">06:00 - 12:00</p>
-                                    </div>
-                                    <div class="grid-item" spacetime="Afternoon">
-                                      <p class="text12 medium colorNeutral800">Afternoon</p>
-                                      <p class="medium colorNeutral800">12:00 - 18:00</p>
-                                    </div>
-                                    <div class="grid-item" spacetime="Evening">
-                                      <p class="text12 medium colorNeutral800">Evening</p>
-                                      <p class="medium colorNeutral800">18:00 - 24:00</p>
+                                    <div class="flBoxArrival flBox__time">
+                                      <div class="boxArrival__title boxDelete" type="Arrival">
+                                        <p class="medium">Arrival Time</p>
+                                        <p class="colorRed85 deleteFilter">Delete</p>
+                                      </div>
+                                      <div class="boxArrival__space">
+                                        <div class="grid-container">
+                                          <div class="grid-item" spacetime="eMorning">
+                                            <p class="text12 medium colorNeutral800">Early Morning</p>
+                                            <p class="medium colorNeutral800">00:00 - 06:00</p>
+                                          </div>
+                                          <div class="grid-item" spacetime="Morning">
+                                            <p class="text12 medium colorNeutral800">Morning</p>
+                                            <p class="medium colorNeutral800">06:00 - 12:00</p>
+                                          </div>
+                                          <div class="grid-item" spacetime="Afternoon">
+                                            <p class="text12 medium colorNeutral800">Afternoon</p>
+                                            <p class="medium colorNeutral800">12:00 - 18:00</p>
+                                          </div>
+                                          <div class="grid-item" spacetime="Evening">
+                                            <p class="text12 medium colorNeutral800">Evening</p>
+                                            <p class="medium colorNeutral800">18:00 - 24:00</p>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
+                          <div class="navbarBox__backdrop"></div>
                         </div>
                       </div>
                     </div>
@@ -3055,7 +3065,7 @@
                 </div>
               </div>
             </div>
-            <div class="flightResult__left flightResult__selected hidden">
+            <div class="flightResult__left flightResult__selected">
               <div class="box_after_choosing_flight">
                 <div class="flTable__group">
                   <div class="flightItem__table__row">
@@ -3123,8 +3133,11 @@
                             <p class="text14 medium colorNeutral500">Direct</p>
                           </div>
                         </div>
+                        <div class="flightItem__table__class showMobile">
+                          <p class="medium colorNeutral800">ECONOMY PROMOTION</p>
+                        </div>
                       </div>
-                      <div class="flightItem__table__right">
+                      <div class="flightItem__table__right showDesktop">
                         <p class="medium colorNeutral800">ECONOMY PROMOTION</p>
                         <p class="colorNeutral500">Fare Basis: RTXYZ</p>
                         <p class="colorNeutral500">Checked Bagagge: 20Kg</p>
@@ -3287,8 +3300,11 @@
                             <p class="text14 medium colorNeutral500">Direct</p>
                           </div>
                         </div>
+                        <div class="flightItem__table__class showMobile">
+                          <p class="medium colorNeutral800">BUSINESS</p>
+                        </div>
                       </div>
-                      <div class="flightItem__table__right">
+                      <div class="flightItem__table__right showDesktop">
                         <p class="medium colorNeutral800">ECONOMY PROMOTION</p>
                         <p class="colorNeutral500">Fare Basis: RTXYZ</p>
                         <p class="colorNeutral500">Checked Bagagge: 20Kg</p>
@@ -3384,9 +3400,9 @@
                   </div>
                 </div>
               </div>
-              <div class="tripSummary__btn"><a href="flightPassenger.html" class="btn btn-orange btn-lg"><span>CONTINUE</span></a></div>
+              <div class="tripSummary__btn showDesktop"><a href="flightPassenger.html" class="btn btn-orange btn-lg"><span>Continue to passengers</span></a></div>
             </div>
-            <div class="flightResult__right hidden">
+            <div class="flightResult__right">
               <div class="tripSummary">
                 <div class="tripSummary__header">
                   <p class="text16 colorNeutral800 medium">SUMMARY</p>
@@ -3507,6 +3523,7 @@
                 </div>
               </div>
             </div>
+            <div class="tripSummary__btn mt15 showMobile"><a href="flightPassenger.html" class="btn btn-orange btn-lg"><span>Continue to passengers</span></a></div>
           </div>
         </div>
       </section>
