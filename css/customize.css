@@ -721,6 +721,37 @@
 
 }
 @media (min-width: 768px) and (max-width: 1199px){
+    .header__title, .header__search{
+        padding-left: 1vw!important;
+    }
+    .homeIntern__group{
+        padding-top: 2vw!important;
+    }
+    .socialFooter svg,.footer__lang svg{
+        width: 2.5vw;
+    }
+    .appFooter img{
+        width: 8vw!important;
+        height: 4vw!important;
+    }
+    .typeBook__group{
+        padding-top: 2vw!important;
+    }
+    .typeBook__col{
+        padding: 0 3vw!important;
+    }
+    .typeBook__group svg{
+        width: 1.5vw;
+    }
+    .typeBook__item.active{
+        padding-bottom: 0!important;
+    }
+    .inputSearch__promo svg{
+        width: 1vw;
+    }
+    .searchBox__btn{
+        width: 15vw!important;
+    }
     .homeServices__text p{
         font-size: 1.1vw!important;
     }
@@ -1662,6 +1693,7 @@
     width: 110px;
     margin-right: 20px;
     border-radius: 8px;
+    object-fit: contain;
 }
 
 .socialFooter svg{
