@@ -122,20 +122,20 @@
     #searchModal .searchBox__body{
         margin-top: 30px;
     }
-    /*.searchBox__main{*/
-    /*    position: fixed;*/
-    /*    top: 0;*/
-    /*    left: 0;*/
-    /*    right: 0;*/
-    /*    bottom: 0;*/
-    /*    z-index: 100;*/
-    /*    background-color: #fff;*/
-    /*    overflow-y: auto;*/
-    /*    -webkit-overflow-scrolling: touch;*/
-    /*    transition: all .3s ease-in-out;*/
-    /*    transform: translateX(-100%);*/
-    /*    visibility: hidden;*/
-    /*}*/
+    .searchBox__main{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+        background-color: #fff;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        transition: all .3s ease-in-out;
+        transform: translateX(-100%);
+        visibility: hidden;
+    }
     .navbarBox__list.hidden{
         display: block!important;
     }
@@ -707,10 +707,6 @@
         display: flex;
         align-items: center;
     }
-    .no_scroll_body {
-        height: 100%;
-        overflow: hidden;
-    }
     .fareCondition__title {
         padding: 0.5vw 1vw;
         font-size: 14px;
@@ -721,8 +717,17 @@
 
 }
 @media (min-width: 768px) and (max-width: 1199px){
+    .form-group-icon svg{
+        width: 1.5vw;
+    }
+    .form-group-icon input, .form-group-icon select{
+        padding-left: 3.8vw!important;
+    }
     .header__title, .header__search{
-        padding-left: 1vw!important;
+        padding-left: 1.8vw!important;
+    }
+    .navbarBox__list ul li a{
+        padding: 1vw 0;
     }
     .homeIntern__group{
         padding-top: 2vw!important;
@@ -825,16 +830,19 @@
         width: 2vw;
         height: 2vw;
     }
+    .text46{
+        font-size: 3vw!important;
+    }
     .logo svg{
-        width: 18vw;
+        width: 20vw;
         height: 3vw;
     }
     .homeBanner__cont h2 {
-        font-size: 3.5vw!important;
+        font-size: 3vw!important;
     }
-    .homeBanner__cont p{
-        font-size: 2vw!important;
-    }
+    /*.homeBanner__cont p{*/
+    /*    font-size: 2vw!important;*/
+    /*}*/
     .header__title span{
         font-size: .9vw;
     }
@@ -1100,6 +1108,9 @@
 }
 .text48{
     font-size: 48px;
+}
+.text46{
+    font-size: 46px;
 }
 .aboutUs,.contactUs,.faq,.termOfUse,.faq,.privacyPolicy,.bookingStatus,.refundRequest,.flightResult{
     background: #F9FCFF;
